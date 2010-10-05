@@ -19,8 +19,8 @@
 				<ondown>9001</ondown>
 				<control type="button" id="100">
 					<width>900</width>
-					<height>45</height>
-					<font>font12</font>
+					<height>35</height>
+					<font>font11</font>
 					<label>[B]$LOCALIZE[31110][/B]</label>
 					<align>center</align>
 					<disabledcolor>blue</disabledcolor>
@@ -67,7 +67,7 @@
 					<focusedcolor>black</focusedcolor>
 					<label>15311</label>
 					<label2>$INFO[Skin.String(Startup_Playlist_Path)]</label2>
-					<onclick>Skin.SetFile(Startup_Playlist_Path,,special://home/userdata/playlists/music/)</onclick>
+					<onclick>Skin.SetFile(Startup_Playlist_Path,,special://musicplaylists/)</onclick>
 					<texturefocus border="5">ThumbFO.png</texturefocus>
 					<texturenofocus border="5">ListNF.png</texturenofocus>
 					<enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
@@ -89,8 +89,8 @@
 				<ondown>9002</ondown>
 				<control type="button" id="200">
 					<width>900</width>
-					<height>45</height>
-					<font>font12</font>
+					<height>35</height>
+					<font>font11</font>
 					<label>[B]$LOCALIZE[31111][/B]</label>
 					<align>center</align>
 					<disabledcolor>blue</disabledcolor>
@@ -125,6 +125,119 @@
 					<texturefocus border="5">ThumbFO.png</texturefocus>
 					<texturenofocus border="5">ListNF.png</texturenofocus>
 				</control>
+				<control type="image" id="220">
+					<width>900</width>
+					<height>4</height>
+					<texture>-</texture>
+				</control>
+				<control type="button" id="221">
+					<width>900</width>
+					<height>35</height>
+					<font>font11</font>
+					<label>[B]$LOCALIZE[31116][/B]</label>
+					<align>center</align>
+					<disabledcolor>blue</disabledcolor>
+					<texturefocus border="5">List_Seperator.png</texturefocus>
+					<texturenofocus border="5">List_Seperator.png</texturenofocus>
+					<onclick>-</onclick>
+					<enable>false</enable>
+				</control>
+
+				<control type="radiobutton" id="222">
+					<width>900</width>
+					<height>45</height>
+					<font>font12</font>
+					<label>$LOCALIZE[31132] - [B]1[/B]</label>
+					<textcolor>white</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus border="5">ThumbFO.png</texturefocus>
+					<texturenofocus border="5">ListNF.png</texturenofocus>
+					<onclick>Skin.ToggleSetting(HomeVideoButton1)</onclick>
+					<selected>Skin.HasSetting(HomeVideoButton1)</selected>
+				</control>
+				<control type="button" id="223">
+					<width>900</width>
+					<height>45</height>
+					<font>font12</font>
+					<label> - $LOCALIZE[31133]</label>
+					<label2>[COLOR=blue2]$INFO[Skin.String(HomeVideoButton1_label)][/COLOR]</label2>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus border="5">ThumbFO.png</texturefocus>
+					<texturenofocus border="5">ListNF.png</texturenofocus>
+					<onclick>Skin.SetString(HomeVideoButton1_label)</onclick>
+					<visible>Skin.HasSetting(HomeVideoButton1)</visible>
+				</control>
+				<control type="button" id="224">
+					<width>900</width>
+					<height>45</height>
+					<font>font12</font>
+					<label> - $LOCALIZE[31134]</label>
+					<label2>[COLOR=blue2]$INFO[Skin.String(HomeVideoButton1_Path)][/COLOR]</label2>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus border="5">ThumbFO.png</texturefocus>
+					<texturenofocus border="5">ListNF.png</texturenofocus>
+					<onclick>Skin.SetFile(HomeVideoButton1_Path,,special://videoplaylists/)</onclick>
+					<visible>Skin.HasSetting(HomeVideoButton1)</visible>
+				</control>
+
+				<control type="radiobutton" id="225">
+					<width>900</width>
+					<height>45</height>
+					<font>font12</font>
+					<label>$LOCALIZE[31132] - [B]2[/B]</label>
+					<textcolor>white</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus border="5">ThumbFO.png</texturefocus>
+					<texturenofocus border="5">ListNF.png</texturenofocus>
+					<onclick>Skin.ToggleSetting(HomeVideoButton2)</onclick>
+					<selected>Skin.HasSetting(HomeVideoButton2)</selected>
+				</control>
+				<control type="button" id="226">
+					<width>900</width>
+					<height>45</height>
+					<font>font12</font>
+					<label> - $LOCALIZE[31133]</label>
+					<label2>[COLOR=blue2]$INFO[Skin.String(HomeVideoButton2_label)][/COLOR]</label2>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus border="5">ThumbFO.png</texturefocus>
+					<texturenofocus border="5">ListNF.png</texturenofocus>
+					<onclick>Skin.SetString(HomeVideoButton2_label)</onclick>
+					<visible>Skin.HasSetting(HomeVideoButton2)</visible>
+				</control>
+				<control type="button" id="227">
+					<width>900</width>
+					<height>45</height>
+					<font>font12</font>
+					<label> - $LOCALIZE[31134]</label>
+					<label2>[COLOR=blue2]$INFO[Skin.String(HomeVideoButton2_Path)][/COLOR]</label2>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus border="5">ThumbFO.png</texturefocus>
+					<texturenofocus border="5">ListNF.png</texturenofocus>
+					<onclick>Skin.SetFile(HomeVideoButton2_Path,,special://videoplaylists/)</onclick>
+					<visible>Skin.HasSetting(HomeVideoButton2)</visible>
+				</control>
+
+				<control type="image" id="230">
+					<width>900</width>
+					<height>4</height>
+					<texture>-</texture>
+				</control>
+				<control type="button" id="231">
+					<width>900</width>
+					<height>35</height>
+					<font>font11</font>
+					<label>[B]$LOCALIZE[31117][/B]</label>
+					<align>center</align>
+					<disabledcolor>blue</disabledcolor>
+					<texturefocus border="5">List_Seperator.png</texturefocus>
+					<texturenofocus border="5">List_Seperator.png</texturenofocus>
+					<onclick>-</onclick>
+					<enable>false</enable>
+				</control>
 			</control>
 			<!-- End Home Page Skin Settings -->
 			<!-- Start Custom Script Skin Settings -->
@@ -142,8 +255,8 @@
 				<ondown>9004</ondown>
 				<control type="button" id="200">
 					<width>900</width>
-					<height>45</height>
-					<font>font12</font>
+					<height>35</height>
+					<font>font11</font>
 					<label>[B]$LOCALIZE[31112][/B]</label>
 					<align>center</align>
 					<disabledcolor>blue</disabledcolor>
@@ -159,8 +272,8 @@
 				</control>
 				<control type="button" id="220">
 					<width>900</width>
-					<height>45</height>
-					<font>font12</font>
+					<height>35</height>
+					<font>font11</font>
 					<label>[B]$LOCALIZE[31113][/B]</label>
 					<align>center</align>
 					<disabledcolor>blue</disabledcolor>
@@ -176,8 +289,8 @@
 				</control>
 				<control type="button" id="240">
 					<width>900</width>
-					<height>45</height>
-					<font>font12</font>
+					<height>35</height>
+					<font>font11</font>
 					<label>[B]$LOCALIZE[31114][/B]</label>
 					<align>center</align>
 					<disabledcolor>blue</disabledcolor>

@@ -72,14 +72,19 @@
   <string id="31113">Home Quick Launch Music Addons</string>
   <string id="31114">Home Quick Launch Picture Addons</string>
   <string id="31115">Home Quick Launch Program Addons</string>
-  <string id="31116"></string>
+  <string id="31116">Video Submenu shortcuts</string>
+  <string id="31117">Music Submenu shortcuts</string>
 
   <!-- Skin Settings labels (Options Text Headers) -->
   <string id="31130">Show Fanart in background</string>
+  <string id="31131">Shortcut file link</string>
+  <string id="31132">Enable Playlist Button</string>
+  <string id="31133">Playlist Label</string>
+  <string id="31134">Playlist Path</string>
 
 
 
-    <!-- Description Labels  -->
+    <!-- Settings Description Labels  -->
   <string id="31400">[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR]Change the skin · Set language and region · Change file listing options[CR]Set up a screensaver</string>
   <string id="31401">[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR]Manage your video library · Set video playback options · Change video listing options[CR]Set subtitle fonts</string>
   <string id="31402">[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR]Manage your music library · Set music playback options · Change music listing options[CR]Setup song submission · Set karaoke options</string>

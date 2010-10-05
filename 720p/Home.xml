@@ -186,6 +186,20 @@
 						<visible>Library.HasContent(MusicVideos)</visible>
 						<visible>Container(9000).HasFocus(1)</visible>
 					</control>
+					<control type="button" id="90108">
+						<include>ButtonHomeSubCommonValues</include>
+						<label>$INFO[Skin.String(HomeVideoButton1_label)]</label>
+						<onclick>ActivateWindow(VideoLibrary,$INFO[Skin.String(HomeVideoButton1_Path)],return)</onclick>
+						<visible>Skin.HasSetting(HomeVideoButton1)</visible>
+						<visible>Container(9000).HasFocus(1)</visible>
+					</control>
+					<control type="button" id="90109">
+						<include>ButtonHomeSubCommonValues</include>
+						<label>$INFO[Skin.String(HomeVideoButton2_label)]</label>
+						<onclick>ActivateWindow(VideoLibrary,$INFO[Skin.String(HomeVideoButton2_Path)],return)</onclick>
+						<visible>Skin.HasSetting(HomeVideoButton2)</visible>
+						<visible>Container(9000).HasFocus(1)</visible>
+					</control>
 					<control type="button" id="90104">
 						<include>ButtonHomeSubCommonValues</include>
 						<label>744</label>
