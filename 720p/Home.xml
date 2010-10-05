@@ -942,14 +942,14 @@
 				<posy>405</posy>
 				<control type="image">
 					<posx>0</posx>
-					<posy>120</posy>
+					<posy>130</posy>
 					<width>512</width>
 					<height>64</height>
 					<texture>HorizontalGlow.png</texture>
 				</control>
 				<control type="image">
 					<posx>512r</posx>
-					<posy>120</posy>
+					<posy>130</posy>
 					<width>512</width>
 					<height>64</height>
 					<texture>HorizontalGlow.png</texture>
