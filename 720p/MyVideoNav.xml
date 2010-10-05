@@ -213,15 +213,5 @@
 			<include>AspectCodecFlagging</include>
 		</control>
 		<include>BehindDialogFadeOut</include>
-
-<!-- Test code for the flagging Can stay until all codecs done
-
-		<control type="label">
-			<posy>10</posy>
-			<font>font13</font>
-			<include>WindowTitleCommons</include>
-			<label>Video - $INFO[ListItem.VideoResolution] - $INFO[ListItem.VideoCodec] - $INFO[ListItem.VideoAspect] - Audio - $INFO[ListItem.AudioCodec] - $INFO[ListItem.AudioChannels] - $INFO[ListItem.AudioLanguage] - Subtitle - $INFO[ListItem.SubtitleLanguage]</label>
-		</control>
--->
 	</controls>
 </window>

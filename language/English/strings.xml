@@ -77,24 +77,7 @@
   <!-- Skin Settings labels (Options Text Headers) -->
   <string id="31130">Show Fanart in background</string>
 
-  <!-- Script Settings labels -->
-  <string id="31200">Custom Add-on options</string>
-  <string id="31201"></string>
-  <string id="31202"></string>
-  <string id="31203">Set button label</string>
-  <string id="31204">Add-on path</string>
-  <string id="31205"></string>
-  <string id="31206"></string>
-  <string id="31207">Show subtitle download button in Video OSD</string>
-  <string id="31208">Show lyrics Add-on button in Music OSD</string>
-  <string id="31209">Enable quick launch Add-on button for -</string>
 
-  <!-- Subtitles Script Extra labels -->
-  <string id="31250">Subtitles</string>
-  <string id="31251">Subtitle Source</string>
-
-  <!-- AMT Script Extra labels -->
-  <string id="31300">Show cast</string>
 
     <!-- Description Labels  -->
   <string id="31400">[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR]Change the skin · Set language and region · Change file listing options[CR]Set up a screensaver</string>

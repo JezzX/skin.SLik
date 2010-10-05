@@ -7,7 +7,6 @@
 	<include file="ViewsAddonBrowser.xml" />
 
 	<constant name="FanartCrossfadeTime">400</constant>
-	<constant name="IconCrossfadeTime">400</constant>
 
 	<include name="CommonBackground">
 		<control type="image">
@@ -596,12 +595,6 @@
 			<posx>10</posx>
 			<posy>450</posy>
 			<visible>Player.HasVideo</visible>
-			<visible>![Window.IsVisible(VideoLibrary) + Control.IsVisible(56)]</visible>
-			<visible>![Window.IsVisible(VideoLibrary) + Control.IsVisible(500)]</visible>
-			<visible>![Window.IsVisible(VideoFiles) + Control.IsVisible(500)]</visible>
-			<visible>![Window.IsVisible(MusicLibrary) + Control.IsVisible(500)]</visible>
-			<visible>![Window.IsVisible(MusicLibrary) + Control.IsVisible(56)]</visible>
-			<visible>![Window.IsVisible(MusicFiles) + Control.IsVisible(500)]</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="image">
 				<posx>0</posx>
@@ -745,158 +738,6 @@
 		<texturenofocus border="2">button-nofocus.png</texturenofocus>
 		<pulseonselect>no</pulseonselect>
 	</include>
-	<include name="ButtonSetBackgroundCommonValues">
-		<width>180</width>
-		<height>35</height>
-		<font>font12</font>
-		<textcolor>grey2</textcolor>
-		<focusedcolor>white</focusedcolor>
-		<align>center</align>
-		<texturenofocus border="3">button-nofocus.png</texturenofocus>
-		<texturefocus border="3">button-focus2.png</texturefocus>
-	</include>
-	<include name="WindowTitleButtons">
-		<control type="group">
-			<posx>98r</posx>
-			<posy>0</posy>
-			<width>36</width>
-			<height>32</height>
-			<visible>system.getbool(input.enablemouse)</visible>
-			<animation effect="slide" start="0,-32" end="0,0" time="200">WindowOpen</animation>
-			<animation effect="slide" end="0,-32" start="0,0" time="200">WindowClose</animation>
-			<control type="image">
-				<description>Button background image</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>74</width>
-				<height>32</height>
-				<texture border="3">black-back2.png</texture>
-			</control>
-			<control type="button">
-				<posx>5</posx>
-				<posy>0</posy>
-				<width>32</width>
-				<height>28</height>
-				<label>31003</label>
-				<align>right</align>
-				<font>font10</font>
-				<textoffsetx>50</textoffsetx>
-				<textwidth>300</textwidth>
-				<textcolor>00FFFFFF</textcolor>
-				<focusedcolor>grey2</focusedcolor>
-				<texturefocus>HeaderControlBackFO.png</texturefocus>
-				<texturenofocus>HeaderControlBackNF.png</texturenofocus>
-				<onleft>9000</onleft>
-				<onright>9000</onright>
-				<onup>9000</onup>
-				<ondown>9000</ondown>
-				<onclick>PreviousMenu</onclick>
-			</control>
-			<control type="button">
-				<posx>37</posx>
-				<posy>0</posy>
-				<width>32</width>
-				<height>28</height>
-				<label>31004</label>
-				<align>right</align>
-				<font>font10</font>
-				<textoffsetx>82</textoffsetx>
-				<textwidth>300</textwidth>
-				<textcolor>00FFFFFF</textcolor>
-				<focusedcolor>grey2</focusedcolor>
-				<texturefocus>HeaderControlHomeFO.png</texturefocus>
-				<texturenofocus>HeaderControlHomeNF.png</texturenofocus>
-				<onleft>9000</onleft>
-				<onright>9000</onright>
-				<onup>9000</onup>
-				<ondown>9000</ondown>
-				<onclick>ActivateWindow(Home)</onclick>
-			</control>
-		</control>
-	</include>
-	<include name="WindowTitleButtonsMedia">
-		<control type="group">
-			<posx>130r</posx>
-			<posy>0</posy>
-			<width>36</width>
-			<height>32</height>
-			<visible>system.getbool(input.enablemouse)</visible>
-			<animation effect="slide" start="0,-32" end="0,0" time="200">WindowOpen</animation>
-			<animation effect="slide" end="0,-32" start="0,0" time="200">WindowClose</animation>
-			<control type="image">
-				<description>Button background image</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>106</width>
-				<height>32</height>
-				<texture border="3">black-back2.png</texture>
-			</control>
-			<control type="button">
-				<posx>5</posx>
-				<posy>0</posy>
-				<width>32</width>
-				<height>28</height>
-				<label>31002</label>
-				<align>right</align>
-				<font>font10</font>
-				<textoffsetx>50</textoffsetx>
-				<textwidth>300</textwidth>
-				<textcolor>00FFFFFF</textcolor>
-				<focusedcolor>grey2</focusedcolor>
-				<texturefocus>HeaderControlUpOneLevelFO.png</texturefocus>
-				<texturenofocus>HeaderControlUpOneLevelNF.png</texturenofocus>
-				<onleft>9000</onleft>
-				<onright>9000</onright>
-				<onup>9000</onup>
-				<ondown>9000</ondown>
-				<onclick>ParentDir</onclick>
-			</control>
-			<control type="button">
-				<posx>37</posx>
-				<posy>0</posy>
-				<width>32</width>
-				<height>28</height>
-				<label>31003</label>
-				<align>right</align>
-				<font>font10</font>
-				<textoffsetx>82</textoffsetx>
-				<textwidth>300</textwidth>
-				<textcolor>00FFFFFF</textcolor>
-				<focusedcolor>grey2</focusedcolor>
-				<texturefocus>HeaderControlBackFO.png</texturefocus>
-				<texturenofocus>HeaderControlBackNF.png</texturenofocus>
-				<onleft>9000</onleft>
-				<onright>9000</onright>
-				<onup>9000</onup>
-				<ondown>9000</ondown>
-				<onclick>PreviousMenu</onclick>
-			</control>
-			<control type="button">
-				<posx>69</posx>
-				<posy>0</posy>
-				<width>32</width>
-				<height>28</height>
-				<label>31004</label>
-				<align>right</align>
-				<font>font10</font>
-				<textoffsetx>114</textoffsetx>
-				<textwidth>300</textwidth>
-				<textcolor>00FFFFFF</textcolor>
-				<focusedcolor>grey2</focusedcolor>
-				<texturefocus>HeaderControlHomeFO.png</texturefocus>
-				<texturenofocus>HeaderControlHomeNF.png</texturenofocus>
-				<onleft>9000</onleft>
-				<onright>9000</onright>
-				<onup>9000</onup>
-				<ondown>9000</ondown>
-				<onclick>ActivateWindow(Home)</onclick>
-			</control>
-		</control>
-	</include>
-	<include name="backgroundfade">
-		 <animation effect="fade" time="600">Visible</animation>
-		 <animation effect="fade" time="600">Hidden</animation>
-	</include>
 	<include name="Window_OpenClose_Animation">
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
@@ -912,12 +753,6 @@
 		<animation effect="fade" time="200" condition="Skin.HasSetting(Animate_Skin)">WindowClose</animation>
 		<animation effect="slide" start="1030,0" end="0,0" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(Animate_Skin)">WindowOpen</animation>
 		<animation effect="slide" end="1030,0" start="0,0" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(Animate_Skin)">WindowClose</animation>
-	</include>
-	<include name="Window_OpenClose_Home_Panel_Animation">
-		<animation effect="fade" time="200" condition="Skin.HasSetting(Animate_Skin)">WindowOpen</animation>
-		<animation effect="fade" time="200" condition="Skin.HasSetting(Animate_Skin)">WindowClose</animation>
-		<animation effect="slide" start="-600,0" end="0,0" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(Animate_Skin)">WindowOpen</animation>
-		<animation effect="slide" end="-600,0" start="0,0" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(Animate_Skin)">WindowClose</animation>
 	</include>
 	<include name="dialogeffect">
 		<animation effect="fade" time="200">WindowOpen</animation>
