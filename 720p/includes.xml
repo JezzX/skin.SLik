@@ -259,7 +259,7 @@
 				<scroll>false</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>[B]$INFO[Container.FolderPath][/B]</label>
+				<label>[B]$INFO[Container.FolderName][/B]</label>
 				<visible>!Window.IsVisible(VideoLibrary) + !Window.IsVisible(MusicLibrary) + !Window.IsVisible(AddonBrowser)</visible>
 			</control>
 		</control>
