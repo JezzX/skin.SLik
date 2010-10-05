@@ -33,7 +33,7 @@
 					<width>900</width>
 					<height>45</height>
 					<font>font12</font>
-					<label>31120</label>
+					<label>31130</label>
 					<textcolor>white</textcolor>
 					<focusedcolor>black</focusedcolor>
 					<texturefocus border="5">ThumbFO.png</texturefocus>

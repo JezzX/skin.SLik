@@ -17,7 +17,7 @@
 			<height>720</height>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-			<visible>!Container.Scrolling</visible>
+			<visible>!Container.Scrolling + !Skin.HasSetting(Show_Fanart)</visible>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
 		</control>
@@ -27,7 +27,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture>Background.png</texture>
-			<animation effect="fade" start="100" end="80" time="0" condition="!IsEmpty(ListItem.Property(Fanart_Image))">conditional</animation>
+			<animation effect="fade" start="100" end="80" time="0" condition="!IsEmpty(ListItem.Property(Fanart_Image)) + !Skin.HasSetting(Show_Fanart)">conditional</animation>
 		</control>
 	</include>
 	<include name="WindowHeader">
