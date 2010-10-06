@@ -80,7 +80,7 @@
 			<width>90</width>
 			<height>40</height>
 			<aspectratio align="right">keep</aspectratio>
-			<texture>flagging/video/TV.png</texture>
+			<texture>flagging/video/tv.png</texture>
 			<visible>[substring(ListItem.FilenameAndPath,pdtv) | substring(ListItem.FilenameAndPath,hdtv) | substring(ListItem.FilenameAndPath,dsr)] + !Skin.HasSetting(HideFilenameFlagging)</visible>
 		</control>
 		<control type="image">
