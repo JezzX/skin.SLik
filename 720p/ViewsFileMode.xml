@@ -14,7 +14,7 @@
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<preloaditems>3</preloaditems>
-			<itemlayout height="45" width="950">
+			<itemlayout condition="!Container.Content(LiveTV)" height="45" width="950">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -119,7 +119,7 @@
 					<texture>$INFO[ListItem.Overlay,light/List]</texture>
 				</control>
 			</itemlayout>
-			<focusedlayout height="45" width="950">
+			<focusedlayout condition="!Container.Content(LiveTV)" height="45" width="950">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -222,6 +222,90 @@
 					<width>30</width>
 					<height>23</height>
 					<texture>$INFO[ListItem.Overlay,dark/List]</texture>
+				</control>
+			</focusedlayout>
+			<itemlayout condition="Container.Content(LiveTV)" height="45" width="950">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>950</width>
+					<height>45</height>
+					<texture border="5">ListNF.png</texture>
+				</control>
+				<control type="image">
+					<posx>5</posx>
+					<posy>3</posy>
+					<width>55</width>
+					<height>39</height>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<bordertexture border="5">white-back.png</bordertexture>
+					<bordersize>1</bordersize>
+				</control>
+				<control type="label">
+					<posx>70</posx>
+					<posy>0</posy>
+					<width>800</width>
+					<height>45</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<selectedcolor>blue</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<posx>930</posx>
+					<posy>0</posy>
+					<width>695</width>
+					<height>45</height>
+					<font>font12</font>
+					<textcolor>grey2</textcolor>
+					<selectedcolor>blue</selectedcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout condition="Container.Content(LiveTV)" height="45" width="950">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>950</width>
+					<height>45</height>
+					<texture border="5">ThumbFO.png</texture>
+				</control>
+				<control type="image">
+					<posx>5</posx>
+					<posy>3</posy>
+					<width>55</width>
+					<height>39</height>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<bordertexture border="5">black-back.png</bordertexture>
+					<bordersize>1</bordersize>
+				</control>
+				<control type="label">
+					<posx>70</posx>
+					<posy>0</posy>
+					<width>800</width>
+					<height>45</height>
+					<font>font12</font>
+					<textcolor>black</textcolor>
+					<selectedcolor>blue2</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<posx>930</posx>
+					<posy>0</posy>
+					<width>695</width>
+					<height>45</height>
+					<font>font12</font>
+					<textcolor>black</textcolor>
+					<selectedcolor>blue2</selectedcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
 				</control>
 			</focusedlayout>
 		</control>
@@ -374,7 +458,7 @@
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<preloaditems>3</preloaditems>
-			<itemlayout height="45" width="950">
+			<itemlayout condition="!Container.Content(LiveTV)" height="45" width="950">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -479,7 +563,7 @@
 					<texture>$INFO[ListItem.Overlay,light/List]</texture>
 				</control>
 			</itemlayout>
-			<focusedlayout height="45" width="950">
+			<focusedlayout condition="!Container.Content(LiveTV)" height="45" width="950">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -584,6 +668,90 @@
 					<texture>$INFO[ListItem.Overlay,dark/List]</texture>
 				</control>
 			</focusedlayout>
+			<itemlayout condition="Container.Content(LiveTV)" height="45" width="950">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>950</width>
+					<height>45</height>
+					<texture border="5">ListNF.png</texture>
+				</control>
+				<control type="image">
+					<posx>5</posx>
+					<posy>3</posy>
+					<width>55</width>
+					<height>39</height>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<bordertexture border="5">white-back.png</bordertexture>
+					<bordersize>1</bordersize>
+				</control>
+				<control type="label">
+					<posx>70</posx>
+					<posy>0</posy>
+					<width>800</width>
+					<height>45</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<selectedcolor>blue</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<posx>930</posx>
+					<posy>0</posy>
+					<width>695</width>
+					<height>45</height>
+					<font>font12</font>
+					<textcolor>grey2</textcolor>
+					<selectedcolor>blue</selectedcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout condition="Container.Content(LiveTV)" height="45" width="950">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>950</width>
+					<height>45</height>
+					<texture border="5">ThumbFO.png</texture>
+				</control>
+				<control type="image">
+					<posx>5</posx>
+					<posy>3</posy>
+					<width>55</width>
+					<height>39</height>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<bordertexture border="5">black-back.png</bordertexture>
+					<bordersize>1</bordersize>
+				</control>
+				<control type="label">
+					<posx>70</posx>
+					<posy>0</posy>
+					<width>800</width>
+					<height>45</height>
+					<font>font12</font>
+					<textcolor>black</textcolor>
+					<selectedcolor>blue2</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<posx>930</posx>
+					<posy>0</posy>
+					<width>695</width>
+					<height>45</height>
+					<font>font12</font>
+					<textcolor>black</textcolor>
+					<selectedcolor>blue2</selectedcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+				</control>
+			</focusedlayout>
 		</control>
 		<control type="scrollbar" id="60">
 			<posx>1120</posx>
@@ -638,9 +806,23 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
+				<visible>!Container.Content(LiveTV)</visible> 
+			</control>
+			<control type="label">
+				<posx>360</posx>
+				<posy>470</posy>
+				<width>840</width>
+				<height>35</height>
+				<font>font18</font>
+				<textcolor>white</textcolor>
+				<scroll>true</scroll>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label2]</label>
+				<visible>Container.Content(LiveTV)</visible> 
 			</control>
 			<control type="group">
-				<visible>[Window.IsVisible(VideoFiles) | Window.IsVisible(VideoLibrary)] + !stringcompare(ListItem.Path,plugin://)</visible> 
+				<visible>[Window.IsVisible(VideoFiles) | Window.IsVisible(VideoLibrary)] + !Container.Content(Addons) + !Container.Content(LiveTV)</visible> 
 				<control type="image">
 					<posx>80</posx>
 					<posy>470</posy>
@@ -690,7 +872,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>Window.IsVisible(AddonBrowser) | stringcompare(ListItem.Path,plugin://) | stringcompare(ListItem.Path,script://)</visible>
+				<visible>Window.IsVisible(AddonBrowser) | Container.Content(Addons)</visible>
 				<control type="image">
 					<posx>80</posx>
 					<posy>470</posy>
@@ -712,6 +894,31 @@
 					<scroll>true</scroll>
 					<align>left</align>
 					<label>$INFO[ListItem.Property(Addon.Description)]</label>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Container.Content(LiveTV)</visible>
+				<control type="image">
+					<posx>80</posx>
+					<posy>470</posy>
+					<width>266</width>
+					<height>150</height>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" fallback="DefaultVideoCover.jpg">$INFO[ListItem.Icon]</texture>
+					<bordertexture border="5">white-back.png</bordertexture>
+					<bordersize>2</bordersize>
+					<fadetime>FanartCrossfadeTime</fadetime>
+				</control>
+				<control type="textbox">
+					<posx>360</posx>
+					<posy>510</posy>
+					<width>840</width>
+					<height>105</height>
+					<font>font11</font>
+					<textcolor>grey2</textcolor>
+					<scroll>true</scroll>
+					<align>left</align>
+					<label>$INFO[ListItem.Plot]</label>
 				</control>
 			</control>
 		</control>
@@ -1116,6 +1323,7 @@
 	<include name="WideIconView">
 		<control type="panel" id="55">
 			<visible>![Container.Content(Addons) | Container.Content(Movies)] + [Container.Content(TVShows) | Window.IsVisible(VideoFiles)]</visible>
+			<visible>!Container.Content(LiveTV)</visible>
 			<posx>90</posx>
 			<posy>75</posy>
 			<width>1100</width>
@@ -1251,6 +1459,7 @@
 	<include name="WideIconView_Info">
 		<control type="panel" id="56">
 			<visible>Container.Content(TVShows)</visible>
+			<visible>!Container.Content(LiveTV)</visible>
 			<posx>640</posx>
 			<posy>75</posy>
 			<width>550</width>
