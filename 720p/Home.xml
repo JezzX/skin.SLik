@@ -982,7 +982,7 @@
 							<width>246</width>
 							<height>92</height>
 							<texture>$INFO[Listitem.ActualIcon]</texture>
-							<bordertexture border="5">black-back.png</bordertexture>
+							<bordertexture>black-back.png</bordertexture>
 							<bordersize>1</bordersize>
 							<aspectratio>stretch</aspectratio>
 						</control>
@@ -1024,7 +1024,7 @@
 							<width>246</width>
 							<height>92</height>
 							<texture>$INFO[Listitem.ActualIcon]</texture>
-							<bordertexture border="5">black-back.png</bordertexture>
+							<bordertexture>black-back.png</bordertexture>
 							<bordersize>1</bordersize>
 							<aspectratio>stretch</aspectratio>
 						</control>
