@@ -18,7 +18,7 @@
 			<texture>$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
 			<visible>!IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
 			<colordiffuse>AAFFFFFF</colordiffuse>
-
+			<include>dialogeffect</include>
 		</control>
 		<control type="group" id="0">
 			<visible>Player.ShowCodec + !Window.IsVisible(script-XBMC_Lyrics-main.xml)</visible>
