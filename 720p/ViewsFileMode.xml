@@ -921,6 +921,80 @@
 					<label>$INFO[ListItem.Plot]</label>
 				</control>
 			</control>
+			<control type="group">
+				<visible>Container.Content(Artists)</visible> 
+				<control type="image">
+					<posx>80</posx>
+					<posy>470</posy>
+					<width>266</width>
+					<height>150</height>
+					<texture background="true" fallback="Fanart_Fallback_Music_Small.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<bordertexture border="5">white-back.png</bordertexture>
+					<bordersize>2</bordersize>
+					<fadetime>FanartCrossfadeTime</fadetime>
+				</control>
+				<control type="textbox">
+					<posx>360</posx>
+					<posy>510</posy>
+					<width>840</width>
+					<height>105</height>
+					<font>font11</font>
+					<textcolor>grey2</textcolor>
+					<scroll>true</scroll>
+					<align>left</align>
+					<label>$INFO[ListItem.Property(Artist_Description)]</label>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Container.Content(Albums)</visible>
+				<control type="image">
+					<posx>80</posx>
+					<posy>470</posy>
+					<width>266</width>
+					<height>150</height>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" fallback="DefaultAudioCover.jpg">$INFO[ListItem.Icon]</texture>
+					<bordertexture border="5">white-back.png</bordertexture>
+					<bordersize>2</bordersize>
+					<fadetime>FanartCrossfadeTime</fadetime>
+				</control>
+				<control type="textbox">
+					<posx>360</posx>
+					<posy>510</posy>
+					<width>840</width>
+					<height>105</height>
+					<font>font11</font>
+					<textcolor>grey2</textcolor>
+					<scroll>true</scroll>
+					<align>left</align>
+					<label>$INFO[ListItem.Property(Album_Description)]</label>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Container.Content(Songs) | Window.IsVisible(MusicFiles)</visible>
+				<control type="image">
+					<posx>80</posx>
+					<posy>470</posy>
+					<width>266</width>
+					<height>150</height>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" fallback="DefaultAudioCover.jpg">$INFO[ListItem.Icon]</texture>
+					<bordertexture border="5">white-back.png</bordertexture>
+					<bordersize>2</bordersize>
+					<fadetime>FanartCrossfadeTime</fadetime>
+				</control>
+				<control type="textbox">
+					<posx>360</posx>
+					<posy>510</posy>
+					<width>840</width>
+					<height>105</height>
+					<font>font11</font>
+					<textcolor>grey2</textcolor>
+					<scroll>true</scroll>
+					<align>left</align>
+					<label>$INFO[ListItem.Album][CR][CR]$INFO[ListItem.Genre][CR][CR]$INFO[ListItem.Year]</label>
+				</control>
+			</control>
 		</control>
 	</include>
 	<include name="PictureThumbView">
