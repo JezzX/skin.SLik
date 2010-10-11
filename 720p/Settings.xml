@@ -3,40 +3,50 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>CommonBackground</include>
-		<control type="image">
-			<posx>0</posx>
-			<posy>500</posy>
-			<width>1280</width>
-			<height>220</height>
-			<texture>black-back.png</texture>
-		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>500</posy>
-			<width>512</width>
-			<height>64</height>
-			<texture>HorizontalGlow.png</texture>
-		</control>
-		<control type="image">
-			<posx>512r</posx>
-			<posy>500</posy>
-			<width>512</width>
-			<height>64</height>
-			<texture>HorizontalGlow.png</texture>
-		</control>
-		<control type="textbox">
-			<posx>220</posx>
-			<posy>540</posy>
-			<width>840</width>
-			<height>105</height>
-			<font>font11</font>
-			<textcolor>grey2</textcolor>
-			<scroll>true</scroll>
-			<align>center</align>
-			<label>$INFO[Container(50).ListItem.Label2]</label>
-		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>500</posy>
+				<width>1280</width>
+				<height>220</height>
+				<texture>black-back.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>500</posy>
+				<width>512</width>
+				<height>64</height>
+				<texture>HorizontalGlow.png</texture>
+			</control>
+			<control type="image">
+				<posx>512r</posx>
+				<posy>500</posy>
+				<width>512</width>
+				<height>64</height>
+				<texture>HorizontalGlow.png</texture>
+			</control>
+			<control type="textbox">
+				<posx>220</posx>
+				<posy>540</posy>
+				<width>840</width>
+				<height>105</height>
+				<font>font11</font>
+				<textcolor>grey2</textcolor>
+				<scroll>true</scroll>
+				<align>center</align>
+				<label>$INFO[Container(50).ListItem.Label2]</label>
+			</control>
+		</control>
+		<control type="group">
+			<animation type="WindowOpen" reversible="false">
+				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+				<effect type="fade" start="0" end="100" time="300" />
+			</animation>
+			<animation type="WindowClose" reversible="false">
+				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+				<effect type="fade" start="100" end="0" time="300" />
+			</animation>
 			<control type="panel" id="50">
 				<posx>128</posx>
 				<posy>80</posy>
@@ -184,6 +194,7 @@
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
 			<texture>icon_system.png</texture>
+			<include>Window_OpenClose_Animation</include>
 		</control>
 		<control type="label">
 			<description>Header label</description>
@@ -196,6 +207,7 @@
 			<font>font13</font>
 			<textcolor>white</textcolor>
 			<label>$LOCALIZE[5]</label>
+			<include>Window_OpenClose_Animation</include>
 		</control>
 		<control type="image">
 			<posx>0</posx>

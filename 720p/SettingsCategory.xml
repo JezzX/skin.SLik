@@ -4,6 +4,14 @@
 	<controls>
 		<include>CommonBackground</include>
 		<control type="grouplist" id="5">
+			<animation type="WindowOpen" reversible="false">
+				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" delay="200" />
+				<effect type="fade" start="0" end="100" time="300" delay="200" />
+			</animation>
+			<animation type="WindowClose" reversible="false">
+				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+				<effect type="fade" start="100" end="0" time="300" />
+			</animation>
 			<description>control area</description>
 			<posx>340</posx>
 			<posy>70</posy>
@@ -18,7 +26,14 @@
 			<include>Window_OpenClose_Animation</include>
 		</control>
 		<control type="group">
-			<include>Window_OpenClose_Animation</include>
+			<animation type="WindowOpen" reversible="false">
+				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+				<effect type="fade" start="0" end="100" time="300" />
+			</animation>
+			<animation type="WindowClose" reversible="false">
+				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+				<effect type="fade" start="100" end="0" time="300" />
+			</animation>
 			<posx>40</posx>
 			<posy>45</posy>
 			<control type="image">
@@ -122,6 +137,7 @@
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
 			<texture>icon_system.png</texture>
+			<include>Window_OpenClose_Animation</include>
 		</control>
 		<control type="label">
 			<description>Header label</description>
@@ -134,6 +150,7 @@
 			<font>font13</font>
 			<textcolor>white</textcolor>
 			<label>$LOCALIZE[5] - $INFO[Control.GetLabel(2)]</label>
+			<include>Window_OpenClose_Animation</include>
 		</control>
 		<control type="image">
 			<posx>0</posx>
