@@ -173,7 +173,7 @@
 					<align>top</align>
 					<onleft>9002</onleft>
 					<onright>9001</onright>
-					<onup>402</onup>
+					<onup>603</onup>
 					<ondown>9000</ondown>
 					<itemgap>0</itemgap>
 					<visible>!Container(9000).HasFocus(5)</visible>
@@ -1009,7 +1009,7 @@
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<onup>90155</onup>
-					<ondown>402</ondown>
+					<ondown>603</ondown>
 					<pagecontrol>-</pagecontrol>
 					<focusposition>1</focusposition>
 					<orientation>horizontal</orientation>
@@ -1277,64 +1277,115 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>160</posx>
-				<posy>550</posy>
+				<animation type="WindowOpen" reversible="false">
+					<effect type="zoom" start="130" end="100" center="640,500" easing="out" tween="back" time="300"/>
+					<effect type="fade" start="0" end="100" time="300" />
+				</animation>
+				<animation type="WindowClose" reversible="false">
+					<effect type="zoom" start="100" end="140" center="640,500" easing="in" tween="back" time="300" />
+					<effect type="fade" start="100" end="0" time="300" />
+				</animation>
+				<posx>128</posx>
+				<posy>540</posy>
 				<visible>Player.HasMedia</visible>
-				<control type="button" id="400">
+				<control type="image">
+					<description>OSD back</description>
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>30</width>
-					<height>30</height>
-					<label>-</label>
-					<texturefocus>PlayerControls-PrevFO.png</texturefocus>
-					<texturenofocus>PlayerControls-PrevNF.png</texturenofocus>
-					<onleft>403</onleft>
-					<onright>401</onright>
-					<onup>9000</onup>
-					<ondown>90101</ondown>
-					<onclick>XBMC.PlayerControl(Previous)</onclick>
+					<width>256</width>
+					<height>42</height>
+					<texture border="5">SubBack.png</texture>
 				</control>
-				<control type="button" id="401">
-					<posx>50</posx>
-					<posy>0</posy>
-					<width>30</width>
-					<height>30</height>
-					<label>-</label>
-					<texturefocus>PlayerControls-StopFO.png</texturefocus>
-					<texturenofocus>PlayerControls-StopNF.png</texturenofocus>
-					<onleft>400</onleft>
-					<onright>402</onright>
-					<onup>9000</onup>
-					<ondown>90101</ondown>
-					<onclick>XBMC.PlayerControl(Stop)</onclick>
-				</control>
-				<control type="button" id="402">
-					<posx>100</posx>
-					<posy>0</posy>
-					<width>30</width>
-					<height>30</height>
-					<label>-</label>
-					<texturefocus>PlayerControls-PlayFO.png</texturefocus>
-					<texturenofocus>PlayerControls-PlayNF.png</texturenofocus>
-					<onleft>401</onleft>
-					<onright>403</onright>
-					<onup>9000</onup>
-					<ondown>90101</ondown>
-					<onclick>XBMC.PlayerControl(Play)</onclick>
-				</control>
-				<control type="button" id="403">
-					<posx>150</posx>
-					<posy>0</posy>
-					<width>30</width>
-					<height>30</height>
-					<label>-</label>
-					<texturefocus>PlayerControls-NextFO.png</texturefocus>
-					<texturenofocus>PlayerControls-NextNF.png</texturenofocus>
-					<onleft>402</onleft>
-					<onright>400</onright>
-					<onup>9000</onup>
-					<ondown>90101</ondown>
-					<onclick>XBMC.PlayerControl(Next)</onclick>
+				<control type="group">
+					<posx>7</posx>
+					<posy>1</posy>
+					<control type="button" id="600">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>40</width>
+						<height>40</height>
+						<label>-</label>
+						<texturefocus>PlayerControls-PrevFO.png</texturefocus>
+						<texturenofocus>PlayerControls-PrevNF.png</texturenofocus>
+						<onleft>605</onleft>
+						<onright>601</onright>
+						<onup>9000</onup>
+						<ondown>9010</ondown>
+						<onclick>XBMC.PlayerControl(Previous)</onclick>
+					</control>
+					<control type="button" id="601">
+						<posx>40</posx>
+						<posy>0</posy>
+						<width>40</width>
+						<height>40</height>
+						<label>-</label>
+						<texturefocus>PlayerControls-RewindFO.png</texturefocus>
+						<texturenofocus>PlayerControls-RewindNF.png</texturenofocus>
+						<onleft>600</onleft>
+						<onright>602</onright>
+						<onup>9000</onup>
+						<ondown>9010</ondown>
+						<onclick>XBMC.PlayerControl(Rewind)</onclick>
+					</control>
+					<control type="button" id="602">
+						<posx>80</posx>
+						<posy>0</posy>
+						<width>40</width>
+						<height>40</height>
+						<label>-</label>
+						<texturefocus>PlayerControls-StopFO.png</texturefocus>
+						<texturenofocus>PlayerControls-StopNF.png</texturenofocus>
+						<onleft>601</onleft>
+						<onright>603</onright>
+						<onup>9000</onup>
+						<ondown>9010</ondown>
+						<onclick>XBMC.PlayerControl(Stop)</onclick>
+					</control>
+					<control type="togglebutton" id="603">
+						<posx>120</posx>
+						<posy>0</posy>
+						<width>40</width>
+						<height>40</height>
+						<label>-</label>
+						<texturefocus>PlayerControls-PauseFO.png</texturefocus>
+						<texturenofocus>PlayerControls-PauseNF.png</texturenofocus>
+						<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
+						<alttexturefocus>PlayerControls-PlayFO.png</alttexturefocus>
+						<alttexturenofocus>PlayerControls-PlayNF.png</alttexturenofocus>
+						<onleft>602</onleft>
+						<onright>604</onright>
+						<onup>9000</onup>
+						<ondown>9010</ondown>
+						<onclick>XBMC.PlayerControl(Play)</onclick>
+					</control>
+					<control type="button" id="604">
+						<posx>160</posx>
+						<posy>0</posy>
+						<width>40</width>
+						<height>40</height>
+						<label>-</label>
+						<texturefocus>PlayerControls-ForwardFO.png</texturefocus>
+						<texturenofocus>PlayerControls-ForwardNF.png</texturenofocus>
+						<onleft>603</onleft>
+						<onright>605</onright>
+						<onup>9000</onup>
+						<ondown>9010</ondown>
+						<onclick>XBMC.PlayerControl(Next)</onclick>
+					</control>
+					<control type="button" id="605">
+						<posx>200</posx>
+						<posy>0</posy>
+						<width>40</width>
+						<height>40</height>
+						<label>-</label>
+						<texturefocus>PlayerControls-NextFO.png</texturefocus>
+						<texturenofocus>PlayerControls-NextNF.png</texturenofocus>
+						<onleft>604</onleft>
+						<onright>600</onright>
+						<onup>9000</onup>
+						<ondown>9010</ondown>
+						<onclick>XBMC.PlayerControl(Next)</onclick>
+					</control>
 				</control>
 			</control>
 		</control>

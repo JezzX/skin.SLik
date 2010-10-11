@@ -17,8 +17,10 @@
 			<height>720</height>
 			<texture>$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
 			<visible>!IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
+			<visible>!Skin.HasSetting(HideMusicOSDFanart)</visible>
 			<colordiffuse>AAFFFFFF</colordiffuse>
 			<include>dialogeffect</include>
+			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="group" id="0">
 			<visible>Player.ShowCodec + !Window.IsVisible(script-XBMC_Lyrics-main.xml)</visible>
