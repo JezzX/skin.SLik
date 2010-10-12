@@ -16,14 +16,6 @@
 			<colordiffuse>DDFFFFFF</colordiffuse>
 			<texture border="40">DialogBack.png</texture>
 		</control>
-		<control type="image">
-			<description>background image</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>800</width>
-			<height>610</height>
-			<texture border="40">DialogFront.png</texture>
-		</control>
 		<control type="label" id="3">
 			<description>heading label</description>
 			<posx>40</posx>

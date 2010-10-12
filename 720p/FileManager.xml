@@ -21,14 +21,6 @@
 				<colordiffuse>DDFFFFFF</colordiffuse>
 				<texture border="40">DialogBack.png</texture>
 			</control>
-			<control type="image">
-				<description>background image</description>
-				<posx>40</posx>
-				<posy>40</posy>
-				<width>1200</width>
-				<height>640</height>
-				<texture border="40">DialogFront.png</texture>
-			</control>
 			<control type="label" id="101">
 				<description>current directory text label left</description>
 				<posx>100</posx>

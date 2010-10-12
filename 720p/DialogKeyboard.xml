@@ -48,13 +48,6 @@
 					<height>340</height>
 					<texture border="40">DialogBack.png</texture>
 				</control>
-				<control type="image">
-					<posx>-45</posx>
-					<posy>-45</posy>
-					<width>790</width>
-					<height>340</height>
-					<texture border="40">DialogFront.png</texture>
-				</control>
 				<control type="button" id="300">
 					<description>DONE button</description>
 					<posx>0</posx>
