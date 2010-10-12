@@ -1308,7 +1308,7 @@
 						<onleft>605</onleft>
 						<onright>602</onright>
 						<onup>9000</onup>
-						<ondown>9010</ondown>
+						<ondown>90101</ondown>
 						<onclick>XBMC.PlayerControl(Previous)</onclick>
 					</control>
 					<control type="button" id="602">
@@ -1322,7 +1322,7 @@
 						<onleft>600</onleft>
 						<onright>603</onright>
 						<onup>9000</onup>
-						<ondown>9010</ondown>
+						<ondown>90101</ondown>
 						<onclick>XBMC.PlayerControl(Stop)</onclick>
 					</control>
 					<control type="togglebutton" id="603">
@@ -1339,7 +1339,7 @@
 						<onleft>602</onleft>
 						<onright>605</onright>
 						<onup>9000</onup>
-						<ondown>9010</ondown>
+						<ondown>90101</ondown>
 						<onclick>XBMC.PlayerControl(Play)</onclick>
 					</control>
 					<control type="button" id="605">
@@ -1353,7 +1353,7 @@
 						<onleft>603</onleft>
 						<onright>600</onright>
 						<onup>9000</onup>
-						<ondown>9010</ondown>
+						<ondown>90101</ondown>
 						<onclick>XBMC.PlayerControl(Next)</onclick>
 					</control>
 				</control>
