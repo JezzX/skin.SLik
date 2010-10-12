@@ -14,7 +14,7 @@
 					<effect type="fade" start="100" end="0" time="300" />
 				</animation>
 				<posx>150</posx>
-				<posy>65</posy>
+				<posy>70</posy>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -118,7 +118,7 @@
 				<effect type="fade" start="100" end="0" time="300" />
 			</animation>
 				<posx>150</posx>
-				<posy>355</posy>
+				<posy>360</posy>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -269,7 +269,7 @@
 			</animation>
 				<description>day 0</description>
 				<posx>620</posx>
-				<posy>65</posy>
+				<posy>70</posy>
 				<control type="image">
 					<description>background image</description>
 					<posx>0</posx>
@@ -308,9 +308,9 @@
 				<control type="image">
 					<description>Weather Icon</description>
 					<posx>5</posx>
-					<posy>30</posy>
+					<posy>35</posy>
 					<width>246</width>
-					<height>135</height>
+					<height>125</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[Window(Weather).Property(Day0.OutlookIcon)]</texture>
 				</control>
@@ -402,7 +402,7 @@
 			</animation>
 				<description>day 1</description>
 				<posx>880</posx>
-				<posy>65</posy>
+				<posy>70</posy>
 				<control type="image">
 					<description>background image</description>
 					<posx>0</posx>
@@ -441,9 +441,9 @@
 				<control type="image">
 					<description>Weather Icon</description>
 					<posx>5</posx>
-					<posy>30</posy>
+					<posy>35</posy>
 					<width>246</width>
-					<height>135</height>
+					<height>125</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[Window(Weather).Property(Day1.OutlookIcon)]</texture>
 				</control>
@@ -535,7 +535,7 @@
 			</animation>
 				<description>day 2</description>
 				<posx>620</posx>
-				<posy>355</posy>
+				<posy>360</posy>
 				<control type="image">
 					<description>background image</description>
 					<posx>0</posx>
@@ -566,9 +566,9 @@
 				<control type="image">
 					<description>Weather Icon</description>
 					<posx>5</posx>
-					<posy>30</posy>
+					<posy>35</posy>
 					<width>246</width>
-					<height>135</height>
+					<height>125</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[Window(Weather).Property(Day2.OutlookIcon)]</texture>
 				</control>
@@ -660,7 +660,7 @@
 			</animation>
 				<description>day 3</description>
 				<posx>880</posx>
-				<posy>355</posy>
+				<posy>360</posy>
 				<control type="image">
 					<description>background image</description>
 					<posx>0</posx>
@@ -691,9 +691,9 @@
 				<control type="image">
 					<description>Weather Icon</description>
 					<posx>5</posx>
-					<posy>30</posy>
+					<posy>35</posy>
 					<width>246</width>
-					<height>135</height>
+					<height>125</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[Window(Weather).Property(Day3.OutlookIcon)]</texture>
 				</control>
@@ -865,14 +865,14 @@
 		</control>
 		<control type="image">
 			<posx>0</posx>
-			<posy>70r</posy>
+			<posy>60r</posy>
 			<width>1280</width>
 			<height>70</height>
 			<texture border="0,3,0,0">Footer.png</texture>
 		</control>
 		<control type="image">
 			<posx>30</posx>
-			<posy>47r</posy>
+			<posy>43r</posy>
 			<width>100</width>
 			<height>40</height>
 			<aspectratio align="left">stretch</aspectratio>
@@ -881,7 +881,7 @@
 		<control type="spincontrolex" id="3">
 			<description>change location button</description>
 			<posx>90</posx>
-			<posy>46r</posy>
+			<posy>42r</posy>
 			<width>30</width>
 			<height>40</height>
 			<font>-</font>
@@ -895,7 +895,7 @@
 		<control type="label">
 			<description>Location label</description>
 			<posx>140</posx>
-			<posy>47r</posy>
+			<posy>43r</posy>
 			<width>800</width>
 			<height>40</height>
 			<font>font13</font>
@@ -907,7 +907,7 @@
 		<control type="label">
 			<description>update Name</description>
 			<posx>30r</posx>
-			<posy>55r</posy>
+			<posy>51r</posy>
 			<width>620</width>
 			<height>25</height>
 			<height>25</height>
