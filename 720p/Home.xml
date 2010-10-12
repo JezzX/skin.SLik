@@ -1187,6 +1187,8 @@
 					<width>130</width>
 					<height>130</height>
 					<texture>$INFO[MusicPlayer.Cover]</texture>
+					<bordertexture>black-back.png</bordertexture>
+					<bordersize>1</bordersize>
 				</control>
 				<control type="label">
 					<description>Artist label</description>
@@ -1257,95 +1259,77 @@
 				</control>
 				<control type="rss">
 					<description>rss feed</description>
-					<posx>70</posx>
+					<posx>65</posx>
 					<posy>32r</posy>
-					<width>1210</width>
+					<width>1215</width>
 					<font>font11</font>
 					<urlset>1</urlset>
 					<textcolor>black</textcolor>
 					<titlecolor>black</titlecolor>
 					<headlinecolor>black</headlinecolor>
 					<include>Window_OpenClose_Animation</include>
+					<animation effect="slide" start="0,0" end="140,0" time="200" tween="quadratic" easing="out" condition="Player.HasMedia">Conditional</animation>
 				</control>
 				<control type="image">
 					<posx>20</posx>
-					<posy>35r</posy>
+					<posy>36r</posy>
 					<width>32</width>
 					<height>32</height>
 					<texture>icon_rss.png</texture>
 					<include>Window_OpenClose_Animation</include>
+					<animation effect="slide" start="0,0" end="140,0" time="200" tween="quadratic" easing="out" condition="Player.HasMedia">Conditional</animation>
 				</control>
 			</control>
 			<control type="group">
-				<animation type="WindowOpen" reversible="false">
-					<effect type="zoom" start="130" end="100" center="640,500" easing="out" tween="back" time="300"/>
-					<effect type="fade" start="0" end="100" time="300" />
-				</animation>
-				<animation type="WindowClose" reversible="false">
-					<effect type="zoom" start="100" end="140" center="640,500" easing="in" tween="back" time="300" />
-					<effect type="fade" start="100" end="0" time="300" />
-				</animation>
-				<posx>128</posx>
-				<posy>540</posy>
+				<posx>10</posx>
+				<posy>36r</posy>
 				<visible>Player.HasMedia</visible>
+				<include>Window_OpenClose_Animation</include>
+				<include>VisibleFadeEffect</include>
 				<control type="image">
 					<description>OSD back</description>
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>256</width>
-					<height>42</height>
-					<texture border="5">SubBack.png</texture>
+					<width>147</width>
+					<height>32</height>
+					<texture border="5">PlayerControls-Background.png</texture>
 				</control>
 				<control type="group">
-					<posx>7</posx>
-					<posy>1</posy>
+					<posx>5</posx>
+					<posy>0</posy>
 					<control type="button" id="600">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>40</width>
-						<height>40</height>
+						<width>32</width>
+						<height>32</height>
 						<label>-</label>
 						<texturefocus>PlayerControls-PrevFO.png</texturefocus>
 						<texturenofocus>PlayerControls-PrevNF.png</texturenofocus>
 						<onleft>605</onleft>
-						<onright>601</onright>
+						<onright>602</onright>
 						<onup>9000</onup>
 						<ondown>9010</ondown>
 						<onclick>XBMC.PlayerControl(Previous)</onclick>
 					</control>
-					<control type="button" id="601">
-						<posx>40</posx>
-						<posy>0</posy>
-						<width>40</width>
-						<height>40</height>
-						<label>-</label>
-						<texturefocus>PlayerControls-RewindFO.png</texturefocus>
-						<texturenofocus>PlayerControls-RewindNF.png</texturenofocus>
-						<onleft>600</onleft>
-						<onright>602</onright>
-						<onup>9000</onup>
-						<ondown>9010</ondown>
-						<onclick>XBMC.PlayerControl(Rewind)</onclick>
-					</control>
 					<control type="button" id="602">
-						<posx>80</posx>
+						<posx>35</posx>
 						<posy>0</posy>
-						<width>40</width>
-						<height>40</height>
+						<width>32</width>
+						<height>32</height>
 						<label>-</label>
 						<texturefocus>PlayerControls-StopFO.png</texturefocus>
 						<texturenofocus>PlayerControls-StopNF.png</texturenofocus>
-						<onleft>601</onleft>
+						<onleft>600</onleft>
 						<onright>603</onright>
 						<onup>9000</onup>
 						<ondown>9010</ondown>
 						<onclick>XBMC.PlayerControl(Stop)</onclick>
 					</control>
 					<control type="togglebutton" id="603">
-						<posx>120</posx>
+						<posx>70</posx>
 						<posy>0</posy>
-						<width>40</width>
-						<height>40</height>
+						<width>32</width>
+						<height>32</height>
 						<label>-</label>
 						<texturefocus>PlayerControls-PauseFO.png</texturefocus>
 						<texturenofocus>PlayerControls-PauseNF.png</texturenofocus>
@@ -1353,34 +1337,20 @@
 						<alttexturefocus>PlayerControls-PlayFO.png</alttexturefocus>
 						<alttexturenofocus>PlayerControls-PlayNF.png</alttexturenofocus>
 						<onleft>602</onleft>
-						<onright>604</onright>
+						<onright>605</onright>
 						<onup>9000</onup>
 						<ondown>9010</ondown>
 						<onclick>XBMC.PlayerControl(Play)</onclick>
 					</control>
-					<control type="button" id="604">
-						<posx>160</posx>
-						<posy>0</posy>
-						<width>40</width>
-						<height>40</height>
-						<label>-</label>
-						<texturefocus>PlayerControls-ForwardFO.png</texturefocus>
-						<texturenofocus>PlayerControls-ForwardNF.png</texturenofocus>
-						<onleft>603</onleft>
-						<onright>605</onright>
-						<onup>9000</onup>
-						<ondown>9010</ondown>
-						<onclick>XBMC.PlayerControl(Next)</onclick>
-					</control>
 					<control type="button" id="605">
-						<posx>200</posx>
+						<posx>105</posx>
 						<posy>0</posy>
-						<width>40</width>
-						<height>40</height>
+						<width>32</width>
+						<height>32</height>
 						<label>-</label>
 						<texturefocus>PlayerControls-NextFO.png</texturefocus>
 						<texturenofocus>PlayerControls-NextNF.png</texturenofocus>
-						<onleft>604</onleft>
+						<onleft>603</onleft>
 						<onright>600</onright>
 						<onup>9000</onup>
 						<ondown>9010</ondown>
