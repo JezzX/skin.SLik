@@ -129,14 +129,14 @@
 	<include name="WindowFooter">
 		<control type="image">
 			<posx>0</posx>
-			<posy>70r</posy>
+			<posy>60r</posy>
 			<width>1280</width>
 			<height>70</height>
 			<texture border="0,3,0,0">Footer.png</texture>
 		</control>
 		<control type="grouplist">
 			<posx>640</posx>
-			<posy>55r</posy>
+			<posy>51r</posy>
 			<width>620</width>
 			<height>25</height>
 			<orientation>horizontal</orientation>

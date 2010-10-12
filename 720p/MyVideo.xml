@@ -144,7 +144,7 @@
 		<control type="grouplist">
 			<description>Media Codec Flagging Images</description>
 			<posx>20</posx>
-			<posy>47r</posy>
+			<posy>43r</posy>
 			<width>620</width>
 			<itemgap>5</itemgap>
 			<orientation>horizontal</orientation>
