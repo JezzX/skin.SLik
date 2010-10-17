@@ -22,13 +22,38 @@
 			<include>dialogeffect</include>
 			<include>VisibleFadeEffect</include>
 		</control>
+		<control type="group">
+			<visible>Window.IsVisible(Mutebug) | Window.IsVisible(BusyDialog) | Window.IsVisible(VolumeBar) | Player.Paused | Player.ShowInfo</visible>
+			<include>WindowHeader</include>
+			<include>VisibleFadeEffect</include>
+			<control type="image">
+				<posx>20</posx>
+				<posy>5</posy>
+				<width>40</width>
+				<height>35</height>
+				<aspectratio>keep</aspectratio>
+				<texture>icon_music.png</texture>
+			</control>
+			<control type="label">
+				<description>Header label</description>
+				<posx>70</posx>
+				<posy>5</posy>
+				<width>400</width>
+				<height>35</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font13</font>
+				<textcolor>white</textcolor>
+				<label>$LOCALIZE[250]</label>
+			</control>
+		</control>
 		<control type="group" id="0">
 			<visible>Player.ShowCodec + !Window.IsVisible(script-XBMC_Lyrics-main.xml)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="image">
 				<description>media info background image</description>
 				<posx>0</posx>
-				<posy>30</posy>
+				<posy>50</posy>
 				<width>1280</width>
 				<height>105</height>
 				<texture>black-back.png</texture>
@@ -36,7 +61,7 @@
 			<control type="label">
 				<description>row 1 label</description>
 				<posx>50</posx>
-				<posy>40</posy>
+				<posy>60</posy>
 				<label>-</label>
 				<align>left</align>
 				<label>$INFO[musicplayer.Codec,$LOCALIZE[21446]: ,]$INFO[musicplayer.Bitrate, · $LOCALIZE[623]: ,kbps]$INFO[musicplayer.bitspersample, · $LOCALIZE[612]: ,bit]$INFO[musicplayer.Samplerate, · $LOCALIZE[613]: ,kHz]$INFO[musicplayer.Channels, · $LOCALIZE[21444]: ]</label>
@@ -45,7 +70,7 @@
 			<control type="label">
 				<description>row 2 label</description>
 				<posx>50</posx>
-				<posy>70</posy>
+				<posy>90</posy>
 				<label>-</label>
 				<align>left</align>
 				<label>$INFO[Visualisation.Name] [I][COLOR=blue]($LOCALIZE[20166])[/COLOR][/I] · fps: $INFO[System.FPS]</label>
@@ -55,7 +80,7 @@
 			<control type="label">
 				<description>Unlocked row 2 label</description>
 				<posx>50</posx>
-				<posy>70</posy>
+				<posy>90</posy>
 				<label>-</label>
 				<align>left</align>
 				<label>$INFO[Visualisation.Name] · fps: $INFO[System.FPS]</label>
@@ -65,7 +90,7 @@
 			<control type="label">
 				<description>row 3 label</description>
 				<posx>50</posx>
-				<posy>100</posy>
+				<posy>120</posy>
 				<label>-</label>
 				<align>left</align>
 				<label>$LOCALIZE[13388]: $INFO[Visualisation.Preset]</label>

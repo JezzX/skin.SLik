@@ -1,6 +1,6 @@
 <window id="115">
 	<defaultcontrol>1</defaultcontrol>
-	<visible>Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + [Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)]] | Player.Forwarding | Player.Rewinding</visible>
+	<visible>Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + Window.IsVisible(FullscreenVideo)] | Player.Forwarding | Player.Rewinding</visible>
 	<include>dialogeffect</include>
 	<coordinates>
 		<system>1</system>
