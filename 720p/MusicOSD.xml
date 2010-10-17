@@ -8,7 +8,7 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<!-- animation effect="slide" start="0,0" end="0,-150" time="200" tween="quadratic" easing="out" condition="Player.ShowInfo">Conditional</animation -->
+			<animation effect="slide" start="0,0" end="0,-150" time="200" tween="quadratic" easing="out" condition="Player.ShowInfo">Conditional</animation>
 			<control type="group" id="700">
 				<animation type="Visible" reversible="false">
 					<effect type="zoom" start="80" end="100" center="640,600" easing="out" tween="back" time="200" />
@@ -116,14 +116,14 @@
 				<include>VisibleFadeEffect</include>
 			</control>
 			<control type="group" id="599">
-				<posx>450</posx>
+				<posx>452</posx>
 				<posy>600</posy>
 				<control type="image">
 					<description>OSD back</description>
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>380</width>
-					<height>60</height>
+					<width>375</width>
+					<height>55</height>
 					<texture border="5">PlayerControls-Background.png</texture>
 				</control>
 				<control type="group">
@@ -132,8 +132,8 @@
 					<control type="button" id="600">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>60</width>
-						<height>60</height>
+						<width>55</width>
+						<height>55</height>
 						<label>-</label>
 						<texturefocus>PlayerControls-PrevFO.png</texturefocus>
 						<texturenofocus>PlayerControls-PrevNF.png</texturenofocus>
@@ -146,8 +146,8 @@
 					<control type="button" id="601">
 						<posx>60</posx>
 						<posy>0</posy>
-						<width>60</width>
-						<height>60</height>
+						<width>55</width>
+						<height>55</height>
 						<label>-</label>
 						<texturefocus>PlayerControls-RewindFO.png</texturefocus>
 						<texturenofocus>PlayerControls-RewindNF.png</texturenofocus>
@@ -160,8 +160,8 @@
 					<control type="button" id="602">
 						<posx>120</posx>
 						<posy>0</posy>
-						<width>60</width>
-						<height>60</height>
+						<width>55</width>
+						<height>55</height>
 						<label>-</label>
 						<texturefocus>PlayerControls-StopFO.png</texturefocus>
 						<texturenofocus>PlayerControls-StopNF.png</texturenofocus>
@@ -174,8 +174,8 @@
 					<control type="togglebutton" id="603">
 						<posx>180</posx>
 						<posy>0</posy>
-						<width>60</width>
-						<height>60</height>
+						<width>55</width>
+						<height>55</height>
 						<label>-</label>
 						<texturefocus>PlayerControls-PauseFO.png</texturefocus>
 						<texturenofocus>PlayerControls-PauseNF.png</texturenofocus>
@@ -191,8 +191,8 @@
 					<control type="button" id="604">
 						<posx>240</posx>
 						<posy>0</posy>
-						<width>60</width>
-						<height>60</height>
+						<width>55</width>
+						<height>55</height>
 						<label>-</label>
 						<texturefocus>PlayerControls-ForwardFO.png</texturefocus>
 						<texturenofocus>PlayerControls-ForwardNF.png</texturenofocus>
@@ -205,8 +205,8 @@
 					<control type="button" id="605">
 						<posx>300</posx>
 						<posy>0</posy>
-						<width>60</width>
-						<height>60</height>
+						<width>55</width>
+						<height>55</height>
 						<label>-</label>
 						<texturefocus>PlayerControls-NextFO.png</texturefocus>
 						<texturenofocus>PlayerControls-NextNF.png</texturenofocus>
