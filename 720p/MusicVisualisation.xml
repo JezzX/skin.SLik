@@ -196,7 +196,7 @@
 					<label>$INFO[MusicPlayer.Time]$INFO[Player.Duration, / ]</label>
 					<align>right</align>
 					<aligny>bottom</aligny>
-					<font>font35</font>
+					<font>font35_Numeric</font>
 					<textcolor>black</textcolor>
 				</control>
 			</control>
