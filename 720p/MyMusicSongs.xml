@@ -32,10 +32,20 @@
 					<onup>99</onup>
 					<ondown>3</ondown>
 				</control>
+				<control type="image">
+					<description>NoFocus Background for Sort button</description>
+					<posx>0</posx>
+					<posy>45</posy>
+					<width>238</width>
+					<height>45</height>
+					<texture border="5">button-nofocus.png</texture>
+					<visible>Control.HasFocus(4)</visible>
+				</control>
 				<control type="button" id="3">
 					<description>Sort by button</description>
 					<posx>0</posx>
 					<posy>45</posy>
+					<width>238</width>
 					<include>ButtonCommonValues</include>
 					<label>103</label>
 					<onleft>9001</onleft>
@@ -43,11 +53,33 @@
 					<onup>2</onup>
 					<ondown>99</ondown>
 				</control>
+				<control type="image">
+					<description>NoFocus Background for Sort Direction Toggle</description>
+					<posx>240</posx>
+					<posy>45</posy>
+					<width>40</width>
+					<height>45</height>
+					<texture border="5">button-nofocus.png</texture>
+					<visible>Control.HasFocus(3)</visible>
+				</control>
+				<control type="image">
+					<description>Focus Background for Sort Direction Toggle</description>
+					<posx>240</posx>
+					<posy>45</posy>
+					<width>40</width>
+					<height>45</height>
+					<texture border="5">button-focus2.png</texture>
+					<visible>Control.HasFocus(4)</visible>
+				</control>
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
 					<posx>250</posx>
 					<posy>58</posy>
 					<label>-</label>
+					<texturefocus>scroll-up.png</texturefocus>
+					<texturenofocus>scroll-up.png</texturenofocus>
+					<alttexturefocus>scroll-down.png</alttexturefocus>
+					<alttexturenofocus>scroll-down.png</alttexturenofocus>
 					<onleft>3</onleft>
 					<onright>50</onright>
 					<onup>2</onup>
