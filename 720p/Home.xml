@@ -1182,7 +1182,7 @@
 				<animation effect="slide" time="300" start="0,0" end="700,0" delay="0">WindowClose</animation>
 				<control type="image">
 					<description>Cover image</description>
-					<posx>160r</posx>
+					<posx>490</posx>
 					<posy>0</posy>
 					<width>130</width>
 					<height>130</height>
@@ -1190,9 +1190,16 @@
 					<bordertexture>black-back.png</bordertexture>
 					<bordersize>1</bordersize>
 				</control>
+				<control type="image">
+					<posx>180</posx>
+					<posy>43</posy>
+					<width>300</width>
+					<height>1</height>
+					<texture>separator2.png</texture>
+				</control>
 				<control type="label">
 					<description>Artist label</description>
-					<posx>170r</posx>
+					<posx>480</posx>
 					<posy>15</posy>
 					<height>20</height>
 					<width>620</width>
@@ -1203,16 +1210,9 @@
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
-				<control type="image">
-					<posx>460r</posx>
-					<posy>43</posy>
-					<width>300</width>
-					<height>1</height>
-					<texture>separator2.png</texture>
-				</control>
 				<control type="label">
 					<description>Title label</description>
-					<posx>170r</posx>
+					<posx>480</posx>
 					<posy>48</posy>
 					<height>20</height>
 					<width>620</width>
@@ -1224,7 +1224,7 @@
 				</control>
 				<control type="label">
 					<description>Album Label</description>
-					<posx>170r</posx>
+					<posx>480</posx>
 					<posy>80</posy>
 					<height>20</height>
 					<width>620</width>
@@ -1237,7 +1237,143 @@
 				</control>
 				<control type="label">
 					<description>Time Label</description>
-					<posx>170r</posx>
+					<posx>480</posx>
+					<posy>100</posy>
+					<height>30</height>
+					<width>500</width>
+					<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font13_Numeric</font>
+					<shadowcolor>black</shadowcolor>
+				</control>
+			</control>
+			<control type="group">
+				<posx>650r</posx>
+				<posy>180r</posy>
+				<visible>Player.HasVideo</visible>
+				<animation effect="fade" time="200">VisibleChange</animation>
+				<animation effect="slide" time="300" start="700,0" end="0,0" delay="0">WindowOpen</animation>
+				<animation effect="slide" time="300" start="0,0" end="700,0" delay="0">WindowClose</animation>
+				<control type="image">
+					<description>Cover image</description>
+					<posx>490</posx>
+					<posy>0</posy>
+					<width>130</width>
+					<height>130</height>
+					<texture>DefaultVideoCover.png</texture>
+					<bordertexture>black-back.png</bordertexture>
+					<bordersize>1</bordersize>
+				</control>
+				<control type="image">
+					<posx>190</posx>
+					<posy>43</posy>
+					<width>300</width>
+					<height>1</height>
+					<texture>separator2.png</texture>
+				</control>
+				<control type="label">
+					<description>Title label</description>
+					<posx>480</posx>
+					<posy>48</posy>
+					<height>20</height>
+					<width>620</width>
+					<label>$INFO[VideoPlayer.Title]</label>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="group">
+					<visible>VideoPlayer.Content(Movies)</visible>
+					<control type="label">
+						<description>Director label</description>
+						<posx>480</posx>
+						<posy>15</posy>
+						<height>20</height>
+						<width>620</width>
+						<label>[B]$INFO[VideoPlayer.Director][/B]</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font11</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+					<control type="label">
+						<description>Genre Label</description>
+						<posx>480</posx>
+						<posy>80</posy>
+						<height>20</height>
+						<width>620</width>
+						<label>$INFO[VideoPlayer.Genre]</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font10</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+				</control>
+				<control type="group">
+					<visible>VideoPlayer.Content(Episodes)</visible>
+					<control type="label">
+						<description>TVShow label</description>
+						<posx>480</posx>
+						<posy>15</posy>
+						<height>20</height>
+						<width>620</width>
+						<label>[B]$INFO[VideoPlayer.TVShowTitle][/B]</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font11</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+					<control type="label">
+						<description>Ep number Label</description>
+						<posx>480</posx>
+						<posy>80</posy>
+						<height>20</height>
+						<width>620</width>
+						<label>$INFO[VideoPlayer.Season,$LOCALIZE[20373]: ] $INFO[VideoPlayer.Episode,$LOCALIZE[20359]: ]</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font10</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+				</control>
+				<control type="group">
+					<visible>VideoPlayer.Content(MusicVideos)</visible>
+					<control type="label">
+						<description>Artist label</description>
+						<posx>480</posx>
+						<posy>15</posy>
+						<height>20</height>
+						<width>620</width>
+						<label>[B]$INFO[VideoPlayer.Artist][/B]</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font11</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+					<control type="label">
+						<description>Album Label</description>
+						<posx>480</posx>
+						<posy>80</posy>
+						<height>20</height>
+						<width>620</width>
+						<label>$INFO[VideoPlayer.Album]</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font10</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+				</control>
+				<control type="label">
+					<description>Time Label</description>
+					<posx>480</posx>
 					<posy>100</posy>
 					<height>30</height>
 					<width>500</width>
