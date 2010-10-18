@@ -607,12 +607,14 @@
 			<control type="group">
 				<visible>Player.HasAudio</visible>
 				<control type="image">
-					<posx>5</posx>
+					<posx>10</posx>
 					<posy>40</posy>
-					<width>280</width>
+					<width>270</width>
 					<height>200</height>
-					<texture>$INFO[MusicPlayer.Cover]</texture>
 					<aspectratio>keep</aspectratio>
+					<texture>$INFO[MusicPlayer.Cover]</texture>
+					<bordertexture border="5">black-back.png</bordertexture>
+					<bordersize>1</bordersize>
 				</control>
 				<control type="fadelabel">
 					<posx>20</posx>
@@ -664,84 +666,132 @@
 					<pauseatend>2000</pauseatend>
 				</control>
 			</control>
-		</control>
-		<control type="group">
-			<posx>10</posx>
-			<posy>450</posy>
-			<visible>Player.HasVideo</visible>
-			<include>VisibleFadeEffect</include>
-			<control type="image">
-				<posx>0</posx>
-				<posy>10</posy>
-				<width>260</width>
-				<height>165</height>
-				<colordiffuse>AAFFFFFF</colordiffuse>
-				<texture>black-back.png</texture>
-				<visible>!Window.IsVisible(VideoLibrary)</visible>
-			</control>
-			<control type="videowindow">
-				<posx>5</posx>
-				<posy>15</posy>
-				<width>250</width>
-				<height>155</height>
-				<visible>!Window.IsVisible(VideoLibrary)</visible>
-			</control>
-			<control type="label">
-				<posx>5</posx>
-				<posy>180</posy>
-				<width>250</width>
-				<height>20</height>
-				<label>$INFO[VideoPlayer.Time]$INFO[Player.Duration, - ]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font11</font>
-				<textcolor>grey2</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
-			</control>
-			<control type="fadelabel">
-				<posx>5</posx>
-				<posy>203</posy>
-				<width>250</width>
-				<height>20</height>
-				<label>$INFO[VideoPlayer.Title]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font11</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scrollout>false</scrollout>
-				<pauseatend>2000</pauseatend>
-			</control>
-			<control type="fadelabel">
-				<posx>5</posx>
-				<posy>225</posy>
-				<width>250</width>
-				<height>20</height>
-				<label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Season,,x]$INFO[VideoPlayer.Episode]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font10</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scrollout>false</scrollout>
-				<pauseatend>2000</pauseatend>
-				<visible>VideoPlayer.Content(Episodes)</visible>
-			</control>
-			<control type="fadelabel">
-				<posx>5</posx>
-				<posy>225</posy>
-				<width>250</width>
-				<height>20</height>
-				<label>$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Director, | ]$INFO[VideoPlayer.Genre, | ]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font10</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scrollout>false</scrollout>
-				<pauseatend>2000</pauseatend>
-				<visible>VideoPlayer.Content(Movies)</visible>
+			<control type="group">
+				<visible>Player.HasVideo</visible>
+				<control type="image">
+					<posx>10</posx>
+					<posy>40</posy>
+					<width>270</width>
+					<height>200</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[VideoPlayer.Cover]</texture>
+					<bordertexture border="5">black-back.png</bordertexture>
+					<bordersize>1</bordersize>
+				</control>
+				<control type="image">
+					<posx>50</posx>
+					<posy>285</posy>
+					<width>240</width>
+					<height>1</height>
+					<texture>separator2.png</texture>
+				</control>
+				<control type="fadelabel">
+					<posx>20</posx>
+					<posy>290</posy>
+					<width>250</width>
+					<height>20</height>
+					<label>[B]$INFO[VideoPlayer.Title][/B]</label>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font11</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scrollout>false</scrollout>
+					<pauseatend>2000</pauseatend>
+				</control>
+				<control type="group">
+					<visible>VideoPlayer.Content(Movies)</visible>
+					<control type="fadelabel">
+						<posx>20</posx>
+						<posy>260</posy>
+						<width>250</width>
+						<height>20</height>
+						<label>$INFO[VideoPlayer.Director]</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font11</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scrollout>false</scrollout>
+						<pauseatend>2000</pauseatend>
+					</control>
+					<control type="fadelabel">
+						<posx>20</posx>
+						<posy>320</posy>
+						<width>250</width>
+						<height>20</height>
+						<label>$INFO[VideoPlayer.Genre]</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font11</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scrollout>false</scrollout>
+						<pauseatend>2000</pauseatend>
+					</control>
+				</control>
+				<control type="group">
+					<visible>VideoPlayer.Content(Episodes)</visible>
+					<control type="fadelabel">
+						<posx>20</posx>
+						<posy>260</posy>
+						<width>250</width>
+						<height>20</height>
+						<label>$INFO[VideoPlayer.TVShowTitle]</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font11</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scrollout>false</scrollout>
+						<pauseatend>2000</pauseatend>
+					</control>
+					<control type="fadelabel">
+						<posx>20</posx>
+						<posy>320</posy>
+						<width>250</width>
+						<height>20</height>
+						<label>$INFO[VideoPlayer.Season,$LOCALIZE[20373]: ] $INFO[VideoPlayer.Episode,$LOCALIZE[20359]: ]</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font11</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scrollout>false</scrollout>
+						<pauseatend>2000</pauseatend>
+					</control>
+				</control>
+				<control type="group">
+					<visible>VideoPlayer.Content(MusicVideos)</visible>
+					<control type="fadelabel">
+						<posx>20</posx>
+						<posy>260</posy>
+						<width>250</width>
+						<height>20</height>
+						<label>$INFO[VideoPlayer.Artist]</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font11</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scrollout>false</scrollout>
+						<pauseatend>2000</pauseatend>
+					</control>
+					<control type="fadelabel">
+						<posx>20</posx>
+						<posy>320</posy>
+						<width>250</width>
+						<height>20</height>
+						<label>$INFO[VideoPlayer.Album]</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font11</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scrollout>false</scrollout>
+						<pauseatend>2000</pauseatend>
+					</control>
+				</control>
 			</control>
 		</control>
 	</include>
