@@ -12,38 +12,16 @@
 			<include>ThumbnailView_Info</include> <!-- view id = 54 -->
 			<include>ScrollOffsetLabel</include>
 		</control>
+		<include>CommonNowPlaying_Controls</include> <!-- This is ControlGroup(9001) -->
+		<include>CommonNowPlaying</include>
 		<control type="group">
-			<include>VisibleFadeEffect</include>
-			<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus | ControlGroup(9001).HasFocus</visible>
-			<posx>60</posx>
-			<posy>45</posy>
-			<control type="image">
-				<description>Down Arrow</description>
-				<posx>30</posx>
-				<posy>0</posy>
-				<width>40</width>
-				<height>30</height>
-				<texture>arrow-big-up.png</texture>
-				<animation effect="slide" start="0,0" end="64,0" time="200" condition="Player.HasMedia">conditional</animation>
-			</control>
-			<include>CommonNowPlaying_Controls</include>
-			<include>CommonNowPlaying</include>
+			<include>CommonOptionsMenuBack</include>
 			<control type="group" id="9000">
-				<posx>0</posx>
+				<posx>5</posx>
 				<posy>30</posy>
-				<visible>true</visible>
-				<animation effect="slide" start="0,0" end="64,0" time="200" condition="Player.HasMedia">conditional</animation>
-				<control type="image">
-					<description>background image</description>
-					<posx>0</posx>
-					<posy>-5</posy>
-					<width>290</width>
-					<height>415</height>
-					<texture border="8">SubBack.png</texture>
-				</control>
 				<control type="button" id="2">
 					<description>View As button</description>
-					<posx>5</posx>
+					<posx>0</posx>
 					<posy>0</posy>
 					<include>ButtonCommonValues</include>
 					<label>-</label>
@@ -107,7 +85,7 @@
 				</control>
 				<control type="radiobutton" id="5">
 					<description>AutoUpdate Button</description>
-					<posx>5</posx>
+					<posx>0</posx>
 					<posy>90</posy>
 					<include>ButtonCommonValues</include>
 					<label>24063</label>
