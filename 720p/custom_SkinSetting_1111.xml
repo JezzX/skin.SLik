@@ -16,7 +16,7 @@
 				<visible>Skin.String(SkinSettings,1)</visible>
 				<posx>340</posx>
 				<posy>70</posy>
-				<width>900</width>
+				<width>880</width>
 				<height>540</height>
 				<itemgap>0</itemgap>
 				<pagecontrol>-</pagecontrol>
@@ -25,7 +25,7 @@
 				<onup>9001</onup>
 				<ondown>9001</ondown>
 				<control type="button" id="100">
-					<width>900</width>
+					<width>880</width>
 					<height>35</height>
 					<font>font11</font>
 					<label>[B]$LOCALIZE[31110][/B]</label>
@@ -37,7 +37,7 @@
 					<enable>false</enable>
 				</control>
 				<control type="radiobutton" id="101">
-					<width>900</width>
+					<width>880</width>
 					<height>45</height>
 					<font>font12</font>
 					<label>31130</label>
@@ -49,12 +49,12 @@
 					<selected>!Skin.HasSetting(Show_Fanart)</selected>
 				</control>
 				<control type="image" id="102">
-					<width>900</width>
+					<width>880</width>
 					<height>4</height>
 					<texture>-</texture>
 				</control>
 				<control type="radiobutton" id="103">
-					<width>900</width>
+					<width>880</width>
 					<height>45</height>
 					<font>font12</font>
 					<label>21398</label>
@@ -86,16 +86,16 @@
 				<visible>Skin.String(SkinSettings,2)</visible>
 				<posx>340</posx>
 				<posy>70</posy>
-				<width>900</width>
-				<height>540</height>
+				<width>880</width>
+				<height>570</height>
 				<itemgap>0</itemgap>
-				<pagecontrol>-</pagecontrol>
+				<pagecontrol>9062</pagecontrol>
 				<onleft>9000</onleft>
-				<onright>9000</onright>
+				<onright>9062</onright>
 				<onup>9002</onup>
 				<ondown>9002</ondown>
 				<control type="button" id="200">
-					<width>900</width>
+					<width>880</width>
 					<height>35</height>
 					<font>font11</font>
 					<label>[B]$LOCALIZE[31111][/B]</label>
@@ -108,7 +108,7 @@
 				</control>
 				<control type="radiobutton" id="201">
 					<description>enable video info</description>
-					<width>900</width>
+					<width>880</width>
 					<height>45</height>
 					<font>font12</font>
 					<label>20176</label>
@@ -121,7 +121,7 @@
 				</control>
 				<control type="radiobutton" id="202">
 					<description>enable music info</description>
-					<width>900</width>
+					<width>880</width>
 					<height>45</height>
 					<font>font12</font>
 					<label>20083</label>
@@ -133,12 +133,12 @@
 					<texturenofocus border="5">ListNF.png</texturenofocus>
 				</control>
 				<control type="image" id="220">
-					<width>900</width>
+					<width>880</width>
 					<height>4</height>
 					<texture>-</texture>
 				</control>
 				<control type="button" id="221">
-					<width>900</width>
+					<width>880</width>
 					<height>35</height>
 					<font>font11</font>
 					<label>[B]$LOCALIZE[31116][/B]</label>
@@ -151,7 +151,7 @@
 				</control>
 
 				<control type="radiobutton" id="222">
-					<width>900</width>
+					<width>880</width>
 					<height>45</height>
 					<font>font12</font>
 					<label>$LOCALIZE[31132] - [B]1[/B]</label>
@@ -163,7 +163,7 @@
 					<selected>Skin.HasSetting(HomeVideoButton1)</selected>
 				</control>
 				<control type="button" id="223">
-					<width>900</width>
+					<width>880</width>
 					<height>45</height>
 					<font>font12</font>
 					<label> - $LOCALIZE[31133]</label>
@@ -176,7 +176,7 @@
 					<visible>Skin.HasSetting(HomeVideoButton1)</visible>
 				</control>
 				<control type="button" id="224">
-					<width>900</width>
+					<width>880</width>
 					<height>45</height>
 					<font>font12</font>
 					<label> - $LOCALIZE[31134]</label>
@@ -190,7 +190,7 @@
 				</control>
 
 				<control type="radiobutton" id="225">
-					<width>900</width>
+					<width>880</width>
 					<height>45</height>
 					<font>font12</font>
 					<label>$LOCALIZE[31132] - [B]2[/B]</label>
@@ -202,7 +202,7 @@
 					<selected>Skin.HasSetting(HomeVideoButton2)</selected>
 				</control>
 				<control type="button" id="226">
-					<width>900</width>
+					<width>880</width>
 					<height>45</height>
 					<font>font12</font>
 					<label> - $LOCALIZE[31133]</label>
@@ -215,7 +215,7 @@
 					<visible>Skin.HasSetting(HomeVideoButton2)</visible>
 				</control>
 				<control type="button" id="227">
-					<width>900</width>
+					<width>880</width>
 					<height>45</height>
 					<font>font12</font>
 					<label> - $LOCALIZE[31134]</label>
@@ -229,12 +229,12 @@
 				</control>
 
 				<control type="image" id="230">
-					<width>900</width>
+					<width>880</width>
 					<height>4</height>
 					<texture>-</texture>
 				</control>
 				<control type="button" id="231">
-					<width>900</width>
+					<width>880</width>
 					<height>35</height>
 					<font>font11</font>
 					<label>[B]$LOCALIZE[31117][/B]</label>
@@ -245,6 +245,101 @@
 					<onclick>-</onclick>
 					<enable>false</enable>
 				</control>
+
+				<control type="radiobutton" id="232">
+					<width>880</width>
+					<height>45</height>
+					<font>font12</font>
+					<label>$LOCALIZE[31132] - [B]1[/B]</label>
+					<textcolor>white</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus border="5">ThumbFO.png</texturefocus>
+					<texturenofocus border="5">ListNF.png</texturenofocus>
+					<onclick>Skin.ToggleSetting(HomeMusicButton1)</onclick>
+					<selected>Skin.HasSetting(HomeMusicButton1)</selected>
+				</control>
+				<control type="button" id="233">
+					<width>880</width>
+					<height>45</height>
+					<font>font12</font>
+					<label> - $LOCALIZE[31133]</label>
+					<label2>[COLOR=blue2]$INFO[Skin.String(HomeMusicButton1_label)][/COLOR]</label2>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus border="5">ThumbFO.png</texturefocus>
+					<texturenofocus border="5">ListNF.png</texturenofocus>
+					<onclick>Skin.SetString(HomeMusicButton1_label)</onclick>
+					<visible>Skin.HasSetting(HomeMusicButton1)</visible>
+				</control>
+				<control type="button" id="234">
+					<width>880</width>
+					<height>45</height>
+					<font>font12</font>
+					<label> - $LOCALIZE[31134]</label>
+					<label2>[COLOR=blue2]$INFO[Skin.String(HomeMusicButton1_Path)][/COLOR]</label2>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus border="5">ThumbFO.png</texturefocus>
+					<texturenofocus border="5">ListNF.png</texturenofocus>
+					<onclick>Skin.SetFile(HomeMusicButton1_Path,,special://musicplaylists/)</onclick>
+					<visible>Skin.HasSetting(HomeMusicButton1)</visible>
+				</control>
+
+				<control type="radiobutton" id="235">
+					<width>880</width>
+					<height>45</height>
+					<font>font12</font>
+					<label>$LOCALIZE[31132] - [B]2[/B]</label>
+					<textcolor>white</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus border="5">ThumbFO.png</texturefocus>
+					<texturenofocus border="5">ListNF.png</texturenofocus>
+					<onclick>Skin.ToggleSetting(HomeMusicButton2)</onclick>
+					<selected>Skin.HasSetting(HomeMusicButton2)</selected>
+				</control>
+				<control type="button" id="236">
+					<width>880</width>
+					<height>45</height>
+					<font>font12</font>
+					<label> - $LOCALIZE[31133]</label>
+					<label2>[COLOR=blue2]$INFO[Skin.String(HomeMusicButton2_label)][/COLOR]</label2>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus border="5">ThumbFO.png</texturefocus>
+					<texturenofocus border="5">ListNF.png</texturenofocus>
+					<onclick>Skin.SetString(HomeMusicButton2_label)</onclick>
+					<visible>Skin.HasSetting(HomeMusicButton2)</visible>
+				</control>
+				<control type="button" id="237">
+					<width>880</width>
+					<height>45</height>
+					<font>font12</font>
+					<label> - $LOCALIZE[31134]</label>
+					<label2>[COLOR=blue2]$INFO[Skin.String(HomeMusicButton2_Path)][/COLOR]</label2>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus border="5">ThumbFO.png</texturefocus>
+					<texturenofocus border="5">ListNF.png</texturenofocus>
+					<onclick>Skin.SetFile(HomeMusicButton2_Path,,special://musicplaylists/)</onclick>
+					<visible>Skin.HasSetting(HomeMusicButton2)</visible>
+				</control>
+
+			</control>
+			<control type="scrollbar" id="9062">
+				<posx>1225</posx>
+				<posy>70</posy>
+				<width>17</width>
+				<height>570</height>
+				<texturesliderbackground border="2,2,2,2">scrollbar_bar_back.png</texturesliderbackground>
+				<texturesliderbar border="2,16,2,16">scrollbar_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="2,16,2,16">scrollbar_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>scrollbar_nib.png</textureslidernib>
+				<textureslidernibfocus>scrollbar_nib.png</textureslidernibfocus>
+				<onleft>9002</onleft>
+				<onright>9000</onright>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+				<visible>Control.IsVisible(9002)</visible>
 			</control>
 			<!-- End Home Page Skin Settings -->
 			<!-- Start Custom Script Skin Settings -->
@@ -252,7 +347,7 @@
 				<visible>Skin.String(SkinSettings,4)</visible>
 				<posx>340</posx>
 				<posy>70</posy>
-				<width>900</width>
+				<width>880</width>
 				<height>540</height>
 				<itemgap>0</itemgap>
 				<pagecontrol>-</pagecontrol>
@@ -261,7 +356,7 @@
 				<onup>9004</onup>
 				<ondown>9004</ondown>
 				<control type="button" id="200">
-					<width>900</width>
+					<width>880</width>
 					<height>35</height>
 					<font>font11</font>
 					<label>[B]$LOCALIZE[31112][/B]</label>
@@ -273,12 +368,12 @@
 					<enable>false</enable>
 				</control>
 				<control type="image" id="219">
-					<width>900</width>
+					<width>880</width>
 					<height>4</height>
 					<texture>-</texture>
 				</control>
 				<control type="button" id="220">
-					<width>900</width>
+					<width>880</width>
 					<height>35</height>
 					<font>font11</font>
 					<label>[B]$LOCALIZE[31113][/B]</label>
@@ -290,12 +385,12 @@
 					<enable>false</enable>
 				</control>
 				<control type="image" id="239">
-					<width>900</width>
+					<width>880</width>
 					<height>4</height>
 					<texture>-</texture>
 				</control>
 				<control type="button" id="240">
-					<width>900</width>
+					<width>880</width>
 					<height>35</height>
 					<font>font11</font>
 					<label>[B]$LOCALIZE[31114][/B]</label>
@@ -307,7 +402,7 @@
 					<enable>false</enable>
 				</control>
 				<control type="image" id="229">
-					<width>900</width>
+					<width>880</width>
 					<height>4</height>
 					<texture>-</texture>
 				</control>
