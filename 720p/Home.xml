@@ -1019,7 +1019,7 @@
 					<posx>-128</posx>
 					<posy>0</posy>
 					<width>1408</width>
-					<height>256</height>
+					<height>130</height>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<onup>90155</onup>
@@ -1157,7 +1157,7 @@
 						</item>
 						<item id="7">
 							<label>13005</label>
-							<onclick>xbmc.shutdown</onclick>
+							<onclick>ActivateWindow(ShutdownMenu)</onclick>
 							<icon>thumbs/Power.png</icon>
 							<thumb>special://skin/backgrounds/power.jpg</thumb>
 						</item>
