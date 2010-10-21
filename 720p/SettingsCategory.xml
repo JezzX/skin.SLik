@@ -60,45 +60,40 @@
 				<height>30</height>
 				<texture>arrow-big-up.png</texture>
 			</control>
-			<control type="group" id="9000">
+			<control type="image">
+				<description>background image</description>
 				<posx>0</posx>
-				<posy>30</posy>
-				<visible>true</visible>
-				<control type="image">
-					<description>background image</description>
-					<posx>0</posx>
-					<posy>-5</posy>
-					<width>290</width>
-					<height>415</height>
-					<texture border="8">SubBack.png</texture>
-				</control>
-				<control type="image">
-					<description>Overlay image</description>
-					<posx>0</posx>
-					<posy>-5</posy>
-					<width>200</width>
-					<height>310</height>
-					<texture>GlassOverlay.png</texture>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>-5</posy>
-					<width>290</width>
-					<height>40</height>
-					<texture>HorizontalGlow.png</texture>
-				</control>
-				<control type="grouplist" id="3">
-					<description>button area</description>
-					<posx>5</posx>
-					<posy>5</posy>
-					<width>280</width>
-					<height>405</height>
-					<itemgap>0</itemgap>
-					<onleft>5</onleft>
-					<onright>5</onright>
-					<onup>3</onup>
-					<ondown>3</ondown>
-				</control>
+				<posy>25</posy>
+				<width>290</width>
+				<height>415</height>
+				<texture border="8">SubBack.png</texture>
+			</control>
+			<control type="image">
+				<description>Overlay image</description>
+				<posx>0</posx>
+				<posy>25</posy>
+				<width>200</width>
+				<height>310</height>
+				<texture>GlassOverlay.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>25</posy>
+				<width>290</width>
+				<height>40</height>
+				<texture>HorizontalGlow.png</texture>
+			</control>
+			<control type="grouplist" id="3">
+				<description>button area</description>
+				<posx>5</posx>
+				<posy>35</posy>
+				<width>280</width>
+				<height>405</height>
+				<itemgap>0</itemgap>
+				<onleft>5</onleft>
+				<onright>5</onright>
+				<onup>3</onup>
+				<ondown>3</ondown>
 			</control>
 		</control>
 		<control type="button" id="10">
