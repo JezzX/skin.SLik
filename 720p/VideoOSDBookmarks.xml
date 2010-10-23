@@ -2,7 +2,7 @@
 	<defaultcontrol always="true">2</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<posx>400</posx>
+		<posx>240</posx>
 		<posy>55</posy>
 	</coordinates>
 	<include>dialogeffect</include>

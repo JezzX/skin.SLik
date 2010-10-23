@@ -1,5 +1,5 @@
 <window type="dialog" id="2901">
-	<defaultcontrol>603</defaultcontrol>
+	<defaultcontrol always="true">603</defaultcontrol>
 	<include>dialogeffect</include>
 	<coordinates>
 		<system>1</system>
@@ -8,6 +8,8 @@
 	</coordinates>
 	<controls>
 		<control type="group">
+			<include>VisibleFadeEffect</include>
+			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 			<animation effect="slide" start="0,0" end="0,-150" time="200" tween="quadratic" easing="out" condition="Window.IsVisible(FullscreenInfo)">Conditional</animation>
 			<control type="group" id="700">
 				<animation type="Visible" reversible="false">

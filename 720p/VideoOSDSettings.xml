@@ -3,7 +3,7 @@
 	<include>dialogeffect</include>
 	<coordinates>
 		<system>1</system>
-		<posx>400</posx>
+		<posx>240</posx>
 		<posy>55</posy>
 	</coordinates>
 	<controls>
