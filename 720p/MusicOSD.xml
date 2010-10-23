@@ -8,6 +8,8 @@
 	</coordinates>
 	<controls>
 		<control type="group">
+			<include>VisibleFadeEffect</include>
+			<visible>![Window.IsVisible(VisualisationSettings) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(SelectDialog)]</visible>
 			<animation effect="slide" start="0,0" end="0,-150" time="200" tween="quadratic" easing="out" condition="Player.ShowInfo">Conditional</animation>
 			<control type="group" id="700">
 				<animation type="Visible" reversible="false">
