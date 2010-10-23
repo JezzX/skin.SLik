@@ -364,7 +364,7 @@
 					<control type="button" id="90155">
 						<include>ButtonHomeSubCommonValues</include>
 						<label>$LOCALIZE[20126] $INFO[system.profilename]</label>
-						<onclick>XBMC.Logoff()</onclick>
+						<onclick>System.Logoff</onclick>
 						<visible>Container(9000).HasFocus(7)</visible>
 						<visible>System.HasLoginScreen</visible>
 						<visible>System.Loggedon</visible>
