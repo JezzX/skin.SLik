@@ -27,12 +27,6 @@
 			<label>$LOCALIZE[1036]</label>
 			<textcolor>dialogheader</textcolor>
 		</control>
-		<control type="button">
-			<description>Close Window button</description>
-			<posx>810</posx>
-			<posy>35</posy>
-			<include>WindowCloseButtonCommons</include>
-		</control>
 		<control type="image">
 			<posx>40</posx>
 			<posy>80</posy>

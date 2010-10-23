@@ -28,12 +28,6 @@
 			<label>[UPPERCASE]$LOCALIZE[298][/UPPERCASE] - ($INFO[Container(11).NumItems]) $LOCALIZE[31025] - $LOCALIZE[31024] ($INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages])</label>
 			<textcolor>white</textcolor>
 		</control>
-		<control type="button">
-			<description>Close Window button</description>
-			<posx>730</posx>
-			<posy>35</posy>
-			<include>WindowCloseButtonCommons</include>
-		</control>
 		<control type="image">
 			<posx>40</posx>
 			<posy>78</posy>

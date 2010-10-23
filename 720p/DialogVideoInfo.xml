@@ -22,12 +22,6 @@
 			<label>[UPPERCASE]$INFO[Listitem.Title][/UPPERCASE]</label>
 			<font>font18</font>
 		</control>
-		<control type="button">
-			<description>Close Window button</description>
-			<posx>1210</posx>
-			<posy>35</posy>
-			<include>WindowCloseButtonCommons</include>
-		</control>
 		<control type="image">
 			<posx>40</posx>
 			<posy>84</posy>
