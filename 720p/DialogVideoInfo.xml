@@ -1,15 +1,8 @@
 <window id="2003">
 	<defaultcontrol always="true">8</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<include>dialogeffect</include>
 	<controls>
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture border="40">DialogBack.png</texture>
-		</control>
+		<include>CommonBackground</include>
 		<control type="label">
 			<description>Item Title value</description>
 			<posx>40</posx>
@@ -847,17 +840,6 @@
 			<showonepage>true</showonepage>
 			<animation effect="slide" time="0" end="-170,0" condition="Control.IsVisible(50)">Conditional</animation>
 		</control>
-		<control type="grouplist">
-			<description>Media Codec Flagging Images</description>
-			<posx>290</posx>
-			<posy>640</posy>
-			<width>640</width>
-			<itemgap>0</itemgap>
-			<orientation>horizontal</orientation>
-			<include>VideoCodecFlagging</include>
-			<include>AudioCodecFlagging</include>
-			<include>AspectCodecFlagging</include>
-		</control>
 		<control type="grouplist" id="9000">
 			<posx>60</posx>
 			<posy>470</posy>
@@ -903,6 +885,46 @@
 				<include>ButtonInfoDialogsCommonValues</include>
 				<label>20413</label>
 			</control>
+		</control>
+		<include>WindowHeader</include>
+		<control type="image">
+			<posx>20</posx>
+			<posy>5</posy>
+			<width>40</width>
+			<height>35</height>
+			<aspectratio>keep</aspectratio>
+			<texture>icon_video.png</texture>
+		</control>
+		<control type="label">
+			<description>Header label</description>
+			<posx>70</posx>
+			<posy>5</posy>
+			<width>400</width>
+			<height>35</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font13</font>
+			<textcolor>white</textcolor>
+			<label>$LOCALIZE[20159]</label>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>60r</posy>
+			<width>1280</width>
+			<height>70</height>
+			<texture border="0,3,0,0">Footer.png</texture>
+		</control>
+		<control type="grouplist">
+			<description>Media Codec Flagging Images</description>
+			<posx>20</posx>
+			<posy>43r</posy>
+			<width>620</width>
+			<itemgap>5</itemgap>
+			<orientation>horizontal</orientation>
+			<include>VideoCodecFlagging</include>
+			<include>AudioCodecFlagging</include>
+			<include>VideoTypeHackFlaggingConditions</include>
+			<include>AspectCodecFlagging</include>
 		</control>
 	</controls>
 </window>
