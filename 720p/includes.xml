@@ -843,7 +843,7 @@
 		<shadowcolor>black</shadowcolor>
 		<align>center</align>
 		<aligny>center</aligny>
-		<texturefocus border="2">button-focus.png</texturefocus>
+		<texturefocus border="2">button-focus2.png</texturefocus>
 		<texturenofocus border="2">button-nofocus.png</texturenofocus>
 		<pulseonselect>no</pulseonselect>
 	</include>
