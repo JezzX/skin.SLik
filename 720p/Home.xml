@@ -369,6 +369,13 @@
 						<visible>System.HasLoginScreen</visible>
 						<visible>System.Loggedon</visible>
 					</control>
+					<!-- Start or buttons Used for the main Optical Media button -->
+					<control type="button" id="90161">
+						<include>ButtonHomeSubCommonValues</include>
+						<label>13391</label>
+						<onclick>EjectTray()</onclick>
+						<visible>Container(9000).HasFocus(8)</visible>
+					</control>
 				</control>
 			</control>
 			<control type="group">
@@ -1022,7 +1029,7 @@
 					<height>130</height>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
-					<onup>90155</onup>
+					<onup>90161</onup>
 					<ondown>603</ondown>
 					<pagecontrol>-</pagecontrol>
 					<focusposition>1</focusposition>
@@ -1148,6 +1155,13 @@
 							<onclick>ActivateWindow(Weather)</onclick>
 							<icon>thumbs/Weather.png</icon>
 							<thumb>special://skin/backgrounds/weather.jpg</thumb>
+						</item>
+						<item id="8">
+							<label>31020</label>
+							<onclick>PlayDVD()</onclick>
+							<icon>thumbs/OpticalDrive.png</icon>
+							<thumb>special://skin/backgrounds/opticaldrive.jpg</thumb>
+							<visible>System.HasMediadvd</visible>
 						</item>
 						<item id="6">
 							<label>5</label>
