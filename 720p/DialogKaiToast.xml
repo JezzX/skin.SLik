@@ -26,7 +26,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture>DefaultFile.png</texture>
 			</control>
-			<control type="label" id="401">
+			<control type="fadelabel" id="401">
 				<description>Line 1 Label</description>
 				<posx>60</posx>
 				<posy>10</posy>
@@ -36,8 +36,10 @@
 				<textcolor>blue</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
+				<scrollout>false</scrollout>
+				<pauseatend>2000</pauseatend>
 			</control>
-			<control type="label" id="402">
+			<control type="fadelabel" id="402">
 				<description>Line 2 Label</description>
 				<posx>60</posx>
 				<posy>32</posy>
@@ -46,6 +48,8 @@
 				<font>font10</font>
 				<align>left</align>
 				<aligny>center</aligny>
+				<scrollout>false</scrollout>
+				<pauseatend>2000</pauseatend>
 			</control>
 			<control type="image" id="403">
 				<description>avatar</description>
