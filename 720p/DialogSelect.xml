@@ -280,7 +280,7 @@
 				<font>font12</font>
 				<align>left</align>
 				<textcolor>grey</textcolor>
-				<label>$INFO[Container(6).ListItem.Label2]</label>
+				<label>$INFO[Container(6).ListItem.Property(Addon.Summary)]</label>
 			</control>
 		</control>
 		<control type="button" id="5">
