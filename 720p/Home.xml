@@ -339,7 +339,7 @@
 					<!-- Start or buttons Used for the main Shutdown button -->
 					<control type="button" id="90151">
 						<include>ButtonHomeSubCommonValues</include>
-						<label>13016</label>
+						<label>31500</label>
 						<onclick>XBMC.Powerdown()</onclick>
 						<visible>Container(9000).HasFocus(7)</visible>
 					</control>
