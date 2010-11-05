@@ -276,18 +276,6 @@
 			<label>[B]($INFO[Container.NumItems])[/B] $LOCALIZE[31025]$INFO[Container.TotalTime, - $LOCALIZE[180] [B](,)[/B]] - $LOCALIZE[31024] [B]($INFO[Container.CurrentPage]/$INFO[Container.NumPages])[/B]</label>
 		</control>
 	</include>
-	<include name="WindowTitleCommons">
-		<posx>110</posx>
-		<posy>50</posy>
-		<width>1060</width>
-		<height>30</height>
-		<font>font18</font>
-		<textcolor>white</textcolor>
-		<scroll>false</scroll>
-		<align>left</align>
-		<aligny>center</aligny>
-		<include>Window_OpenClose_Animation</include>
-	</include>
 	<include name="BehindDialogFadeOut">
 		<control type="image">
 			<posx>0</posx>
@@ -850,18 +838,6 @@
 	<include name="Window_OpenClose_Animation">
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
-	</include>
-	<include name="Window_OpenClose_Left_Panel_Animation">
-		<animation effect="fade" time="200" condition="Skin.HasSetting(Animate_Skin)">WindowOpen</animation>
-		<animation effect="fade" time="200" condition="Skin.HasSetting(Animate_Skin)">WindowClose</animation>
-		<animation effect="slide" start="-400,0" end="0,0" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(Animate_Skin)">WindowOpen</animation>
-		<animation effect="slide" end="-400,0" start="0,0" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(Animate_Skin)">WindowClose</animation>
-	</include>
-	<include name="Window_OpenClose_Right_Panel_Animation">
-		<animation effect="fade" time="200" condition="Skin.HasSetting(Animate_Skin)">WindowOpen</animation>
-		<animation effect="fade" time="200" condition="Skin.HasSetting(Animate_Skin)">WindowClose</animation>
-		<animation effect="slide" start="1030,0" end="0,0" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(Animate_Skin)">WindowOpen</animation>
-		<animation effect="slide" end="1030,0" start="0,0" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(Animate_Skin)">WindowClose</animation>
 	</include>
 	<include name="dialogeffect">
 		<animation effect="fade" time="200">WindowOpen</animation>
