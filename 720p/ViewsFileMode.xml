@@ -1141,8 +1141,8 @@
 					<info>ListItem.Label</info>
 				</control>
 				<control type="image">
-					<posx>280</posx>
-					<posy>195</posy>
+					<posx>160</posx>
+					<posy>125</posy>
 					<width>35</width>
 					<height>35</height>
 					<aspectratio>keep</aspectratio>
@@ -1179,8 +1179,8 @@
 					<info>ListItem.Label</info>
 				</control>
 				<control type="image">
-					<posx>280</posx>
-					<posy>195</posy>
+					<posx>160</posx>
+					<posy>125</posy>
 					<width>35</width>
 					<height>35</height>
 					<aspectratio>keep</aspectratio>
@@ -1330,8 +1330,8 @@
 					<info>ListItem.Label</info>
 				</control>
 				<control type="image">
-					<posx>280</posx>
-					<posy>195</posy>
+					<posx>160</posx>
+					<posy>125</posy>
 					<width>35</width>
 					<height>35</height>
 					<aspectratio>keep</aspectratio>
@@ -1368,8 +1368,8 @@
 					<info>ListItem.Label</info>
 				</control>
 				<control type="image">
-					<posx>280</posx>
-					<posy>195</posy>
+					<posx>160</posx>
+					<posy>125</posy>
 					<width>35</width>
 					<height>35</height>
 					<aspectratio>keep</aspectratio>
