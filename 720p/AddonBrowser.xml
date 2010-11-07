@@ -5,6 +5,7 @@
 	<controls>
 		<include>CommonBackground</include>
 		<control type="group">
+			<include>ViewVisibleEffect</include>
 			<include>CommonLower_Info</include>
 			<include>CommonRootView_Addons</include> <!-- view id = 550 -->
 			<include>CommonRootView_Info_Addons</include> <!-- view id = 551 -->

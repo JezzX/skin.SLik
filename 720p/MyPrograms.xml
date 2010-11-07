@@ -5,6 +5,7 @@
 	<controls>
 		<include>CommonBackground</include>
 		<control type="group">
+			<include>ViewVisibleEffect</include>
 			<include>CommonLower_Info</include>
 			<include>CommonRootView2</include> <!-- view id = 50 -->
 			<include>ThumbnailView</include> <!-- view id = 53 -->

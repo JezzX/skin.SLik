@@ -4,6 +4,7 @@
 	<controls>
 		<include>CommonBackground</include>
 		<control type="group">
+			<include>ViewVisibleEffect</include>
 			<include>CommonRootView</include>
 			<include>ScrollOffsetLabel</include>
 		</control>

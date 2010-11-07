@@ -58,7 +58,7 @@
 			<label>$INFO[Container(2).ListItem.Label2,[COLOR=blue]$LOCALIZE[31047] : [/COLOR]]</label>
 		</control>
 		<control type="panel" id="2">
-			<visible>![Window.IsVisible(VideoLibrary) + Container.Content(TVShows)]</visible>
+			<include>ViewVisibleEffect</include>
 			<posx>40</posx>
 			<posy>60</posy>
 			<width>1200</width>
