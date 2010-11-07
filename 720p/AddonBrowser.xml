@@ -28,7 +28,7 @@
 					<label>-</label>
 					<onleft>9001</onleft>
 					<onright>550</onright>
-					<onup>5</onup>
+					<onup>6</onup>
 					<ondown>3</ondown>
 				</control>
 				<control type="image">
@@ -93,6 +93,17 @@
 					<onleft>9001</onleft>
 					<onright>550</onright>
 					<onup>3</onup>
+					<ondown>6</ondown>
+				</control>
+				<control type="radiobutton" id ="6">
+					<description>No notifications</description>
+					<posx>0</posx>
+					<posy>130</posy>
+					<include>ButtonCommonValues</include>
+					<label>25000</label>
+					<onleft>9001</onleft>
+					<onright>550</onright>
+					<onup>5</onup>
 					<ondown>2</ondown>
 				</control>
 			</control>
