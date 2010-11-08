@@ -23,7 +23,8 @@
 	 	<font>
 			<name>font18</name>
 			<filename>arial.ttf</filename>
-			<size>22</size>
+			<size>21</size>
+			<style>bold</style>
 		</font>
 	 	<font>
 			<name>font20</name>

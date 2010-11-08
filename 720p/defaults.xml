@@ -25,7 +25,7 @@
 		<height>42</height>
 		<texturefocus>button-focus.png</texturefocus>
 		<texturenofocus>button-nofocus.png</texturenofocus>
-		<font>font13</font>
+		<font>font12</font>
 		<textcolor>white</textcolor>
 		<disabledcolor>grey3</disabledcolor>
 		<textoffsetx>7</textoffsetx>
@@ -127,7 +127,7 @@
 		<texturefocus>button-focus.png</texturefocus>
 		<texturenofocus>button-nofocus.png</texturenofocus>
 		<label>215</label>
-		<font>font13</font>
+		<font>font12</font>
 		<textcolor>white</textcolor>
 		<disabledcolor>grey3</disabledcolor>
 		<textoffsetx>7</textoffsetx>
@@ -191,7 +191,7 @@
 		<height>42</height>
 		<texturefocus>button-focus.png</texturefocus>
 		<texturenofocus>button-nofocus.png</texturenofocus>
-		<font>font13</font>
+		<font>font12</font>
 		<textcolor>white</textcolor>
 		<disabledcolor>grey3</disabledcolor>
 		<textoffsetx>7</textoffsetx>
