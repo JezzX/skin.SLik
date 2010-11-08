@@ -859,5 +859,6 @@
 			<label>$LOCALIZE[206] - $LOCALIZE[31024] [B]($INFO[Container(50).CurrentPage]/$INFO[Container(50).NumPages])[/B]</label>
 			<visible>Control.IsVisible(50)</visible>
 		</control>
+		<include>BehindDialogFadeOut</include>
 	</controls>
 </window>
