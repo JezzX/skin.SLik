@@ -2,15 +2,15 @@
 <strings>
   <string id="31000">Muted</string>
   <string id="31001">Working</string>
-  <string id="31002">Up One Level</string>
-  <string id="31003">Previous Window</string>
+  <string id="31002"></string>
+  <string id="31003"></string>
   <string id="31004">Home</string>
   <string id="31005">Memory Used:</string>
   <string id="31006">End Time:</string>
   <string id="31007">Recently Added Movies</string>
   <string id="31008">Recently Added Episodes</string>
   <string id="31009">Recently Added</string>
-  <string id="31010">FANART[CR]IMAGE[CR]NOT[CR]AVAILABLE</string>
+  <string id="31010"></string>
   <string id="31011">Last Updated</string>
   <string id="31012">Currently</string>
   <string id="31013">Vis Settings</string>
@@ -32,28 +32,29 @@
   <string id="31027"></string>
   <string id="31028">DVD thumbs</string>
   <string id="31029">DVD list</string>
-  <string id="31030">Fanart</string>
+  <string id="31030"></string>
   <string id="31031">Info list</string>
   <string id="31032">Info Thumbs</string>
   <string id="31033">Picture thumbs</string>
   <string id="31034">Wide icons</string>
   <string id="31035">Info Wide</string>
 
-  <string id="31040">Current movie[CR]Fanart image[CR][CR]Click to change</string>
-  <string id="31041">Current TV show[CR]Fanart image[CR][CR]Click to change</string>
+  <string id="31040"></string>
+  <string id="31041"></string>
   <string id="31042">PLAYING</string>
   <string id="31043">PAUSED</string>
   <string id="31044">FAST FORWARD</string>
   <string id="31045">REWIND</string>
   <string id="31046"></string>
   <string id="31047">Last logged in</string>
-  <string id="31048">Current artist[CR]Fanart image[CR][CR]Click to change</string>
+  <string id="31048"></string>
 
   <string id="31050"></string>
   <string id="31051"></string>
   <string id="31052"></string>
 
   <!-- Playlist Editor labels -->
+  <string id="31054">The playlist is currently empty.[CR][CR]Use the context menu to[CR]add items to the playlist</string>
   <string id="31055">Open playlist</string>
   <string id="31056">Save playlist</string>
   <string id="31057">Close playlist</string>
