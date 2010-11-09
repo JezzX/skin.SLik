@@ -171,7 +171,7 @@
 					<width>246</width>
 					<height>300</height>
 					<align>top</align>
-					<onleft>9002</onleft>
+					<onleft>9000</onleft>
 					<onright>9001</onright>
 					<onup>603</onup>
 					<ondown>9000</ondown>
@@ -445,8 +445,8 @@
 						<height>225</height>
 						<onleft>9010</onleft>
 						<onright>9002</onright>
-						<onup>9001</onup>
-						<ondown>9001</ondown>
+						<onup>9000</onup>
+						<ondown>9000</ondown>
 						<viewtype label="31028">list</viewtype>
 						<pagecontrol>-</pagecontrol>
 						<scrolltime>200</scrolltime>
@@ -540,9 +540,9 @@
 						<width>742</width>
 						<height>245</height>
 						<onleft>9001</onleft>
-						<onright>9010</onright>
-						<onup>9001</onup>
-						<ondown>9001</ondown>
+						<onright>9000</onright>
+						<onup>9000</onup>
+						<ondown>9000</ondown>
 						<viewtype label="31028">list</viewtype>
 						<pagecontrol>-</pagecontrol>
 						<scrolltime>200</scrolltime>
