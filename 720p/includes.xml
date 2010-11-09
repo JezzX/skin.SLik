@@ -821,7 +821,7 @@
 	<include name="ButtonHomeSubCommonValues">
 		<height>37</height>
 		<width>246</width>
-		<textcolor>white</textcolor>
+		<textcolor>grey2</textcolor>
 		<focusedcolor>white</focusedcolor>
 		<align>center</align>
 		<aligny>center</aligny>
