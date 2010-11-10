@@ -185,7 +185,7 @@
 			<onright>60</onright>
 			<onup>551</onup>
 			<ondown>551</ondown>
-			<viewtype label="31031">list</viewtype>
+			<viewtype label="31302">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<preloaditems>3</preloaditems>

@@ -454,7 +454,7 @@
 			<onright>60</onright>
 			<onup>51</onup>
 			<ondown>51</ondown>
-			<viewtype label="31031">list</viewtype>
+			<viewtype label="31302">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<preloaditems>3</preloaditems>
@@ -1296,7 +1296,7 @@
 			<onright>60</onright>
 			<onup>54</onup>
 			<ondown>54</ondown>
-			<viewtype label="31032">list</viewtype>
+			<viewtype label="31301">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
@@ -1406,7 +1406,7 @@
 			<onright>60</onright>
 			<onup>55</onup>
 			<ondown>55</ondown>
-			<viewtype label="31034">list</viewtype>
+			<viewtype label="31303">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>

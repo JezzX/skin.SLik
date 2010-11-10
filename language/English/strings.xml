@@ -27,31 +27,13 @@
   <string id="31024">Page</string>
   <string id="31025">Items</string>
 
-  <!-- Media Window View Type labels -->
-  <string id="31026"></string>
-  <string id="31027"></string>
-  <string id="31028">DVD thumbs</string>
-  <string id="31029">DVD list</string>
-  <string id="31030"></string>
-  <string id="31031">Info list</string>
-  <string id="31032">Info Thumbs</string>
-  <string id="31033">Picture thumbs</string>
-  <string id="31034">Wide icons</string>
-  <string id="31035">Info Wide</string>
 
-  <string id="31040"></string>
-  <string id="31041"></string>
   <string id="31042">PLAYING</string>
   <string id="31043">PAUSED</string>
   <string id="31044">FAST FORWARD</string>
   <string id="31045">REWIND</string>
   <string id="31046"></string>
   <string id="31047">Last logged in</string>
-  <string id="31048"></string>
-
-  <string id="31050"></string>
-  <string id="31051"></string>
-  <string id="31052"></string>
 
   <!-- Playlist Editor labels -->
   <string id="31054">The playlist is currently empty.[CR][CR]Use the context menu to[CR]add items to the playlist</string>
@@ -82,9 +64,16 @@
   <string id="31133">Playlist Label</string>
   <string id="31134">Playlist Path</string>
 
+  <!-- Media Window View Type labels -->
+  <string id="31300">DVD thumbs</string>
+  <string id="31301">Info Thumbs</string>
+  <string id="31302">Info list</string>
+  <string id="31303">Info Wide</string>
+  <string id="31304">Wide icons</string>
+  <string id="31305">Posters</string>
 
-
-    <!-- Settings Description Labels  -->
+  
+  <!-- Settings Description Labels  -->
   <string id="31400">[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR]Change the skin · Set language and region · Change file listing options[CR]Set up a screensaver</string>
   <string id="31401">[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR]Manage your video library · Set video playback options · Change video listing options[CR]Set subtitle fonts</string>
   <string id="31402">[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR]Manage your music library · Set music playback options · Change music listing options[CR]Setup song submission · Set karaoke options</string>
@@ -96,5 +85,6 @@
   <string id="31408">[B]CONFIGURE ADD-ONS[/B][CR][CR]Manage your installed Add-ons · Browse for and install Add-ons from xbmc.org[CR]Modify Add-on settings</string>
   <string id="31409">[B]FILEMANAGER[/B][CR][CR]Manage your system files · Copy, Move, Rename, Delete files and folders on your system[CR]Orginize your Hard Drive</string>
 
+  <!-- To be removed when XBMC Eden version starts coming out  -->
   <string id="31500">Power Off System</string>
  </strings>

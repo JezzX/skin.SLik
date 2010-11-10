@@ -67,7 +67,7 @@
 			<onright>60</onright>
 			<onup>2</onup>
 			<ondown>2</ondown>
-			<viewtype label="31032">list</viewtype>
+			<viewtype label="31301">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
