@@ -579,10 +579,10 @@
 								<posy>193</posy>
 								<height>20</height>
 								<width>240</width>
-								<label>[UPPERCASE]$INFO[ListItem.ActualIcon][/UPPERCASE]</label>
+								<label>$INFO[ListItem.ActualIcon]</label>
 								<align>center</align>
 								<aligny>center</aligny>
-								<font>font11</font>
+								<font>font10</font>
 								<textcolor>grey2</textcolor>
 								<shadowcolor>black</shadowcolor>
 							</control>
@@ -639,10 +639,10 @@
 								<posy>193</posy>
 								<height>20</height>
 								<width>240</width>
-								<label>[UPPERCASE]$INFO[ListItem.ActualIcon][/UPPERCASE]</label>
+								<label>$INFO[ListItem.ActualIcon]</label>
 								<align>center</align>
 								<aligny>center</aligny>
-								<font>font11</font>
+								<font>font10</font>
 								<textcolor>grey2</textcolor>
 								<shadowcolor>black</shadowcolor>
 							</control>
@@ -663,21 +663,21 @@
 								<label>$INFO[Window.Property(LatestEpisode.1.EpisodeTitle)]</label>
 								<label2>$INFO[Window.Property(LatestEpisode.1.ShowTitle)]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.1.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestEpisode.1.EpisodeNo)]</icon>
+								<icon>$LOCALIZE[20373] $INFO[Window.Property(LatestEpisode.1.EpisodeSeason)] $LOCALIZE[20359] $INFO[Window.Property(LatestEpisode.1.EpisodeNumber)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.1.Thumb)]</thumb>
 							</item>
 							<item id="2">
 								<label>$INFO[Window.Property(LatestEpisode.2.EpisodeTitle)]</label>
 								<label2>$INFO[Window.Property(LatestEpisode.2.ShowTitle)]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.2.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestEpisode.2.EpisodeNo)]</icon>
+								<icon>$LOCALIZE[20373] $INFO[Window.Property(LatestEpisode.2.EpisodeSeason)] $LOCALIZE[20359] $INFO[Window.Property(LatestEpisode.2.EpisodeNumber)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.2.Thumb)]</thumb>
 							</item>
 							<item id="3">
 								<label>$INFO[Window.Property(LatestEpisode.3.EpisodeTitle)]</label>
 								<label2>$INFO[Window.Property(LatestEpisode.3.ShowTitle)]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.3.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestEpisode.3.EpisodeNo)]</icon>
+								<icon>$LOCALIZE[20373] $INFO[Window.Property(LatestEpisode.3.EpisodeSeason)] $LOCALIZE[20359] $INFO[Window.Property(LatestEpisode.3.EpisodeNumber)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.3.Thumb)]</thumb>
 							</item>
 						</content>

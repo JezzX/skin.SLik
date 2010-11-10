@@ -6,7 +6,7 @@
   provider-name="Jezz_X">
   <requires>
     <import addon="xbmc.gui" version="2.11"/>
-    <import addon="script.recentlyadded" version="1.0.4"/>
+    <import addon="script.recentlyadded" version="1.0.9"/>
   </requires>
   <extension
     point="xbmc.gui.skin"
