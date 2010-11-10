@@ -15,24 +15,25 @@
 			<height>660</height>
 			<texture border="40">DialogBack.png</texture>
 		</control>
+		<control type="image">
+			<description>Heading Background</description>
+			<posx>30</posx>
+			<posy>35</posy>
+			<width>740</width>
+			<height>40</height>
+			<texture border="5">ThumbFO.png</texture>
+		</control>
 		<control type="label" id="1">
 			<description>heading label</description>
 			<posx>40</posx>
-			<posy>40</posy>
+			<posy>35</posy>
 			<width>720</width>
-			<height>30</height>
+			<height>40</height>
 			<align>center</align>
 			<aligny>center</aligny>
 			<font>font18</font>
 			<label>20333</label>
-			<textcolor>dialogheader</textcolor>
-		</control>
-		<control type="image">
-			<posx>40</posx>
-			<posy>78</posy>
-			<width>720</width>
-			<height>2</height>
-			<texture>separator.png</texture>
+			<textcolor>black</textcolor>
 		</control>
 		<control type="spincontrolex" id="3">
 			<description>Content Picker</description>
@@ -53,9 +54,9 @@
 		</control>
 		<control type="image">
 			<description>scraper image</description>
-			<posx>450</posx>
+			<posx>560</posx>
 			<posy>125</posy>
-			<width>310</width>
+			<width>200</width>
 			<height>200</height>
 			<aspectratio>keep</aspectratio>
 			<info>ListItem.Icon</info>
@@ -64,7 +65,7 @@
 		<control type="list" id="4">
 			<posx>40</posx>
 			<posy>125</posy>
-			<width>400</width>
+			<width>510</width>
 			<height>200</height>
 			<onup>3</onup>
 			<onleft>5</onleft>
@@ -76,7 +77,7 @@
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>400</width>
+					<width>510</width>
 					<height>35</height>
 					<texture border="5">button-nofocus.png</texture>
 				</control>
@@ -90,7 +91,7 @@
 				<control type="label">
 					<posx>50</posx>
 					<posy>0</posy>
-					<width>340</width>
+					<width>450</width>
 					<height>35</height>
 					<font>font12</font>
 					<align>left</align>
@@ -104,7 +105,7 @@
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>400</width>
+					<width>510</width>
 					<height>35</height>
 					<visible>!Control.HasFocus(4)</visible>
 					<texture border="5">button-nofocus.png</texture>
@@ -112,7 +113,7 @@
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>400</width>
+					<width>510</width>
 					<height>35</height>
 					<visible>Control.HasFocus(4)</visible>
 					<texture border="5">button-focus.png</texture>
@@ -127,7 +128,7 @@
 				<control type="label">
 					<posx>50</posx>
 					<posy>0</posy>
-					<width>340</width>
+					<width>450</width>
 					<height>35</height>
 					<font>font12</font>
 					<align>left</align>

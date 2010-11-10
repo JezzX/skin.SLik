@@ -4,7 +4,7 @@
 	<coordinates>
 		<system>1</system>
 		<posx>240</posx>
-		<posy>232</posy>
+		<posy>212</posy>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
@@ -16,24 +16,25 @@
 			<height>295</height>
 			<texture border="40">DialogBack.png</texture>
 		</control>
+		<control type="image">
+			<description>Heading Background</description>
+			<posx>30</posx>
+			<posy>35</posy>
+			<width>740</width>
+			<height>40</height>
+			<texture border="5">ThumbFO.png</texture>
+		</control>
 		<control type="label">
 			<description>heading label</description>
 			<posx>40</posx>
-			<posy>40</posy>
+			<posy>35</posy>
 			<width>720</width>
-			<height>30</height>
+			<height>40</height>
 			<align>center</align>
 			<aligny>center</aligny>
 			<font>font18</font>
 			<label>21421</label>
-			<textcolor>dialogheader</textcolor>
-		</control>
-		<control type="image">
-			<posx>40</posx>
-			<posy>78</posy>
-			<width>720</width>
-			<height>2</height>
-			<texture>separator.png</texture>
+			<textcolor>black</textcolor>
 		</control>
 		<control type="label" id="0">
 			<description>Rule match label</description>

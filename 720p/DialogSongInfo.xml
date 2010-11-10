@@ -15,24 +15,25 @@
 			<height>520</height>
 			<texture border="40">DialogBack.png</texture>
 		</control>
+		<control type="image">
+			<description>Heading Background</description>
+			<posx>30</posx>
+			<posy>35</posy>
+			<width>840</width>
+			<height>40</height>
+			<texture border="5">ThumbFO.png</texture>
+		</control>
 		<control type="label">
 			<description>heading label</description>
 			<posx>40</posx>
-			<posy>40</posy>
+			<posy>35</posy>
 			<width>820</width>
-			<height>30</height>
+			<height>40</height>
 			<align>center</align>
 			<aligny>center</aligny>
 			<font>font18</font>
 			<label>$LOCALIZE[658]</label>
-			<textcolor>dialogheader</textcolor>
-		</control>
-		<control type="image">
-			<posx>40</posx>
-			<posy>79</posy>
-			<width>820</width>
-			<height>4</height>
-			<texture>separator.png</texture>
+			<textcolor>black</textcolor>
 		</control>
 		<control type="label">
 			<description>Song Title value</description>
@@ -46,66 +47,23 @@
 			<info>ListItem.Title</info>
 			<textcolor>blue</textcolor>
 		</control>
-		<control type="grouplist">
+		<control type="image">
 			<posx>50</posx>
 			<posy>140</posy>
 			<width>200</width>
-			<height>280</height>
-			<usecontrolcoords>true</usecontrolcoords>
-			<control type="group">
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>200</width>
-					<height>200</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture>$INFO[ListItem.Icon]</texture>
-				</control>
-			</control>
-		</control>
-		<control type="image">
-			<description>Rating value</description>
-			<posx>50</posx>
-			<posy>360</posy>
-			<width>160</width>
-			<height>32</height>
-			<info>ListItem.StarRating</info>
-		</control>
-		<control type="button" id="14">
-			<description>Decrease Rating</description>
-			<posx>220</posx>
-			<posy>370</posy>
-			<width>33</width>
-			<height>22</height>
-			<onclick>DecreaseRating</onclick>
-			<texturenofocus>scroll-down-2.png</texturenofocus>
-			<texturefocus>scroll-down-focus-2.png</texturefocus>
-			<onleft>15</onleft>
-			<onright>15</onright>
-			<ondown>10</ondown>
-			<onup>10</onup>
-		</control>
-		<control type="button" id="15">
-			<description>Increase Rating</description>
-			<posx>253</posx>
-			<posy>370</posy>
-			<width>33</width>
-			<height>22</height>
-			<onclick>IncreaseRating</onclick>
-			<texturenofocus>scroll-up-2.png</texturenofocus>
-			<texturefocus>scroll-up-focus-2.png</texturefocus>
-			<onleft>14</onleft>
-			<onright>14</onright>
-			<ondown>10</ondown>
-			<onup>10</onup>
+			<height>200</height>
+			<aspectratio aligny="bottom">keep</aspectratio>
+			<texture>$INFO[ListItem.Icon]</texture>
+			<bordertexture border="5">white-back.png</bordertexture>
+			<bordersize>1</bordersize>
 		</control>
 		<control type="label">
 			<description>Artist Title</description>
-			<posx>270</posx>
+			<posx>380</posx>
 			<posy>140</posy>
 			<width>110</width>
 			<height>25</height>
-			<align>left</align>
+			<align>right</align>
 			<aligny>center</aligny>
 			<font>font12</font>
 			<textcolor>grey2</textcolor>
@@ -125,11 +83,11 @@
 		</control>
 		<control type="label">
 			<description>Album Title</description>
-			<posx>270</posx>
+			<posx>380</posx>
 			<posy>170</posy>
 			<width>110</width>
 			<height>25</height>
-			<align>left</align>
+			<align>right</align>
 			<aligny>center</aligny>
 			<font>font12</font>
 			<textcolor>grey2</textcolor>
@@ -149,11 +107,11 @@
 		</control>
 		<control type="label">
 			<description>Genre Title</description>
-			<posx>270</posx>
+			<posx>380</posx>
 			<posy>200</posy>
 			<width>110</width>
 			<height>25</height>
-			<align>left</align>
+			<align>right</align>
 			<aligny>center</aligny>
 			<font>font12</font>
 			<textcolor>grey2</textcolor>
@@ -173,11 +131,11 @@
 		</control>
 		<control type="label">
 			<description>Year Title</description>
-			<posx>270</posx>
+			<posx>380</posx>
 			<posy>230</posy>
 			<width>110</width>
 			<height>25</height>
-			<align>left</align>
+			<align>right</align>
 			<aligny>center</aligny>
 			<font>font12</font>
 			<textcolor>grey2</textcolor>
@@ -197,11 +155,11 @@
 		</control>
 		<control type="label">
 			<description>Track Number Title</description>
-			<posx>270</posx>
+			<posx>380</posx>
 			<posy>260</posy>
 			<width>110</width>
 			<height>25</height>
-			<align>left</align>
+			<align>right</align>
 			<aligny>center</aligny>
 			<font>font12</font>
 			<textcolor>grey2</textcolor>
@@ -221,35 +179,63 @@
 		</control>
 		<control type="label">
 			<description>Rating Title</description>
-			<posx>270</posx>
+			<posx>380</posx>
 			<posy>290</posy>
 			<width>110</width>
 			<height>25</height>
-			<align>left</align>
+			<align>right</align>
 			<aligny>center</aligny>
 			<font>font12</font>
 			<textcolor>grey2</textcolor>
 			<label>$LOCALIZE[563]:</label>
 		</control>
-		<control type="fadelabel">
-			<description>Rating Value</description>
+		<control type="group">
 			<posx>390</posx>
 			<posy>290</posy>
-			<width>480</width>
-			<height>25</height>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>font12</font>
-			<textcolor>white</textcolor>
-			<label fallback="161">$INFO[ListItem.Rating]</label>
+			<control type="image">
+				<description>Rating value</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>160</width>
+				<height>32</height>
+				<texture>light/left_rating/$INFO[ListItem.StarRating]</texture>
+			</control>
+			<control type="button" id="14">
+				<description>Decrease Rating</description>
+				<posx>170</posx>
+				<posy>5</posy>
+				<width>33</width>
+				<height>22</height>
+				<onclick>DecreaseRating</onclick>
+				<texturenofocus>scroll-down-2.png</texturenofocus>
+				<texturefocus>scroll-down-focus-2.png</texturefocus>
+				<onleft>15</onleft>
+				<onright>15</onright>
+				<ondown>10</ondown>
+				<onup>10</onup>
+			</control>
+			<control type="button" id="15">
+				<description>Increase Rating</description>
+				<posx>203</posx>
+				<posy>5</posy>
+				<width>33</width>
+				<height>22</height>
+				<onclick>IncreaseRating</onclick>
+				<texturenofocus>scroll-up-2.png</texturenofocus>
+				<texturefocus>scroll-up-focus-2.png</texturefocus>
+				<onleft>14</onleft>
+				<onright>14</onright>
+				<ondown>10</ondown>
+				<onup>10</onup>
+			</control>
 		</control>
 		<control type="label">
 			<description>Comment Title</description>
-			<posx>270</posx>
+			<posx>380</posx>
 			<posy>320</posy>
 			<width>110</width>
 			<height>25</height>
-			<align>left</align>
+			<align>right</align>
 			<aligny>center</aligny>
 			<font>font12</font>
 			<textcolor>grey2</textcolor>
@@ -269,9 +255,8 @@
 			<posx>40</posx>
 			<posy>440</posy>
 			<width>200</width>
-			<height>32</height>
+			<height>35</height>
 			<label>13405</label>
-			<font>font12</font>
 			<align>center</align>
 			<texturenofocus border="3">button-nofocus.png</texturenofocus>
 			<texturefocus border="3">button-focus2.png</texturefocus>
@@ -285,9 +270,8 @@
 			<posx>245</posx>
 			<posy>440</posy>
 			<width>200</width>
-			<height>32</height>
+			<height>35</height>
 			<label>10523</label>
-			<font>font12</font>
 			<align>center</align>
 			<texturenofocus border="3">button-nofocus.png</texturenofocus>
 			<texturefocus border="3">button-focus2.png</texturefocus>
@@ -301,9 +285,8 @@
 			<posx>455</posx>
 			<posy>440</posy>
 			<width>200</width>
-			<height>32</height>
+			<height>35</height>
 			<label>186</label>
-			<font>font13</font>
 			<align>center</align>
 			<texturenofocus border="3">button-nofocus.png</texturenofocus>
 			<texturefocus border="3">button-focus2.png</texturefocus>
@@ -317,9 +300,8 @@
 			<posx>660</posx>
 			<posy>440</posy>
 			<width>200</width>
-			<height>32</height>
+			<height>35</height>
 			<label>222</label>
-			<font>font13</font>
 			<align>center</align>
 			<texturenofocus border="3">button-nofocus.png</texturenofocus>
 			<texturefocus border="3">button-focus2.png</texturefocus>

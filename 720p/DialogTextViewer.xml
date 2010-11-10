@@ -9,23 +9,24 @@
 			<height>720</height>
 			<texture border="40">DialogBack.png</texture>
 		</control>
+		<control type="image">
+			<description>Heading Background</description>
+			<posx>30</posx>
+			<posy>35</posy>
+			<width>1220</width>
+			<height>40</height>
+			<texture border="5">ThumbFO.png</texture>
+		</control>
 		<control type="label" id="1">
 			<description>Item Title value</description>
 			<posx>40</posx>
-			<posy>45</posy>
+			<posy>35</posy>
 			<width>1200</width>
-			<height>30</height>
+			<height>40</height>
 			<align>center</align>
 			<aligny>center</aligny>
-			<textcolor>dialogheader</textcolor>
+			<textcolor>black</textcolor>
 			<font>font18</font>
-		</control>
-		<control type="image">
-			<posx>40</posx>
-			<posy>84</posy>
-			<width>1200</width>
-			<height>2</height>
-			<texture>separator.png</texture>
 		</control>
 		<control type="textbox" id="5">
 			<description>textarea</description>

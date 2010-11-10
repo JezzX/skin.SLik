@@ -290,7 +290,7 @@
 				<height>30</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font12b</font>
+				<font>font12</font>
 				<label>($INFO[Container(450).NumItems]) $LOCALIZE[31025] - $LOCALIZE[31024] ($INFO[Container(450).CurrentPage]/$INFO[Container(450).NumPages])</label>
 				<visible>!Control.IsVisible(451)</visible>
 			</control>
@@ -302,7 +302,7 @@
 				<height>30</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font12b</font>
+				<font>font12</font>
 				<label>($INFO[Container(451).NumItems]) $LOCALIZE[31025] - $LOCALIZE[31024] ($INFO[Container(451).CurrentPage]/$INFO[Container(451).NumPages])</label>
 				<visible>Control.IsVisible(451)</visible>
 			</control>

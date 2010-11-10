@@ -18,24 +18,25 @@
 				<height>660</height>
 				<texture border="40">DialogBack.png</texture>
 			</control>
+			<control type="image">
+				<description>Heading Background</description>
+				<posx>30</posx>
+				<posy>35</posy>
+				<width>890</width>
+				<height>40</height>
+				<texture border="5">ThumbFO.png</texture>
+			</control>
 			<control type="label">
 				<description>heading label</description>
 				<posx>40</posx>
-				<posy>40</posy>
+				<posy>35</posy>
 				<width>870</width>
-				<height>30</height>
+				<height>40</height>
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font18</font>
 				<label>$LOCALIZE[24003]</label>
-				<textcolor>dialogheader</textcolor>
-			</control>
-			<control type="image">
-				<posx>40</posx>
-				<posy>79</posy>
-				<width>870</width>
-				<height>4</height>
-				<texture>separator.png</texture>
+				<textcolor>black</textcolor>
 			</control>
 			<control type="label">
 				<description>Addon Title value</description>
@@ -54,12 +55,12 @@
 				<posy>130</posy>
 				<control type="label">
 					<description>Type txt</description>
-					<posx>0</posx>
+					<posx>140</posx>
 					<posy>0</posy>
 					<width>140</width>
 					<height>25</height>
 					<label>$LOCALIZE[146]</label>
-					<align>left</align>
+					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12</font>
 					<textcolor>grey2</textcolor>
@@ -78,12 +79,12 @@
 				</control>
 				<control type="label">
 					<description>Author txt</description>
-					<posx>0</posx>
+					<posx>140</posx>
 					<posy>30</posy>
 					<width>140</width>
 					<height>25</height>
 					<label>$LOCALIZE[21863]:</label>
-					<align>left</align>
+					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12</font>
 					<textcolor>grey2</textcolor>
@@ -102,12 +103,12 @@
 				</control>
 				<control type="label">
 					<description>Version txt</description>
-					<posx>0</posx>
+					<posx>140</posx>
 					<posy>60</posy>
 					<width>140</width>
 					<height>25</height>
 					<label>$LOCALIZE[24051]</label>
-					<align>left</align>
+					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12</font>
 					<textcolor>grey2</textcolor>
@@ -126,12 +127,12 @@
 				</control>
 				<control type="label">
 					<description>Rating txt</description>
-					<posx>0</posx>
+					<posx>140</posx>
 					<posy>90</posy>
 					<width>140</width>
 					<height>25</height>
 					<label>$LOCALIZE[563]:</label>
-					<align>left</align>
+					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12</font>
 					<textcolor>grey2</textcolor>
@@ -140,18 +141,18 @@
 					<description>Rating value</description>
 					<posx>155</posx>
 					<posy>90</posy>
-					<width>125</width>
-					<height>25</height>
-					<texture>$INFO[ListItem.Property(Addon.StarRating)]</texture>
+					<width>150</width>
+					<height>30</height>
+					<texture>light/left_rating/$INFO[ListItem.Property(Addon.StarRating)]</texture>
 				</control>
 				<control type="label">
 					<description>Summary txt</description>
-					<posx>0</posx>
+					<posx>140</posx>
 					<posy>120</posy>
 					<width>140</width>
 					<height>25</height>
 					<label>$LOCALIZE[20037]:</label>
-					<align>left</align>
+					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12</font>
 					<textcolor>grey2</textcolor>
@@ -420,6 +421,8 @@
 					<height>230</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Icon]</texture>
+					<bordertexture border="5">white-back.png</bordertexture>
+					<bordersize>1</bordersize>
 				</control>
 			</control>
 		</control>
