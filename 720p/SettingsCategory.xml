@@ -46,6 +46,14 @@
 			<posx>40</posx>
 			<posy>45</posy>
 			<control type="image">
+				<description>shadow border</description>
+				<posx>-8</posx>
+				<posy>17</posy>
+				<width>306</width>
+				<height>431</height>
+				<texture border="10">border-shadow.png</texture>
+			</control>
+			<control type="image">
 				<description>Down Arrow</description>
 				<posx>30</posx>
 				<posy>0</posy>

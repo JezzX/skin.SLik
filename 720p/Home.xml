@@ -66,6 +66,14 @@
 				</animation>
 				<include>Window_OpenClose_Animation</include>
 				<control type="image">
+					<description>shadow border</description>
+					<posx>-8</posx>
+					<posy>-8</posy>
+					<width>272</width>
+					<height>326</height>
+					<texture border="10">border-shadow.png</texture>
+				</control>
+				<control type="image">
 					<description>background image</description>
 					<posx>0</posx>
 					<posy>0</posy>
@@ -395,6 +403,14 @@
 				</animation>
 				<visible>Control.HasFocus(90101) | Control.HasFocus(90102) | Control.HasFocus(9001) | Control.HasFocus(9002)</visible>
 				<control type="image">
+					<description>shadow border</description>
+					<posx>-8</posx>
+					<posy>-8</posy>
+					<width>768</width>
+					<height>326</height>
+					<texture border="10">border-shadow.png</texture>
+				</control>
+				<control type="image">
 					<description>background image</description>
 					<posx>0</posx>
 					<posy>0</posy>
@@ -705,6 +721,14 @@
 				<posy>70</posy>
 				<visible>Container(9000).HasFocus(5)</visible>
 				<control type="image">
+					<description>shadow border</description>
+					<posx>-8</posx>
+					<posy>-8</posy>
+					<width>768</width>
+					<height>326</height>
+					<texture border="10">border-shadow.png</texture>
+				</control>
+				<control type="image">
 					<description>background image</description>
 					<posx>0</posx>
 					<posy>0</posy>
@@ -1008,6 +1032,14 @@
 				</animation>
 				<posx>0</posx>
 				<posy>405</posy>
+				<control type="image">
+					<description>shadow border</description>
+					<posx>-136</posx>
+					<posy>-8</posy>
+					<width>1424</width>
+					<height>146</height>
+					<texture border="10">border-shadow.png</texture>
+				</control>
 				<control type="wraplist" id="9000">
 					<posx>-128</posx>
 					<posy>0</posy>

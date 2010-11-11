@@ -433,6 +433,14 @@
 				<posy>30</posy>
 				<visible>true</visible>
 				<control type="image">
+					<description>shadow border</description>
+					<posx>-8</posx>
+					<posy>-13</posy>
+					<width>306</width>
+					<height>431</height>
+					<texture border="10">border-shadow.png</texture>
+				</control>
+				<control type="image">
 					<description>background image</description>
 					<posx>0</posx>
 					<posy>-5</posy>
