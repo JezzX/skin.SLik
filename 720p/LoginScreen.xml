@@ -256,10 +256,10 @@
 		</control>
 		<control type="image">
 			<posx>0</posx>
-			<posy>50r</posy>
+			<posy>40r</posy>
 			<width>1280</width>
-			<height>50</height>
-			<texture border="0,3,0,0">Footer.png</texture>
+			<height>40</height>
+			<texture>Footer.png</texture>
 		</control>
 		<include>BehindDialogFadeOut</include>
 	</controls>

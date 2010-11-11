@@ -830,14 +830,14 @@
 		</control>
 		<control type="image">
 			<posx>0</posx>
-			<posy>60r</posy>
+			<posy>50r</posy>
 			<width>1280</width>
-			<height>70</height>
-			<texture border="0,3,0,0">Footer.png</texture>
+			<height>50</height>
+			<texture>Footer.png</texture>
 		</control>
 		<control type="image">
 			<posx>30</posx>
-			<posy>43r</posy>
+			<posy>45r</posy>
 			<width>100</width>
 			<height>40</height>
 			<aspectratio align="left">stretch</aspectratio>
@@ -846,7 +846,7 @@
 		<control type="spincontrolex" id="3">
 			<description>change location button</description>
 			<posx>90</posx>
-			<posy>42r</posy>
+			<posy>44r</posy>
 			<width>30</width>
 			<height>40</height>
 			<font>-</font>
@@ -860,7 +860,7 @@
 		<control type="label">
 			<description>Location label</description>
 			<posx>140</posx>
-			<posy>43r</posy>
+			<posy>45r</posy>
 			<width>800</width>
 			<height>40</height>
 			<font>font13</font>

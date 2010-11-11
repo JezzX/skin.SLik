@@ -27,8 +27,8 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
-			<height>530</height>
-			<aspectratio>scale</aspectratio>
+			<height>720</height>
+			<aspectratio>stretch</aspectratio>
 			<imagepath background="true">$INFO[Container(9000).ListItem.Icon]</imagepath>
 			<timeperimage>7000</timeperimage>
 			<randomize>true</randomize>
@@ -1008,20 +1008,6 @@
 				</animation>
 				<posx>0</posx>
 				<posy>405</posy>
-				<control type="image">
-					<posx>0</posx>
-					<posy>130</posy>
-					<width>512</width>
-					<height>64</height>
-					<texture>HorizontalGlow.png</texture>
-				</control>
-				<control type="image">
-					<posx>512r</posx>
-					<posy>130</posy>
-					<width>512</width>
-					<height>64</height>
-					<texture>HorizontalGlow.png</texture>
-				</control>
 				<control type="wraplist" id="9000">
 					<posx>-128</posx>
 					<posy>0</posy>
@@ -1416,10 +1402,10 @@
 				<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
 				<control type="image">
 					<posx>0</posx>
-					<posy>50r</posy>
+					<posy>40r</posy>
 					<width>1280</width>
-					<height>50</height>
-					<texture border="0,3,0,0">Footer.png</texture>
+					<height>40</height>
+					<texture>Footer.png</texture>
 				</control>
 				<control type="rss">
 					<description>rss feed</description>
