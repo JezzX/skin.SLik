@@ -122,9 +122,9 @@
 					<control type="image">
 						<description>Weather Icon</description>
 						<posx>5</posx>
-						<posy>35</posy>
+						<posy>45</posy>
 						<width>246</width>
-						<height>160</height>
+						<height>140</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[Weather.Conditions]</texture>
 					</control>
@@ -759,9 +759,9 @@
 					<control type="image">
 						<description>Weather Icon</description>
 						<posx>5</posx>
-						<posy>35</posy>
+						<posy>45</posy>
 						<width>246</width>
-						<height>160</height>
+						<height>140</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[Window(Weather).Property(Day1.OutlookIcon)]</texture>
 					</control>
@@ -854,9 +854,9 @@
 					<control type="image">
 						<description>Weather Icon</description>
 						<posx>5</posx>
-						<posy>35</posy>
+						<posy>45</posy>
 						<width>246</width>
-						<height>160</height>
+						<height>140</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[Window(Weather).Property(Day2.OutlookIcon)]</texture>
 					</control>
@@ -949,9 +949,9 @@
 					<control type="image">
 						<description>Weather Icon</description>
 						<posx>5</posx>
-						<posy>35</posy>
+						<posy>45</posy>
 						<width>246</width>
-						<height>160</height>
+						<height>140</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[Window(Weather).Property(Day3.OutlookIcon)]</texture>
 					</control>
