@@ -286,18 +286,18 @@
 		<control type="image">
 			<description>Section back</description>
 			<posx>20</posx>
-			<posy>48r</posy>
-			<width>50</width>
-			<height>45</height>
+			<posy>45r</posy>
+			<width>45</width>
+			<height>40</height>
 			<aspectratio align="left">stretch</aspectratio>
 			<texture border="5">flagging/blank.png</texture>
 		</control>
 		<control type="label">
 			<description>Section Letter</description>
 			<posx>20</posx>
-			<posy>48r</posy>
-			<width>50</width>
-			<height>45</height>
+			<posy>45r</posy>
+			<width>45</width>
+			<height>40</height>
 			<font>font22</font>
 			<textcolor>blue</textcolor>
 			<scroll>false</scroll>
@@ -321,7 +321,7 @@
 		<control type="label" id="101">
 			<description>current directory text label left</description>
 			<posx>80</posx>
-			<posy>53r</posy>
+			<posy>52r</posy>
 			<width>500</width>
 			<height>25</height>
 			<font>font12</font>
@@ -333,19 +333,19 @@
 		</control>
 		<control type="image">
 			<description>Section back</description>
-			<posx>70r</posx>
-			<posy>48r</posy>
-			<width>50</width>
-			<height>45</height>
+			<posx>65r</posx>
+			<posy>45r</posy>
+			<width>45</width>
+			<height>40</height>
 			<aspectratio align="left">stretch</aspectratio>
 			<texture border="5">flagging/blank.png</texture>
 		</control>
 		<control type="label">
 			<description>Section Letter</description>
-			<posx>70r</posx>
-			<posy>48r</posy>
-			<width>50</width>
-			<height>45</height>
+			<posx>65r</posx>
+			<posy>45r</posy>
+			<width>45</width>
+			<height>40</height>
 			<font>font22</font>
 			<textcolor>blue</textcolor>
 			<scroll>false</scroll>
@@ -369,7 +369,7 @@
 		<control type="label" id="102">
 			<description>current directory text label right</description>
 			<posx>80r</posx>
-			<posy>53r</posy>
+			<posy>52r</posy>
 			<width>500</width>
 			<height>25</height>
 			<font>font12</font>
