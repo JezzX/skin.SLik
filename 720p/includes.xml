@@ -867,6 +867,43 @@
 		<texturenofocus border="2">button-nofocus.png</texturenofocus>
 		<pulseonselect>no</pulseonselect>
 	</include>
+	<include name="Common_RSS_Feed">
+		<control type="group">
+			<control type="image">
+				<posx>0</posx>
+				<posy>680</posy>
+				<width>1280</width>
+				<height>40</height>
+				<texture>Footer.png</texture>
+				<animation reversible="false" effect="zoom" start="0,670,1280,50" end="0,680,1280,40" time="200" condition="Window.Previous(VideoFiles) | Window.Previous(VideoLibrary) | Window.Previous(MusicFiles) | Window.Previous(MusicLibrary) | Window.Previous(Pictures) | Window.Previous(Programs) | Window.Previous(FileManager) | Window.Previous(Weather) | Window.Previous(AddonBrowser) | Window.Previous(Profiles)">WindowOpen</animation>
+				<animation reversible="false" effect="zoom" end="0,670,1280,50" start="0,680,1280,40" time="200" condition="Window.Next(VideoFiles) | Window.Next(VideoLibrary) | Window.Next(MusicFiles) | Window.Next(MusicLibrary) | Window.Next(Pictures) | Window.Next(Programs) | Window.Next(FileManager) | Window.Next(Weather) | Window.Next(AddonBrowser) | Window.Next(Profiles)">WindowClose</animation>
+			</control>
+			<control type="group">
+				<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
+				<animation effect="slide" start="0,0" end="150,0" time="200" tween="quadratic" easing="out" condition="Player.HasMedia + Window.IsVisible(Home)">Conditional</animation>
+				<control type="rss">
+					<description>rss feed</description>
+					<posx>65</posx>
+					<posy>32r</posy>
+					<width>1215</width>
+					<font>font11</font>
+					<urlset>1</urlset>
+					<textcolor>black</textcolor>
+					<titlecolor>black</titlecolor>
+					<headlinecolor>black</headlinecolor>
+					<include>Window_OpenClose_Animation</include>
+				</control>
+				<control type="image">
+					<posx>20</posx>
+					<posy>36r</posy>
+					<width>32</width>
+					<height>32</height>
+					<texture border="5">icon_rss.png</texture>
+					<include>Window_OpenClose_Animation</include>
+				</control>
+			</control>
+		</control>
+	</include>
 	<include name="Window_OpenClose_Animation">
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>

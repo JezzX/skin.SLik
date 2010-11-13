@@ -209,13 +209,7 @@
 			<label>$LOCALIZE[5]</label>
 			<include>Window_OpenClose_Animation</include>
 		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>40r</posy>
-			<width>1280</width>
-			<height>40</height>
-			<texture>Footer.png</texture>
-		</control>
+		<include>Common_RSS_Feed</include>
 		<include>BehindDialogFadeOut</include>
 	</controls>
 </window>

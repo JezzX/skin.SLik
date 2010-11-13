@@ -164,13 +164,6 @@
 			<label>$LOCALIZE[5] - $INFO[Control.GetLabel(2)]</label>
 			<include>Window_OpenClose_Animation</include>
 		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>40r</posy>
-			<width>1280</width>
-			<height>40</height>
-			<texture>Footer.png</texture>
-		</control>
 		<control type="label" id="2">
 			<description>Fake Label so we can pass it value down to the one above</description>
 			<posx>0</posx>
@@ -180,6 +173,7 @@
 			<font>-</font>
 			<visible>false</visible>
 		</control>
+		<include>Common_RSS_Feed</include>
 		<include>BehindDialogFadeOut</include>
 	</controls>
 </window>
