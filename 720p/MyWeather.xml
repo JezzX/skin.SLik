@@ -16,6 +16,14 @@
 				<posx>150</posx>
 				<posy>70</posy>
 				<control type="image">
+					<description>shadow border</description>
+					<posx>-8</posx>
+					<posy>-8</posy>
+					<width>476</width>
+					<height>296</height>
+					<texture border="10">border-shadow.png</texture>
+				</control>
+				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>460</width>
@@ -119,6 +127,14 @@
 			</animation>
 				<posx>150</posx>
 				<posy>360</posy>
+				<control type="image">
+					<description>shadow border</description>
+					<posx>-8</posx>
+					<posy>-8</posy>
+					<width>476</width>
+					<height>296</height>
+					<texture border="10">border-shadow.png</texture>
+				</control>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -271,6 +287,14 @@
 				<posx>620</posx>
 				<posy>70</posy>
 				<control type="image">
+					<description>shadow border</description>
+					<posx>-8</posx>
+					<posy>-8</posy>
+					<width>266</width>
+					<height>296</height>
+					<texture border="10">border-shadow.png</texture>
+				</control>
+				<control type="image">
 					<description>background image</description>
 					<posx>0</posx>
 					<posy>0</posy>
@@ -403,6 +427,14 @@
 				<description>day 1</description>
 				<posx>880</posx>
 				<posy>70</posy>
+				<control type="image">
+					<description>shadow border</description>
+					<posx>-8</posx>
+					<posy>-8</posy>
+					<width>266</width>
+					<height>296</height>
+					<texture border="10">border-shadow.png</texture>
+				</control>
 				<control type="image">
 					<description>background image</description>
 					<posx>0</posx>
@@ -537,6 +569,14 @@
 				<posx>620</posx>
 				<posy>360</posy>
 				<control type="image">
+					<description>shadow border</description>
+					<posx>-8</posx>
+					<posy>-8</posy>
+					<width>266</width>
+					<height>296</height>
+					<texture border="10">border-shadow.png</texture>
+				</control>
+				<control type="image">
 					<description>background image</description>
 					<posx>0</posx>
 					<posy>0</posy>
@@ -661,6 +701,14 @@
 				<description>day 3</description>
 				<posx>880</posx>
 				<posy>360</posy>
+				<control type="image">
+					<description>shadow border</description>
+					<posx>-8</posx>
+					<posy>-8</posy>
+					<width>266</width>
+					<height>296</height>
+					<texture border="10">border-shadow.png</texture>
+				</control>
 				<control type="image">
 					<description>background image</description>
 					<posx>0</posx>
