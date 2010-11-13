@@ -53,8 +53,8 @@
 					<selectedcolor>blue</selectedcolor>
 					<align>right</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label2]</label>
-					<visible>!stringcompare(ListItem.Label2,$LOCALIZE[305])</visible>
+					<label>$INFO[ListItem.Property(Addon.Status)]</label>
+					<visible>!stringcompare(ListItem.Property(Addon.Status),$LOCALIZE[305])</visible>
 				</control>
 				<control type="label">
 					<posx>865</posx>
@@ -124,8 +124,8 @@
 					<selectedcolor>blue2</selectedcolor>
 					<align>right</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label2]</label>
-					<visible>!stringcompare(ListItem.Label2,$LOCALIZE[305])</visible>
+					<label>$INFO[ListItem.Property(Addon.Status)]</label>
+					<visible>!stringcompare(ListItem.Property(Addon.Status),$LOCALIZE[305])</visible>
 				</control>
 				<control type="label">
 					<posx>865</posx>
@@ -228,8 +228,8 @@
 					<selectedcolor>blue</selectedcolor>
 					<align>right</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label2]</label>
-					<visible>!stringcompare(ListItem.Label2,$LOCALIZE[305])</visible>
+					<label>$INFO[ListItem.Property(Addon.Status)]</label>
+					<visible>!stringcompare(ListItem.Property(Addon.Status),$LOCALIZE[305])</visible>
 				</control>
 				<control type="label">
 					<posx>865</posx>
@@ -299,8 +299,8 @@
 					<selectedcolor>blue2</selectedcolor>
 					<align>right</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label2]</label>
-					<visible>!stringcompare(ListItem.Label2,$LOCALIZE[305])</visible>
+					<label>$INFO[ListItem.Property(Addon.Status)]</label>
+					<visible>!stringcompare(ListItem.Property(Addon.Status),$LOCALIZE[305])</visible>
 				</control>
 				<control type="label">
 					<posx>865</posx>
