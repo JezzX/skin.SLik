@@ -1,6 +1,6 @@
 <window id="115">
 	<defaultcontrol>1</defaultcontrol>
-	<visible>true</visible>
+	<visible>Player.HasMedia</visible>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
@@ -17,7 +17,7 @@
 				<width>40</width>
 				<height>35</height>
 				<aspectratio>keep</aspectratio>
-				<texture>icon_music.png</texture>
+				<texture>icon_video.png</texture>
 			</control>
 			<control type="label">
 				<description>Header label</description>
