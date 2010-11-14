@@ -57,7 +57,7 @@
 			<height>40</height>
 			<aspectratio align="right">keep</aspectratio>
 			<texture>flagging/video/bluray.png</texture>
-			<visible>[substring(ListItem.FilenameAndPath,bluray) | substring(ListItem.FilenameAndPath,bdrip)] + !Skin.HasSetting(HideFilenameFlagging)</visible>
+			<visible>[substring(ListItem.FilenameAndPath,bluray) | substring(ListItem.FilenameAndPath,bdrip) | substring(ListItem.FilenameAndPath,brrip)] + !Skin.HasSetting(HideFilenameFlagging)</visible>
 		</control>
 		<control type="image">
 			<description>HDDVD Image</description>
