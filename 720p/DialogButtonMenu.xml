@@ -126,7 +126,8 @@
 				<onright>5</onright>
 				<onup>1</onup>
 				<ondown>1</ondown>
-				<enable>[System.HasLoginScreen + System.Loggedon]</enable>
+				<enable>System.HasLoginScreen</enable>
+				<enable>System.Loggedon</enable>
 			</control>
 			<control type="image">
 				<posx>20</posx>

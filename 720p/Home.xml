@@ -351,18 +351,6 @@
 						<onclick>XBMC.Powerdown()</onclick>
 						<visible>Container(9000).HasFocus(7)</visible>
 					</control>
-					<control type="togglebutton" id="90156">
-						<description>Custom ShutdownTimer button</description>
-						<include>ButtonHomeSubCommonValues</include>
-						<label>20144</label>
-						<altlabel>20151</altlabel>
-						<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
-						<altclick>XBMC.CancelAlarm(shutdowntimer)</altclick>
-						<alttexturefocus border="5">button-focus2.png</alttexturefocus>
-						<alttexturenofocus>-</alttexturenofocus>
-						<visible>Container(9000).HasFocus(7)</visible>
-						<usealttexture>System.HasAlarm(shutdowntimer)</usealttexture>
-					</control>
 					<control type="button" id="90152">
 						<include>ButtonHomeSubCommonValues</include>
 						<label>13013</label>
@@ -388,18 +376,6 @@
 						<visible>Container(9000).HasFocus(7)</visible>
 						<visible>System.HasLoginScreen</visible>
 						<visible>System.Loggedon</visible>
-					</control>
-					<control type="label" id="90157">
-						<description>Custom ShutdownTimer countdown label</description>
-						<height>70</height>
-						<width>240</width>
-						<label>$LOCALIZE[31026] [B]$INFO[System.Alarmpos][/B]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font11</font>
-						<textcolor>blue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<visible>Container(9000).HasFocus(7) + System.HasAlarm(shutdowntimer)</visible>
 					</control>
 					<!-- Start or buttons Used for the main Optical Media button -->
 					<control type="button" id="90161">
@@ -604,10 +580,10 @@
 								<texture background="true">$INFO[ListItem.thumb]</texture>
 							</control>
 							<control type="label">
-								<posx>122</posx>
+								<posx>125</posx>
 								<posy>170</posy>
 								<height>20</height>
-								<width>225</width>
+								<width>240</width>
 								<label>$INFO[ListItem.Label2]</label>
 								<align>center</align>
 								<aligny>center</aligny>
@@ -615,10 +591,10 @@
 								<shadowcolor>black</shadowcolor>
 							</control>
 							<control type="label">
-								<posx>122</posx>
+								<posx>125</posx>
 								<posy>193</posy>
 								<height>20</height>
-								<width>225</width>
+								<width>240</width>
 								<label>$INFO[ListItem.ActualIcon]</label>
 								<align>center</align>
 								<aligny>center</aligny>
@@ -627,10 +603,10 @@
 								<shadowcolor>black</shadowcolor>
 							</control>
 							<control type="label">
-								<posx>122</posx>
+								<posx>125</posx>
 								<posy>215</posy>
 								<height>20</height>
-								<width>225</width>
+								<width>240</width>
 								<label>$INFO[ListItem.label]</label>
 								<align>center</align>
 								<aligny>center</aligny>
@@ -664,10 +640,10 @@
 								<texture background="true">$INFO[ListItem.thumb]</texture>
 							</control>
 							<control type="label">
-								<posx>122</posx>
+								<posx>125</posx>
 								<posy>170</posy>
 								<height>20</height>
-								<width>225</width>
+								<width>240</width>
 								<label>$INFO[ListItem.Label2]</label>
 								<align>center</align>
 								<aligny>center</aligny>
@@ -675,10 +651,10 @@
 								<shadowcolor>black</shadowcolor>
 							</control>
 							<control type="label">
-								<posx>122</posx>
+								<posx>125</posx>
 								<posy>193</posy>
 								<height>20</height>
-								<width>225</width>
+								<width>240</width>
 								<label>$INFO[ListItem.ActualIcon]</label>
 								<align>center</align>
 								<aligny>center</aligny>
@@ -687,10 +663,10 @@
 								<shadowcolor>black</shadowcolor>
 							</control>
 							<control type="label">
-								<posx>122</posx>
+								<posx>125</posx>
 								<posy>215</posy>
 								<height>20</height>
-								<width>225</width>
+								<width>240</width>
 								<label>$INFO[ListItem.label]</label>
 								<align>center</align>
 								<aligny>center</aligny>
@@ -1081,7 +1057,7 @@
 				<control type="wraplist" id="9000">
 					<posx>-128</posx>
 					<posy>0</posy>
-					<width>1536</width>
+					<width>1408</width>
 					<height>130</height>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
@@ -1109,15 +1085,6 @@
 							<bordertexture>black-back.png</bordertexture>
 							<bordersize>1</bordersize>
 							<aspectratio>stretch</aspectratio>
-						</control>
-						<control type="image">
-							<posx>205</posx>
-							<posy>10</posy>
-							<width>40</width>
-							<height>30</height>
-							<texture>ShutDown-HasTimer.png</texture>
-							<aspectratio>keep</aspectratio>
-							<visible>StringCompare(ListItem.Label,$LOCALIZE[13005]) + System.HasAlarm(shutdowntimer)</visible>
 						</control>
 						<control type="label">
 							<posx>10</posx>
@@ -1160,15 +1127,6 @@
 							<bordertexture>black-back.png</bordertexture>
 							<bordersize>1</bordersize>
 							<aspectratio>stretch</aspectratio>
-						</control>
-						<control type="image">
-							<posx>205</posx>
-							<posy>10</posy>
-							<width>40</width>
-							<height>30</height>
-							<texture>ShutDown-HasTimer.png</texture>
-							<aspectratio>keep</aspectratio>
-							<visible>StringCompare(ListItem.Label,$LOCALIZE[13005]) + System.HasAlarm(shutdowntimer)</visible>
 						</control>
 						<control type="label">
 							<posx>10</posx>
@@ -1286,16 +1244,16 @@
 					<description>Cover image</description>
 					<posx>490</posx>
 					<posy>0</posy>
-					<width>135</width>
-					<height>135</height>
+					<width>130</width>
+					<height>130</height>
 					<texture>$INFO[MusicPlayer.Cover]</texture>
-					<bordertexture>SubBack.png</bordertexture>
-					<bordersize>5</bordersize>
+					<bordertexture>black-back.png</bordertexture>
+					<bordersize>1</bordersize>
 				</control>
 				<control type="image">
 					<posx>180</posx>
 					<posy>43</posy>
-					<width>310</width>
+					<width>300</width>
 					<height>1</height>
 					<texture>separator2.png</texture>
 				</control>
@@ -1358,21 +1316,21 @@
 				<animation effect="slide" time="300" start="700,0" end="0,0" delay="0">WindowOpen</animation>
 				<animation effect="slide" time="300" start="0,0" end="700,0" delay="0">WindowClose</animation>
 				<control type="image">
-					<posx>190</posx>
-					<posy>43</posy>
-					<width>310</width>
-					<height>1</height>
-					<texture>separator2.png</texture>
-				</control>
-				<control type="image">
 					<description>Cover image</description>
 					<posx>490</posx>
 					<posy>0</posy>
-					<width>135</width>
-					<height>135</height>
+					<width>130</width>
+					<height>130</height>
 					<texture>DefaultVideoCover.png</texture>
-					<bordertexture>SubBack.png</bordertexture>
-					<bordersize>5</bordersize>
+					<bordertexture>black-back.png</bordertexture>
+					<bordersize>1</bordersize>
+				</control>
+				<control type="image">
+					<posx>190</posx>
+					<posy>43</posy>
+					<width>300</width>
+					<height>1</height>
+					<texture>separator2.png</texture>
 				</control>
 				<control type="label">
 					<description>Title label</description>

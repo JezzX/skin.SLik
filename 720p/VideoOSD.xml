@@ -95,12 +95,6 @@
 						<alttexturenofocus>-</alttexturenofocus>
 						<usealttexture>IsEmpty(Skin.String(SubtitleScript_Path))</usealttexture>
 					</control>
-					<control type="button" id="707">
-						<include>ButtonHomeSubCommonValues</include>
-						<label>31027</label>
-						<onclick>PlayerControl(ShowVideoMenu)</onclick>
-						<visible>VideoPlayer.HasMenu</visible>
-					</control>
 				</control>
 			</control>
 			<control type="image">
@@ -114,13 +108,13 @@
 				<include>VisibleFadeEffect</include>
 			</control>
 			<control type="group" id="599">
-				<posx>422</posx>
+				<posx>452</posx>
 				<posy>600</posy>
 				<control type="image">
 					<description>OSD back</description>
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>435</width>
+					<width>375</width>
 					<height>55</height>
 					<texture border="5">PlayerControls-Background.png</texture>
 				</control>
@@ -135,9 +129,9 @@
 						<label>-</label>
 						<texturefocus>PlayerControls-PrevFO.png</texturefocus>
 						<texturenofocus>PlayerControls-PrevNF.png</texturenofocus>
-						<onleft>607</onleft>
+						<onleft>605</onleft>
 						<onright>601</onright>
-						<onup>707</onup>
+						<onup>706</onup>
 						<ondown>702</ondown>
 						<onclick>XBMC.PlayerControl(Previous)</onclick>
 					</control>
@@ -151,7 +145,7 @@
 						<texturenofocus>PlayerControls-RewindNF.png</texturenofocus>
 						<onleft>600</onleft>
 						<onright>602</onright>
-						<onup>707</onup>
+						<onup>706</onup>
 						<ondown>702</ondown>
 						<onclick>XBMC.PlayerControl(Rewind)</onclick>
 					</control>
@@ -165,7 +159,7 @@
 						<texturenofocus>PlayerControls-StopNF.png</texturenofocus>
 						<onleft>601</onleft>
 						<onright>603</onright>
-						<onup>707</onup>
+						<onup>706</onup>
 						<ondown>702</ondown>
 						<onclick>XBMC.PlayerControl(Stop)</onclick>
 					</control>
@@ -182,7 +176,7 @@
 						<alttexturenofocus>PlayerControls-PlayNF.png</alttexturenofocus>
 						<onleft>602</onleft>
 						<onright>604</onright>
-						<onup>707</onup>
+						<onup>706</onup>
 						<ondown>702</ondown>
 						<onclick>XBMC.PlayerControl(Play)</onclick>
 					</control>
@@ -196,7 +190,7 @@
 						<texturenofocus>PlayerControls-ForwardNF.png</texturenofocus>
 						<onleft>603</onleft>
 						<onright>605</onright>
-						<onup>707</onup>
+						<onup>706</onup>
 						<ondown>702</ondown>
 						<onclick>XBMC.PlayerControl(Next)</onclick>
 					</control>
@@ -209,25 +203,10 @@
 						<texturefocus>PlayerControls-NextFO.png</texturefocus>
 						<texturenofocus>PlayerControls-NextNF.png</texturenofocus>
 						<onleft>604</onleft>
-						<onright>607</onright>
-						<onup>707</onup>
+						<onright>600</onright>
+						<onup>706</onup>
 						<ondown>702</ondown>
 						<onclick>XBMC.PlayerControl(Next)</onclick>
-					</control>
-					<control type="button" id="607">
-						<posx>360</posx>
-						<posy>0</posy>
-						<width>55</width>
-						<height>55</height>
-						<label>-</label>
-						<texturefocus>PlayerControls-SubtitleFO.png</texturefocus>
-						<texturenofocus>PlayerControls-SubtitleNF.png</texturenofocus>
-						<onleft>605</onleft>
-						<onright>600</onright>
-						<onup>707</onup>
-						<ondown>702</ondown>
-						<onclick>Dialog.Close(VideoOSD,true)</onclick>
-						<onclick>ShowSubtitles</onclick>
 					</control>
 				</control>
 			</control>
