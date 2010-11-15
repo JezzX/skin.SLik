@@ -2,7 +2,7 @@
 ECHO ----------------------------------------
 echo Creating Build Folder
 rmdir BUILD /S /Q
-md BUILD\skin.SLik\media\
+md BUILD\skin.SLik-pvr\media\
 
 Echo .svn>exclude.txt
 Echo Thumbs.db>>exclude.txt
@@ -12,21 +12,21 @@ Echo exclude.txt>>exclude.txt
 
 ECHO ----------------------------------------
 ECHO Creating XBT File...
-START /B /WAIT ..\..\TexturePacker\TexturePacker -input media -output BUILD\skin.SLik\media\Textures.xbt
+START /B /WAIT ..\..\TexturePacker\TexturePacker -input media -output BUILD\skin.SLik-pvr\media\Textures.xbt
 
 ECHO ----------------------------------------
 ECHO XBT Texture Files Created...
 ECHO Building Skin Directory...
-xcopy "720p" "BUILD\skin.SLik\720p" /E /Q /I /Y /EXCLUDE:exclude.txt
-xcopy "fonts" "BUILD\skin.SLik\fonts" /E /Q /I /Y /EXCLUDE:exclude.txt
-xcopy "backgrounds" "BUILD\skin.SLik\backgrounds" /E /Q /I /Y /EXCLUDE:exclude.txt
-xcopy "sounds\*.*" "BUILD\skin.SLik\sounds\" /Q /I /Y /EXCLUDE:exclude.txt
-xcopy "colors\*.*" "BUILD\skin.SLik\colors\" /Q /I /Y /EXCLUDE:exclude.txt
-xcopy "language" "BUILD\skin.SLik\language" /E /Q /I /Y /EXCLUDE:exclude.txt
+xcopy "720p" "BUILD\skin.SLik-pvr\720p" /E /Q /I /Y /EXCLUDE:exclude.txt
+xcopy "fonts" "BUILD\skin.SLik-pvr\fonts" /E /Q /I /Y /EXCLUDE:exclude.txt
+xcopy "backgrounds" "BUILD\skin.SLik-pvr\backgrounds" /E /Q /I /Y /EXCLUDE:exclude.txt
+xcopy "sounds\*.*" "BUILD\skin.SLik-pvr\sounds\" /Q /I /Y /EXCLUDE:exclude.txt
+xcopy "colors\*.*" "BUILD\skin.SLik-pvr\colors\" /Q /I /Y /EXCLUDE:exclude.txt
+xcopy "language" "BUILD\skin.SLik-pvr\language" /E /Q /I /Y /EXCLUDE:exclude.txt
 
 del exclude.txt
 
-copy *.xml "BUILD\skin.SLik\"
-copy *.txt "BUILD\skin.SLik\"
-copy icon.png "BUILD\skin.SLik\"
+copy *.xml "BUILD\skin.SLik-pvr\"
+copy *.txt "BUILD\skin.SLik-pvr\"
+copy icon.png "BUILD\skin.SLik-pvr\"
 pause
