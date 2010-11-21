@@ -347,7 +347,7 @@
 					<!-- Start or buttons Used for the main Shutdown button -->
 					<control type="button" id="90151">
 						<include>ButtonHomeSubCommonValues</include>
-						<label>31500</label>
+						<label>31600</label>
 						<onclick>XBMC.Powerdown()</onclick>
 						<visible>Container(9000).HasFocus(7)</visible>
 					</control>
@@ -383,6 +383,39 @@
 						<label>13391</label>
 						<onclick>EjectTray()</onclick>
 						<visible>Container(9000).HasFocus(8)</visible>
+					</control>
+					<!-- Start or buttons Used for the main LiveTV -->
+					<control type="button" id="90170">
+						<include>ButtonHomeSubCommonValues</include>
+						<label>19023</label>
+						<onclick>ActivateWindow(TV)</onclick>
+						<onclick>Setfocus(32)</onclick>
+						<onclick>Setfocus(11)</onclick>
+						<visible>Container(9000).HasFocus(9)</visible>
+					</control>
+					<control type="button" id="90171">
+						<include>ButtonHomeSubCommonValues</include>
+						<label>19024</label>
+						<onclick>ActivateWindow(TV)</onclick>
+						<onclick>Setfocus(33)</onclick>
+						<onclick>Setfocus(12)</onclick>
+						<visible>Container(9000).HasFocus(9)</visible>
+					</control>
+					<control type="button" id="90172">
+						<include>ButtonHomeSubCommonValues</include>
+						<label>19163</label>
+						<onclick>ActivateWindow(TV)</onclick>
+						<onclick>Setfocus(34)</onclick>
+						<onclick>Setfocus(13)</onclick>
+						<visible>Container(9000).HasFocus(9)</visible>
+					</control>
+					<control type="button" id="90173">
+						<include>ButtonHomeSubCommonValues</include>
+						<label>19040</label>
+						<onclick>ActivateWindow(TV)</onclick>
+						<onclick>Setfocus(35)</onclick>
+						<onclick>Setfocus(14)</onclick>
+						<visible>Container(9000).HasFocus(9)</visible>
 					</control>
 				</control>
 			</control>
@@ -1061,7 +1094,7 @@
 					<height>130</height>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
-					<onup>90161</onup>
+					<onup>90173</onup>
 					<ondown>603</ondown>
 					<pagecontrol>-</pagecontrol>
 					<focusposition>1</focusposition>
@@ -1163,6 +1196,13 @@
 							<onclick>ActivateWindow(Programs,Addons,return)</onclick>
 							<icon>thumbs/Programs.png</icon>
 							<thumb>special://skin/backgrounds/programs.jpg</thumb>
+						</item>
+						<item id="9">
+							<label>19020</label>
+							<onclick>ActivateWindow(TV)</onclick>
+							<icon>thumbs/LiveTV.png</icon>
+							<thumb>special://skin/backgrounds/livetv.jpg</thumb>
+							<visible>System.GetBool(pvrmanager.enabled)</visible>
 						</item>
 						<item id="1">
 							<label>3</label>
@@ -1431,6 +1471,35 @@
 						<shadowcolor>black</shadowcolor>
 					</control>
 				</control>
+				<control type="group">
+					<visible>VideoPlayer.Content(LiveTV)</visible>
+					<control type="label">
+						<description>Channel label</description>
+						<posx>480</posx>
+						<posy>15</posy>
+						<height>20</height>
+						<width>620</width>
+						<label>[B]$INFO[VideoPlayer.ChannelName][/B] $INFO[VideoPlayer.ChannelNumber,[COLOR=blue]([/COLOR],[COLOR=blue])[/COLOR]]</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font11</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+					<control type="label">
+						<description>Next Label</description>
+						<posx>480</posx>
+						<posy>80</posy>
+						<height>20</height>
+						<width>620</width>
+						<label>[COLOR=blue]$LOCALIZE[19113] :[/COLOR] $INFO[VideoPlayer.NextTitle]</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>font10</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+				</control>
 				<control type="label">
 					<description>Time Label</description>
 					<posx>480</posx>
@@ -1448,7 +1517,7 @@
 			<control type="group">
 				<posx>10</posx>
 				<posy>36r</posy>
-				<visible>Player.HasMedia</visible>
+				<visible>Player.HasMedia + !VideoPlayer.Content(LiveTV)</visible>
 				<include>Window_OpenClose_Animation</include>
 				<include>VisibleFadeEffect</include>
 				<control type="image">

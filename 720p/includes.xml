@@ -4,6 +4,7 @@
 	<include file="ViewsVideoLibrary.xml" />
 	<include file="ViewsFileMode.xml" />
 	<include file="ViewsAddonBrowser.xml" />
+	<include file="ViewsLiveTV.xml" />
 
 	<constant name="FanartCrossfadeTime">400</constant>
 
@@ -310,7 +311,7 @@
 	<include name="CommonOptionsMenuBack">
 		<include>VisibleFadeEffect</include>
 		<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus | ControlGroup(9001).HasFocus</visible>
-		<animation effect="slide" start="0,0" end="60,0" time="200" condition="Player.HasMedia">conditional</animation>
+		<animation effect="slide" start="0,0" end="60,0" time="200" condition="Player.HasMedia + !VideoPlayer.Content(LiveTV)">conditional</animation>
 		<posx>60</posx>
 		<posy>45</posy>
 		<control type="image">
@@ -358,7 +359,7 @@
 			<posx>60</posx>
 			<posy>75</posy>
 			<onleft>50</onleft>
-			<visible>Player.HasMedia + [ControlGroup(9000).HasFocus | ControlGroup(9001).HasFocus]</visible>
+			<visible>[Player.HasMedia + !VideoPlayer.Content(LiveTV)] + [ControlGroup(9000).HasFocus | ControlGroup(9001).HasFocus]</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="image">
 				<description>shadow border</description>
@@ -886,12 +887,12 @@
 				<width>1280</width>
 				<height>40</height>
 				<texture>Footer.png</texture>
-				<animation reversible="false" effect="zoom" start="0,670,1280,50" end="0,680,1280,40" time="200" condition="Window.Previous(VideoFiles) | Window.Previous(VideoLibrary) | Window.Previous(MusicFiles) | Window.Previous(MusicLibrary) | Window.Previous(Pictures) | Window.Previous(Programs) | Window.Previous(FileManager) | Window.Previous(Weather) | Window.Previous(AddonBrowser) | Window.Previous(Profiles)">WindowOpen</animation>
-				<animation reversible="false" effect="zoom" end="0,670,1280,50" start="0,680,1280,40" time="200" condition="Window.Next(VideoFiles) | Window.Next(VideoLibrary) | Window.Next(MusicFiles) | Window.Next(MusicLibrary) | Window.Next(Pictures) | Window.Next(Programs) | Window.Next(FileManager) | Window.Next(Weather) | Window.Next(AddonBrowser) | Window.Next(Profiles)">WindowClose</animation>
+				<animation reversible="false" effect="zoom" start="0,670,1280,50" end="0,680,1280,40" time="200" condition="Window.Previous(VideoFiles) | Window.Previous(VideoLibrary) | Window.Previous(MusicFiles) | Window.Previous(MusicLibrary) | Window.Previous(Pictures) | Window.Previous(Programs) | Window.Previous(FileManager) | Window.Previous(Weather) | Window.Previous(AddonBrowser) | Window.Previous(Profiles) | Window.Previous(TV)">WindowOpen</animation>
+				<animation reversible="false" effect="zoom" end="0,670,1280,50" start="0,680,1280,40" time="200" condition="Window.Next(VideoFiles) | Window.Next(VideoLibrary) | Window.Next(MusicFiles) | Window.Next(MusicLibrary) | Window.Next(Pictures) | Window.Next(Programs) | Window.Next(FileManager) | Window.Next(Weather) | Window.Next(AddonBrowser) | Window.Next(Profiles) | Window.Next(TV)">WindowClose</animation>
 			</control>
 			<control type="group">
 				<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-				<animation effect="slide" start="0,0" end="150,0" time="200" tween="quadratic" easing="out" condition="Player.HasMedia + Window.IsVisible(Home)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="150,0" time="200" tween="quadratic" easing="out" condition="Player.HasMedia + Window.IsVisible(Home) + !VideoPlayer.Content(LiveTV)">Conditional</animation>
 				<control type="rss">
 					<description>rss feed</description>
 					<posx>65</posx>

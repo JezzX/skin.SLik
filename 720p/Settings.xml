@@ -136,6 +136,12 @@
 						<icon>thumbs/Videos.png</icon>
 					</item>
 					<item>
+						<label>19020</label>
+						<label2>31410</label2>
+						<onclick>ActivateWindow(TVSettings)</onclick>
+						<icon>thumbs/LiveTV.png</icon>
+					</item>
+					<item>
 						<label>2</label>
 						<label2>31402</label2>
 						<onclick>ActivateWindow(MusicSettings)</onclick>

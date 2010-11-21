@@ -189,8 +189,8 @@
 		<posy>200</posy>
 		<width>300</width>
 		<height>42</height>
-		<texturefocus>button-focus.png</texturefocus>
-		<texturenofocus>button-nofocus.png</texturenofocus>
+		<texturefocus border="5">button-focus.png</texturefocus>
+		<texturenofocus border="5">button-nofocus.png</texturenofocus>
 		<font>font12</font>
 		<textcolor>white</textcolor>
 		<disabledcolor>grey3</disabledcolor>

@@ -71,7 +71,7 @@
 				<onclick>XBMC.Powerdown()</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font>-</font>
-				<label>$LOCALIZE[31500]</label>
+				<label>$LOCALIZE[31600]</label>
 				<onleft>1</onleft>
 				<onright>3</onright>
 				<onup>5</onup>

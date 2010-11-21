@@ -84,7 +84,22 @@
   <string id="31407">[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the SLik skin · Add and remove home menu items[CR]Create quick links to media and addons</string>
   <string id="31408">[B]CONFIGURE ADD-ONS[/B][CR][CR]Manage your installed Add-ons · Browse for and install Add-ons from xbmc.org[CR]Modify Add-on settings</string>
   <string id="31409">[B]FILEMANAGER[/B][CR][CR]Manage your system files · Copy, Move, Rename, Delete files and folders on your system[CR]Orginize your Hard Drive</string>
+  <string id="31410">[B]CONFIGURE TV SETTINGS[/B][CR][CR]Enable Live TV Support  ·  Change database settings · Assign Channel Icons[CR]Manage EPG data settings</string>
+
+  <!-- Extra Unified PVR labels -->
+  <string id="31500">Recording Timers</string>
+  <string id="31501">Scheduled Time</string>
+  <string id="31502">Live TV</string>
+  <string id="31503">Add Group</string>
+  <string id="31504">Rename Group</string>
+  <string id="31505">Delete Group</string>
+  <string id="31506">Available[CR]Groups</string>
+  <string id="31507">Ungrouped[CR]Channels</string>
+  <string id="31508">Channels in Group</string>
+  <string id="31509">Channel Group</string>
+  <string id="31510">Timer Set</string>
 
   <!-- To be removed when XBMC Eden version starts coming out  -->
-  <string id="31500">Power Off System</string>
+  <string id="31600">Power Off System</string>
+
  </strings>

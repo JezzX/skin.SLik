@@ -1,0 +1,326 @@
+<window id="600">
+	<defaultcontrol>9000</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+		<include>CommonBackground</include>
+		<control type="group">
+			<include>ViewVisibleEffect</include>
+			<visible>Control.IsVisible(11) | Control.IsVisible(12)</visible>
+			<control type="image">
+				<description>background image</description>
+				<posx>90</posx>
+				<posy>75</posy>
+				<width>545</width>
+				<height>548</height>
+				<texture border="8">SubBack.png</texture>
+			</control>
+			<control type="image">
+				<posx>108</posx>
+				<posy>94</posy>
+				<width>509</width>
+				<height>288</height>
+				<aspectratio>scale</aspectratio>
+				<texture>white-back.png</texture>
+			</control>
+			<control type="videowindow">
+				<posx>110</posx>
+				<posy>96</posy>
+				<width>505</width>
+				<height>284</height>
+				<visible>Player.HasVideo</visible>
+			</control>
+			<control type="visualisation">
+				<posx>110</posx>
+				<posy>96</posy>
+				<width>505</width>
+				<height>284</height>
+				<visible>Player.HasAudio</visible>
+			</control>
+			<control type="image">
+				<posx>110</posx>
+				<posy>96</posy>
+				<width>505</width>
+				<height>284</height>
+				<aspectratio>scale</aspectratio>
+				<texture background="true">special://skin/backgrounds/livetv.jpg</texture>
+				<visible>!Player.HasMedia</visible>
+				<include>VisibleFadeEffect</include>
+			</control>
+		</control>
+		<control type="group" id="9002">
+			<include>ViewVisibleEffect</include>
+			<include>EPGTimelineView</include> <!-- view id = 10 -->
+			<include>LiveTVChannelView</include> <!-- view id = 11 -->
+			<include>LiveRadioChannelView</include> <!-- view id = 12 -->
+			<include>LiveTVRecordingsView</include> <!-- view id = 13 -->
+			<include>LiveTVTimersView</include> <!-- view id = 14 -->
+			<include>LiveTVGuideChannelView</include> <!-- view id = 15 -->
+			<include>LiveTVGuideNowNextView</include> <!-- view id = 16 -->
+			<include>LiveTVSeachView</include> <!-- view id = 17 -->
+			<include>ScrollOffsetLabel</include>
+		</control>
+
+		<control type="image">
+			<posx>0</posx>
+			<posy>50r</posy>
+			<width>1280</width>
+			<height>50</height>
+			<texture>Footer.png</texture>
+		</control>
+		<control type="group">
+			<visible>PVR.IsRecording</visible>
+			<control type="image">
+				<description>Section back</description>
+				<posx>20</posx>
+				<posy>45r</posy>
+				<width>50</width>
+				<height>40</height>
+				<aspectratio>stretch</aspectratio>
+				<texture border="5">light/PVR-IsRecording.png</texture>
+			</control>
+			<control type="label">
+				<description>Timer label</description>
+				<posx>80</posx>
+				<posy>50r</posy>
+				<height>25</height>
+				<width>500</width>
+				<label>[B]$LOCALIZE[19158][/B]$INFO[PVR.NowRecordingDateTime,  - ]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>black</textcolor>
+			</control>
+			<control type="label">
+				<posx>80</posx>
+				<posy>25r</posy>
+				<width>500</width>
+				<height>20</height>
+				<font>font11</font>
+				<textcolor>black</textcolor>
+				<scroll>false</scroll>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[PVR.NowRecordingTitle]</label>
+			</control>
+		</control>
+		<control type="group">
+			<visible>!PVR.IsRecording + PVR.HasTimer</visible>
+			<control type="image">
+				<description>Section back</description>
+				<posx>20</posx>
+				<posy>45r</posy>
+				<width>50</width>
+				<height>40</height>
+				<aspectratio>stretch</aspectratio>
+				<texture border="5">light/PVR-HasTimer.png</texture>
+			</control>
+			<control type="label">
+				<description>Timer label</description>
+				<posx>80</posx>
+				<posy>50r</posy>
+				<height>25</height>
+				<width>500</width>
+				<label>[B]$LOCALIZE[19157][/B]$INFO[PVR.NextRecordingDateTime,  - ]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>black</textcolor>
+			</control>
+			<control type="label">
+				<posx>80</posx>
+				<posy>25r</posy>
+				<width>500</width>
+				<height>20</height>
+				<font>font11</font>
+				<textcolor>black</textcolor>
+				<scroll>false</scroll>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[PVR.NextRecordingTitle]</label>
+			</control>
+		</control>
+		<control type="label">
+			<description>Section Name</description>
+			<posx>20r</posx>
+			<posy>50r</posy>
+			<width>600</width>
+			<height>25</height>
+			<font>font12</font>
+			<textcolor>black</textcolor>
+			<scroll>false</scroll>
+			<align>right</align>
+			<aligny>center</aligny>
+			<label>[B]$INFO[Control.GetLabel(29)] $INFO[Control.GetLabel(30), - ][/B]</label>
+		</control>
+		<control type="label" id="29">
+			<description>Current Catagory</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>0</width>
+			<height>0</height>
+			<font>-</font>
+			<visible>false</visible>
+		</control>
+		<control type="label" id="30">
+			<description>Current Sub Catagory</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>0</width>
+			<height>0</height>
+			<font>-</font>
+			<visible>false</visible>
+		</control>
+		<control type="group">
+			<visible>!Control.IsVisible(10)</visible> 
+			<!-- this group code is a hack because currently Container.Numitem/Pages crashes the EPG container (id 10) so I need to hide all references to it when epg is visible-->
+			<control type="label">
+				<description>number of TV Channels in list text label</description>
+				<posx>20r</posx>
+				<posy>25r</posy>
+				<width>500</width>
+				<height>20</height>
+				<font>font11</font>
+				<textcolor>black</textcolor>
+				<scroll>false</scroll>
+				<align>right</align>
+				<aligny>center</aligny>
+				<label>[B]($INFO[Container(11).NumItems])[/B] $LOCALIZE[19019] - $LOCALIZE[31024] [B]($INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages])[/B]</label>
+				<visible>Control.IsVisible(11)</visible>
+			</control>
+			<control type="label">
+				<description>number of Radio Channels in list text label</description>
+				<posx>20r</posx>
+				<posy>25r</posy>
+				<width>500</width>
+				<height>20</height>
+				<font>font11</font>
+				<textcolor>black</textcolor>
+				<scroll>false</scroll>
+				<align>right</align>
+				<aligny>center</aligny>
+				<label>[B]($INFO[Container(12).NumItems])[/B] $LOCALIZE[19019] - $LOCALIZE[31024] [B]($INFO[Container(12).CurrentPage]/$INFO[Container(12).NumPages])[/B]</label>
+				<visible>Control.IsVisible(12)</visible>
+			</control>
+			<control type="label">
+				<description>Page Count Label for everything else</description>
+				<posx>20r</posx>
+				<posy>25r</posy>
+				<width>500</width>
+				<height>20</height>
+				<font>font11</font>
+				<textcolor>black</textcolor>
+				<scroll>false</scroll>
+				<align>right</align>
+				<aligny>center</aligny>
+				<label>[B]($INFO[Container.NumItems])[/B] $LOCALIZE[31025] - $LOCALIZE[31024] [B]($INFO[Container.CurrentPage]/$INFO[Container.NumPages])[/B]</label>
+				<visible>Control.IsVisible(13) | Control.IsVisible(14) | Control.IsVisible(15) | Control.IsVisible(16) | Control.IsVisible(17)</visible>
+			</control>
+		</control>
+		<include>CommonNowPlaying_Controls</include> <!-- This is ControlGroup(9001) -->
+		<include>CommonNowPlaying</include>
+		<control type="group">
+			<include>CommonOptionsMenuBack</include>
+			<control type="group" id="9000">
+				<posx>5</posx>
+				<posy>30</posy>
+				<control type="button" id="32">
+					<description>TV Channels</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<include>ButtonCommonValues</include>
+					<label>19023</label>
+					<onleft>9001</onleft>
+					<onright>9002</onright>
+					<onup>36</onup>
+					<ondown>33</ondown>
+				</control>
+				<control type="button" id="33">
+					<description>Radio Channels</description>
+					<posx>0</posx>
+					<posy>45</posy>
+					<include>ButtonCommonValues</include>
+					<label>19024</label>
+					<onleft>9001</onleft>
+					<onright>9002</onright>
+					<onup>32</onup>
+					<ondown>31</ondown>
+				</control>
+				<control type="button" id="31">
+					<description>TV Guide</description>
+					<posx>0</posx>
+					<posy>90</posy>
+					<include>ButtonCommonValues</include>
+					<label>19029</label>
+					<onleft>9001</onleft>
+					<onright>9002</onright>
+					<onup>33</onup>
+					<ondown>34</ondown>
+				</control>
+				<control type="button" id="34">
+					<description>Recordings</description>
+					<posx>0</posx>
+					<posy>135</posy>
+					<include>ButtonCommonValues</include>
+					<label>19163</label>
+					<onleft>9001</onleft>
+					<onright>9002</onright>
+					<onup>31</onup>
+					<ondown>35</ondown>
+				</control>
+				<control type="button" id="35">
+					<description>Timers</description>
+					<posx>0</posx>
+					<posy>180</posy>
+					<include>ButtonCommonValues</include>
+					<label>19040</label>
+					<onleft>9001</onleft>
+					<onright>9002</onright>
+					<onup>34</onup>
+					<ondown>36</ondown>
+				</control>
+				<control type="button" id="36">
+					<description>Search</description>
+					<posx>0</posx>
+					<posy>225</posy>
+					<include>ButtonCommonValues</include>
+					<label>137</label>
+					<onleft>9001</onleft>
+					<onright>9002</onright>
+					<onup>35</onup>
+					<ondown>32</ondown>
+				</control>
+			</control>
+		</control>
+		<include>WindowHeader</include>
+		<control type="image">
+			<posx>20</posx>
+			<posy>5</posy>
+			<width>40</width>
+			<height>35</height>
+			<aspectratio>keep</aspectratio>
+			<texture>icon_livetv.png</texture>
+		</control>
+		<control type="label">
+			<description>Header label</description>
+			<posx>70</posx>
+			<posy>5</posy>
+			<width>400</width>
+			<height>35</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font13</font>
+			<textcolor>white</textcolor>
+			<label>$LOCALIZE[19020]</label>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>black-back.png</texture>
+			<animation effect="fade" time="400">Visible</animation>
+			<animation effect="fade" time="200">Hidden</animation>
+			<visible>Window.IsActive(FileBrowser) | Window.IsActive(601) | Window.IsActive(602) | Window.IsActive(603) | Window.IsActive(604) | Window.IsActive(606)</visible>
+		</control>
+	</controls>
+</window>

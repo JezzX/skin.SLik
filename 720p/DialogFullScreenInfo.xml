@@ -93,7 +93,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos)</visible>
+				<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos) + !VideoPlayer.Content(LiveTV)</visible>
 				<control type="image">
 					<description>cover image</description>
 					<posx>30</posx>
@@ -282,6 +282,59 @@
 					<info>Player.Progress</info>
 				</control>
 			</control>
+			<control type="group">
+				<visible>VideoPlayer.Content(LiveTV)</visible>
+				<control type="image">
+					<description>cover image</description>
+					<posx>30</posx>
+					<posy>-42</posy>
+					<width>195</width>
+					<height>180</height>
+					<info>VideoPlayer.Cover</info>
+					<aspectratio aligny="bottom" align="right">keep</aspectratio>
+				</control>
+				<control type="label">
+					<posx>240</posx>
+					<posy>10</posy>
+					<width>810</width>
+					<height>25</height>
+					<label>$INFO[VideoPlayer.ChannelNumber,[COLOR=blue]([/COLOR],[COLOR=blue])[/COLOR]] $INFO[VideoPlayer.ChannelName]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>grey2</textcolor>
+				</control>
+				<control type="label">
+					<posx>250</posx>
+					<posy>40</posy>
+					<width>1000</width>
+					<height>25</height>
+					<label>[B]$INFO[VideoPlayer.Title][/B]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font22</font>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<posx>240</posx>
+					<posy>72</posy>
+					<width>1010</width>
+					<height>25</height>
+					<label>$INFO[VideoPlayer.ChannelGroup,[COLOR=blue]$LOCALIZE[31509]:[/COLOR] ]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>grey2</textcolor>
+				</control>
+				<control type="progress">
+					<description>Progressbar</description>
+					<posx>240</posx>
+					<posy>130</posy>
+					<width>1010</width>
+					<height>8</height>
+					<info>Player.Progress</info>
+				</control>
+			</control>
 			<control type="label">
 				<description>Playlist Pos No</description>
 				<posx>1250</posx>
@@ -306,6 +359,20 @@
 				<font>font11</font>
 				<textcolor>grey2</textcolor>
 				<scroll>true</scroll>
+				<visible>!VideoPlayer.Content(LiveTV)</visible>
+			</control>
+			<control type="label">
+				<posx>1250</posx>
+				<posy>95</posy>
+				<width>1020</width>
+				<height>25</height>
+				<label>[COLOR=blue]$LOCALIZE[19113] :[/COLOR] $INFO[VideoPlayer.NextTitle]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font11</font>
+				<textcolor>grey2</textcolor>
+				<scroll>true</scroll>
+				<visible>VideoPlayer.Content(LiveTV)</visible>
 			</control>
 		</control>
 	</controls>
