@@ -351,6 +351,18 @@
 						<onclick>XBMC.Powerdown()</onclick>
 						<visible>Container(9000).HasFocus(7)</visible>
 					</control>
+					<control type="togglebutton" id="90156">
+						<description>Custom ShutdownTimer button</description>
+						<include>ButtonHomeSubCommonValues</include>
+						<label>20144</label>
+						<altlabel>20151</altlabel>
+						<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
+						<altclick>XBMC.CancelAlarm(shutdowntimer)</altclick>
+						<alttexturefocus border="5">button-focus2.png</alttexturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<visible>Container(9000).HasFocus(7)</visible>
+						<usealttexture>System.HasAlarm(shutdowntimer)</usealttexture>
+					</control>
 					<control type="button" id="90152">
 						<include>ButtonHomeSubCommonValues</include>
 						<label>13013</label>
@@ -376,6 +388,18 @@
 						<visible>Container(9000).HasFocus(7)</visible>
 						<visible>System.HasLoginScreen</visible>
 						<visible>System.Loggedon</visible>
+					</control>
+					<control type="label" id="90157">
+						<description>Custom ShutdownTimer countdown label</description>
+						<height>70</height>
+						<width>240</width>
+						<label>$LOCALIZE[31026] [B]$INFO[System.Alarmpos][/B]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font11</font>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<visible>Container(9000).HasFocus(7) + System.HasAlarm(shutdowntimer)</visible>
 					</control>
 					<!-- Start or buttons Used for the main Optical Media button -->
 					<control type="button" id="90161">
@@ -1086,6 +1110,15 @@
 							<bordersize>1</bordersize>
 							<aspectratio>stretch</aspectratio>
 						</control>
+						<control type="image">
+							<posx>205</posx>
+							<posy>10</posy>
+							<width>40</width>
+							<height>30</height>
+							<texture>ShutDown-HasTimer.png</texture>
+							<aspectratio>keep</aspectratio>
+							<visible>StringCompare(ListItem.Label,$LOCALIZE[13005]) + System.HasAlarm(shutdowntimer)</visible>
+						</control>
 						<control type="label">
 							<posx>10</posx>
 							<posy>100</posy>
@@ -1127,6 +1160,16 @@
 							<bordertexture>black-back.png</bordertexture>
 							<bordersize>1</bordersize>
 							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posx>205</posx>
+							<posy>10</posy>
+							<width>40</width>
+							<height>30</height>
+							<texture>ShutDown-HasTimer.png</texture>
+							<aspectratio>keep</aspectratio>
+							<visible>StringCompare(ListItem.Label,$LOCALIZE[13005]) + System.HasAlarm(shutdowntimer)</visible>
+							<include>VisibleFadeEffect</include>
 						</control>
 						<control type="label">
 							<posx>10</posx>
