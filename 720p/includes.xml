@@ -79,7 +79,18 @@
 				<font>font12</font>
 				<textcolor>blue</textcolor>
 				<label>$LOCALIZE[112]</label>
-				<visible>Player.Paused</visible>
+				<visible>Player.Paused + !Player.Caching</visible>
+				<include>VisibleFadeEffect</include>
+			</control>
+			<control type="label">
+				<description>Caching label</description>
+				<width min="0" max="200">auto</width>
+				<height>35</height>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>blue</textcolor>
+				<label>$LOCALIZE[15107] $INFO[Player.CacheLevel]%</label>
+				<visible>Player.Paused + Player.Caching</visible>
 				<include>VisibleFadeEffect</include>
 			</control>
 			<control type="image">
