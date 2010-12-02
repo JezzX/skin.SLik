@@ -73,9 +73,9 @@
 				<description>Section back</description>
 				<posx>20</posx>
 				<posy>45r</posy>
-				<width>50</width>
+				<width>60</width>
 				<height>40</height>
-				<aspectratio>stretch</aspectratio>
+				<aspectratio align="left">keep</aspectratio>
 				<texture border="5">light/PVR-IsRecording.png</texture>
 			</control>
 			<control type="label">
@@ -109,9 +109,9 @@
 				<description>Section back</description>
 				<posx>20</posx>
 				<posy>45r</posy>
-				<width>50</width>
+				<width>60</width>
 				<height>40</height>
-				<aspectratio>stretch</aspectratio>
+				<aspectratio align="left">keep</aspectratio>
 				<texture border="5">light/PVR-HasTimer.png</texture>
 			</control>
 			<control type="label">
