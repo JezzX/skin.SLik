@@ -108,13 +108,13 @@
 				<include>VisibleFadeEffect</include>
 			</control>
 			<control type="group" id="599">
-				<posx>452</posx>
+				<posx>422</posx>
 				<posy>600</posy>
 				<control type="image">
 					<description>OSD back</description>
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>375</width>
+					<width>435</width>
 					<height>55</height>
 					<texture border="5">PlayerControls-Background.png</texture>
 				</control>
@@ -129,7 +129,7 @@
 						<label>-</label>
 						<texturefocus>PlayerControls-PrevFO.png</texturefocus>
 						<texturenofocus>PlayerControls-PrevNF.png</texturenofocus>
-						<onleft>605</onleft>
+						<onleft>607</onleft>
 						<onright>601</onright>
 						<onup>706</onup>
 						<ondown>702</ondown>
@@ -203,10 +203,25 @@
 						<texturefocus>PlayerControls-NextFO.png</texturefocus>
 						<texturenofocus>PlayerControls-NextNF.png</texturenofocus>
 						<onleft>604</onleft>
-						<onright>600</onright>
+						<onright>607</onright>
 						<onup>706</onup>
 						<ondown>702</ondown>
 						<onclick>XBMC.PlayerControl(Next)</onclick>
+					</control>
+					<control type="button" id="607">
+						<posx>360</posx>
+						<posy>0</posy>
+						<width>55</width>
+						<height>55</height>
+						<label>-</label>
+						<texturefocus>PlayerControls-SubtitleFO.png</texturefocus>
+						<texturenofocus>PlayerControls-SubtitleNF.png</texturenofocus>
+						<onleft>605</onleft>
+						<onright>600</onright>
+						<onup>706</onup>
+						<ondown>702</ondown>
+						<onclick>Dialog.Close(VideoOSD,true)</onclick>
+						<onclick>ShowSubtitles</onclick>
 					</control>
 				</control>
 			</control>
