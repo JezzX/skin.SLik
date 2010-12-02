@@ -1,3 +1,8 @@
 [B]Version 0.0.5[/B]
 
-- First Version
+[B]Version 0.0.3[/B]
+
+- Skinned the PVR channel manager window
+- Added "Buffering.. %" text to the top bar so you don't just think your video randomly paused
+- Skinned 99% of the PVR windows for the pvr-testing2 banch of xbmc
+
