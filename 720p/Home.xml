@@ -1169,7 +1169,6 @@
 							<texture>ShutDown-HasTimer.png</texture>
 							<aspectratio>keep</aspectratio>
 							<visible>StringCompare(ListItem.Label,$LOCALIZE[13005]) + System.HasAlarm(shutdowntimer)</visible>
-							<include>VisibleFadeEffect</include>
 						</control>
 						<control type="label">
 							<posx>10</posx>
