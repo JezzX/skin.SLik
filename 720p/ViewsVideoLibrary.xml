@@ -386,7 +386,7 @@
 			<control type="textbox">
 				<posx>60</posx>
 				<posy>455</posy>
-				<width>580</width>
+				<width>462</width>
 				<height>145</height>
 				<font>font11</font>
 				<textcolor>grey2</textcolor>
