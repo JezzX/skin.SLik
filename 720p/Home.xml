@@ -604,10 +604,10 @@
 								<texture background="true">$INFO[ListItem.thumb]</texture>
 							</control>
 							<control type="label">
-								<posx>125</posx>
+								<posx>122</posx>
 								<posy>170</posy>
 								<height>20</height>
-								<width>240</width>
+								<width>225</width>
 								<label>$INFO[ListItem.Label2]</label>
 								<align>center</align>
 								<aligny>center</aligny>
@@ -615,10 +615,10 @@
 								<shadowcolor>black</shadowcolor>
 							</control>
 							<control type="label">
-								<posx>125</posx>
+								<posx>122</posx>
 								<posy>193</posy>
 								<height>20</height>
-								<width>240</width>
+								<width>225</width>
 								<label>$INFO[ListItem.ActualIcon]</label>
 								<align>center</align>
 								<aligny>center</aligny>
@@ -627,10 +627,10 @@
 								<shadowcolor>black</shadowcolor>
 							</control>
 							<control type="label">
-								<posx>125</posx>
+								<posx>122</posx>
 								<posy>215</posy>
 								<height>20</height>
-								<width>240</width>
+								<width>225</width>
 								<label>$INFO[ListItem.label]</label>
 								<align>center</align>
 								<aligny>center</aligny>
@@ -664,10 +664,10 @@
 								<texture background="true">$INFO[ListItem.thumb]</texture>
 							</control>
 							<control type="label">
-								<posx>125</posx>
+								<posx>122</posx>
 								<posy>170</posy>
 								<height>20</height>
-								<width>240</width>
+								<width>225</width>
 								<label>$INFO[ListItem.Label2]</label>
 								<align>center</align>
 								<aligny>center</aligny>
@@ -675,10 +675,10 @@
 								<shadowcolor>black</shadowcolor>
 							</control>
 							<control type="label">
-								<posx>125</posx>
+								<posx>122</posx>
 								<posy>193</posy>
 								<height>20</height>
-								<width>240</width>
+								<width>225</width>
 								<label>$INFO[ListItem.ActualIcon]</label>
 								<align>center</align>
 								<aligny>center</aligny>
@@ -687,10 +687,10 @@
 								<shadowcolor>black</shadowcolor>
 							</control>
 							<control type="label">
-								<posx>125</posx>
+								<posx>122</posx>
 								<posy>215</posy>
 								<height>20</height>
-								<width>240</width>
+								<width>225</width>
 								<label>$INFO[ListItem.label]</label>
 								<align>center</align>
 								<aligny>center</aligny>
