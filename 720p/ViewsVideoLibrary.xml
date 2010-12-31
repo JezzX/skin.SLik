@@ -1,7 +1,7 @@
 <includes>
 	<include name="MovieDVDView">
 		<control type="fixedlist" id="57">
-			<visible>!Container.Content(Addons) + [Container.Content(Movies) | Container.Content(Seasons) | Window.IsVisible(VideoFiles)]</visible>
+			<visible>!Container.Content(Addons) + [Container.Content(TVShows) | Container.Content(Movies) | Container.Content(Seasons) | Window.IsVisible(VideoFiles)]</visible>
 			<visible>!Container.Content(LiveTV)</visible>
 			<posx>-123</posx>
 			<posy>140</posy>
