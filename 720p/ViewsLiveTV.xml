@@ -543,9 +543,9 @@
 			<control type="epggrid" id="10">
 				<description>EPG Grid</description>
 				<posx>40</posx>
-				<posy>81</posy>
+				<posy>70</posy>
 				<width>1200</width>
-				<height>550</height>
+				<height>446</height>
 				<pagecontrol>10</pagecontrol>
 				<scrolltime>350</scrolltime>
 				<timeblocks>40</timeblocks>
@@ -730,11 +730,56 @@
 			</control>
 			<control type="image">
 				<description>separator image</description>
-				<posx>260</posx>
-				<posy>81</posy>
+				<posx>262</posx>
+				<posy>70</posy>
 				<width>4</width>
-				<height>550</height>
+				<height>450</height>
 				<texture>separator_vertical.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>190r</posy>
+				<width>1280</width>
+				<height>200</height>
+				<texture>black-back.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>190r</posy>
+				<width>512</width>
+				<height>64</height>
+				<texture>HorizontalGlow.png</texture>
+			</control>
+			<control type="image">
+				<posx>512r</posx>
+				<posy>190r</posy>
+				<width>512</width>
+				<height>64</height>
+				<texture>HorizontalGlow.png</texture>
+			</control>
+			<control type="label">
+				<description>Title header label</description>
+				<posx>200</posx>
+				<posy>170r</posy>
+				<width>880</width>
+				<height>20</height>
+				<font>font12</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Title] [COLOR=grey2]($INFO[ListItem.StartTime] - $INFO[ListItem.EndTime])[/COLOR]</label>
+			</control>
+			<control type="textbox">
+				<posx>200</posx>
+				<posy>145r</posy>
+				<width>880</width>
+				<height>70</height>
+				<font>font11</font>
+				<textcolor>grey2</textcolor>
+				<scroll>true</scroll>
+				<align>justify</align>
+				<label>$INFO[ListItem.Plot]</label>
 			</control>
 		</control>
 	</include>
