@@ -668,7 +668,7 @@
 					<control type="image">
 						<posx>5</posx>
 						<posy>28</posy>
-						<width>30</width>
+						<width>29</width>
 						<height>20</height>
 						<texture>light/PVR-IsRecording.png</texture>
 						<visible>ListItem.IsRecording</visible>
@@ -676,7 +676,7 @@
 					<control type="image">
 						<posx>5</posx>
 						<posy>28</posy>
-						<width>20</width>
+						<width>29</width>
 						<height>20</height>
 						<texture>light/PVR-HasTimer.png</texture>
 						<visible>ListItem.HasTimer</visible>
@@ -713,7 +713,7 @@
 					<control type="image">
 						<posx>5</posx>
 						<posy>28</posy>
-						<width>30</width>
+						<width>29</width>
 						<height>20</height>
 						<texture>dark/PVR-IsRecording.png</texture>
 						<visible>ListItem.IsRecording</visible>
@@ -721,7 +721,7 @@
 					<control type="image">
 						<posx>5</posx>
 						<posy>28</posy>
-						<width>20</width>
+						<width>29</width>
 						<height>20</height>
 						<texture>dark/PVR-HasTimer.png</texture>
 						<visible>ListItem.HasTimer</visible>
