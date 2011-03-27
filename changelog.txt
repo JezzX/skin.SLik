@@ -1,3 +1,13 @@
+[B]Version 1.0.0[/B]
+
+- Pumped up the version to 1.0.0 for first proper release
+- Added Portuguese (Brazil) translation thanks to fschnack
+- Changed made it possible to use the "Posters" view for TV shows since lots of people use posters these days
+- Fixed home close animation made the left hand side of the main bar show as cut off
+- Added a new view to the Video Library "Media List" thanks xbs08 for the very neat patch code
+- Fixed auto shutdown timer icon showing where it should not
+- Added a quick way to turn on and off subtitles "CC" button on the main player controls
+
 [B]Version 0.0.3[/B]
 
 - Added "Buffering.. %" text to the top bar so you don't just think your video randomly paused
