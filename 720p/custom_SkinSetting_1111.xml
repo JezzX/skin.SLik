@@ -500,6 +500,7 @@
 					<onright>9004</onright>
 					<onup>21</onup>
 					<ondown>20</ondown>
+					<visible>false</visible>
 				</control>
 			</control>
 		</control>
