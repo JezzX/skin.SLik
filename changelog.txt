@@ -1,3 +1,9 @@
+[B]Version 1.1.0[/B]
+
+- Added Menu Button to Video OSD to get to VD menus
+- Added .wav codec flagging image
+- Fixed up the Nvigation in the video and album information dialogs 
+
 [B]Version 1.0.0[/B]
 
 - Pumped up the version to 1.0.0 for first proper release
