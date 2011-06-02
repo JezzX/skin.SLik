@@ -388,7 +388,7 @@
 					<control type="button" id="90170">
 						<include>ButtonHomeSubCommonValues</include>
 						<label>19023</label>
-						<onclick>ActivateWindow(TV)</onclick>
+						<onclick>ActivateWindow(PVR)</onclick>
 						<onclick>Setfocus(32)</onclick>
 						<onclick>Setfocus(11)</onclick>
 						<visible>Container(9000).HasFocus(9)</visible>
@@ -396,7 +396,7 @@
 					<control type="button" id="90171">
 						<include>ButtonHomeSubCommonValues</include>
 						<label>19024</label>
-						<onclick>ActivateWindow(TV)</onclick>
+						<onclick>ActivateWindow(PVR)</onclick>
 						<onclick>Setfocus(33)</onclick>
 						<onclick>Setfocus(12)</onclick>
 						<visible>Container(9000).HasFocus(9)</visible>
@@ -404,7 +404,7 @@
 					<control type="button" id="90172">
 						<include>ButtonHomeSubCommonValues</include>
 						<label>19163</label>
-						<onclick>ActivateWindow(TV)</onclick>
+						<onclick>ActivateWindow(PVR)</onclick>
 						<onclick>Setfocus(34)</onclick>
 						<onclick>Setfocus(13)</onclick>
 						<visible>Container(9000).HasFocus(9)</visible>
@@ -412,7 +412,7 @@
 					<control type="button" id="90173">
 						<include>ButtonHomeSubCommonValues</include>
 						<label>19040</label>
-						<onclick>ActivateWindow(TV)</onclick>
+						<onclick>ActivateWindow(PVR)</onclick>
 						<onclick>Setfocus(35)</onclick>
 						<onclick>Setfocus(14)</onclick>
 						<visible>Container(9000).HasFocus(9)</visible>
@@ -1199,7 +1199,7 @@
 						</item>
 						<item id="9">
 							<label>19020</label>
-							<onclick>ActivateWindow(TV)</onclick>
+							<onclick>ActivateWindow(PVR)</onclick>
 							<icon>thumbs/LiveTV.png</icon>
 							<thumb>special://skin/backgrounds/livetv.jpg</thumb>
 							<visible>System.GetBool(pvrmanager.enabled)</visible>

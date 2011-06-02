@@ -138,7 +138,7 @@
 					<item>
 						<label>19020</label>
 						<label2>31410</label2>
-						<onclick>ActivateWindow(TVSettings)</onclick>
+						<onclick>ActivateWindow(PVRSettings)</onclick>
 						<icon>thumbs/LiveTV.png</icon>
 					</item>
 					<item>
