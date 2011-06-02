@@ -1,7 +1,7 @@
 <includes>
 	<include name="MovieDVDView">
 		<control type="fixedlist" id="57">
-			<visible>!Container.Content(Addons) + [Container.Content(TVShows) | Container.Content(Movies) | Container.Content(Seasons) | Window.IsVisible(VideoFiles)]</visible>
+			<visible>!Container.Content(Addons) + !Container.Content(Episodes) + !Container.Content(MusicVideos)</visible>
 			<visible>!Container.Content(LiveTV)</visible>
 			<posx>-123</posx>
 			<posy>140</posy>
@@ -203,7 +203,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Premiered]</label>
-					<visible>[Container.Content(TVShows) | Container.Content(Episodes)] + Window.IsVisible(VideoLibrary)</visible>
+					<visible>Container.Content(TVShows) | Container.Content(Episodes)</visible>
 				</control>
 				<control type="label">
 					<posx>480</posx>
@@ -216,7 +216,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Year]</label>
-					<visible>[[Container.Content(Movies) | Container.Content(MusicVideos)] + Window.IsVisible(VideoLibrary)]</visible>
+					<visible>[[Container.Content(Movies) | Container.Content(MusicVideos)] + Window.IsVisible(Videos)]</visible>
 				</control>
 				<control type="image">
 					<posx>435</posx>
@@ -280,7 +280,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Premiered]</label>
-					<visible>[Container.Content(TVShows) | Container.Content(Episodes)] + Window.IsVisible(VideoLibrary)</visible>
+					<visible>Container.Content(TVShows) | Container.Content(Episodes)</visible>
 				</control>
 				<control type="label">
 					<posx>480</posx>
@@ -293,7 +293,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Year]</label>
-					<visible>[[Container.Content(Movies) | Container.Content(MusicVideos)] + Window.IsVisible(VideoLibrary)]</visible>
+					<visible>Container.Content(Movies) | Container.Content(MusicVideos)</visible>
 				</control>
 				<control type="image">
 					<posx>384</posx>
@@ -321,7 +321,7 @@
 			</focusedlayout>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(59) + [Window.IsVisible(VideoFiles) | Window.IsVisible(VideoLibrary)]</visible> 
+			<visible>Control.IsVisible(59) + Window.IsVisible(Videos)</visible> 
 			<include>VisibleFadeEffect</include>
 			<control type="image">
 				<description>background image for the fanart</description>

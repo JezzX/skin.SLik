@@ -177,62 +177,62 @@
 					<control type="button" id="90101">
 						<include>ButtonHomeSubCommonValues</include>
 						<label>342</label>
-						<onclick>ActivateWindow(VideoLibrary,MovieTitles,return)</onclick>
+						<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
 						<visible>Library.HasContent(Movies)</visible>
 						<visible>Container(9000).HasFocus(1)</visible>
 					</control>
 					<control type="button" id="90102">
 						<include>ButtonHomeSubCommonValues</include>
 						<label>20343</label>
-						<onclick>ActivateWindow(VideoLibrary,TvShowTitles,return)</onclick>
+						<onclick>ActivateWindow(Videos,TvShowTitles,return)</onclick>
 						<visible>Library.HasContent(TVShows)</visible>
 						<visible>Container(9000).HasFocus(1)</visible>
 					</control>
 					<control type="button" id="90103">
 						<include>ButtonHomeSubCommonValues</include>
 						<label>20389</label>
-						<onclick>ActivateWindow(VideoLibrary,MusicVideoTitles,return)</onclick>
+						<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
 						<visible>Library.HasContent(MusicVideos)</visible>
 						<visible>Container(9000).HasFocus(1)</visible>
 					</control>
 					<control type="button" id="90108">
 						<include>ButtonHomeSubCommonValues</include>
 						<label>$INFO[Skin.String(HomeVideoButton1_label)]</label>
-						<onclick>ActivateWindow(VideoLibrary,$INFO[Skin.String(HomeVideoButton1_Path)],return)</onclick>
+						<onclick>ActivateWindow(Videos,$INFO[Skin.String(HomeVideoButton1_Path)],return)</onclick>
 						<visible>Skin.HasSetting(HomeVideoButton1)</visible>
 						<visible>Container(9000).HasFocus(1)</visible>
 					</control>
 					<control type="button" id="90109">
 						<include>ButtonHomeSubCommonValues</include>
 						<label>$INFO[Skin.String(HomeVideoButton2_label)]</label>
-						<onclick>ActivateWindow(VideoLibrary,$INFO[Skin.String(HomeVideoButton2_Path)],return)</onclick>
+						<onclick>ActivateWindow(Videos,$INFO[Skin.String(HomeVideoButton2_Path)],return)</onclick>
 						<visible>Skin.HasSetting(HomeVideoButton2)</visible>
 						<visible>Container(9000).HasFocus(1)</visible>
 					</control>
 					<control type="button" id="90104">
 						<include>ButtonHomeSubCommonValues</include>
 						<label>744</label>
-						<onclick>ActivateWindow(VideoFiles,Root)</onclick>
+						<onclick>ActivateWindow(Videos,Files)</onclick>
 						<visible>Container(9000).HasFocus(1)</visible>
 					</control>
 					<control type="button" id="90105">
 						<include>ButtonHomeSubCommonValues</include>
 						<label>14022</label>
-						<onclick>ActivateWindow(VideoLibrary,Root)</onclick>
+						<onclick>ActivateWindow(Videos,Root)</onclick>
 						<visible>Library.HasContent(Video)</visible>
 						<visible>Container(9000).HasFocus(1)</visible>
 					</control>
 					<control type="button" id="90106">
 						<include>ButtonHomeSubCommonValues</include>
 						<label>24001</label>
-						<onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
+						<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 						<visible>Library.HasContent(Video)</visible>
 						<visible>Container(9000).HasFocus(1)</visible>
 					</control>
 					<control type="button" id="90107">
 						<include>ButtonHomeSubCommonValues</include>
 						<label>24001</label>
-						<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
+						<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 						<visible>!Library.HasContent(Video)</visible>
 						<visible>Container(9000).HasFocus(1)</visible>
 					</control>
