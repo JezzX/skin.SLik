@@ -1,20 +1,7 @@
 <window id="0">
-	<defaultcontrol always="true">8999</defaultcontrol>
+	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>	
 	<controls>
-		<control type="button" id="8999">
-			<description>Run Recently added script then focus home menu</description>
-			<posx>-20</posx>
-			<posy>-20</posy>
-			<width>1</width>
-			<height>1</height>
-			<label>-</label>
-			<font>-</font>
-			<onfocus>XBMC.RunScript(script.recentlyadded,limit=4)</onfocus>
-			<onfocus>SetFocus(9000)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-		</control>
 		<control type="label">
 			<description>Hidden label to background load the weather conditions before they are visible</description>
 			<posx>-20</posx>
