@@ -194,7 +194,7 @@
 			<aligny>center</aligny>
 			<font>font13</font>
 			<textcolor>white</textcolor>
-			<label>$LOCALIZE[20314]</label>
+			<label>$LOCALIZE[3]</label>
 		</control>
 		<include>WindowFooter</include>
 		<control type="grouplist">
