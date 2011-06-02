@@ -55,7 +55,7 @@
 					<onleft>9001</onleft>
 					<onright>4</onright>
 					<onup>2</onup>
-					<ondown>99</ondown>
+					<ondown>14</ondown>
 				</control>
 				<control type="image">
 					<description>NoFocus Background for Sort Direction Toggle</description>
@@ -87,36 +87,23 @@
 					<onleft>3</onleft>
 					<onright>50</onright>
 					<onup>2</onup>
-					<ondown>99</ondown>
-				</control>
-				<control type="radiobutton" id="99">
-					<description>Library button</description>
-					<posx>0</posx>
-					<posy>90</posy>
-					<label>$LOCALIZE[29800]</label>
-					<onclick>ReplaceWindow(myvideofiles)</onclick>
-					<selected>Window.IsVisible(myvideolibrary)</selected>
-					<include>ButtonCommonValues</include>
-					<onleft>9001</onleft>
-					<onright>50</onright>
-					<onup>3</onup>
 					<ondown>14</ondown>
 				</control>
 				<control type="radiobutton" id="14">
 					<description>Watched Toggle</description>
 					<posx>0</posx>
-					<posy>135</posy>
+					<posy>90</posy>
 					<include>ButtonCommonValues</include>
 					<label>20367</label>
 					<onleft>9001</onleft>
 					<onright>50</onright>
-					<onup>99</onup>
+					<onup>3</onup>
 					<ondown>8</ondown>
 				</control>
 				<control type="button" id="8">
 					<description>Search</description>
 					<posx>0</posx>
-					<posy>180</posy>
+					<posy>135</posy>
 					<include>ButtonCommonValues</include>
 					<label>137</label>
 					<onleft>9001</onleft>
@@ -127,12 +114,23 @@
 				<control type="radiobutton" id="19">
 					<description>Filter</description>
 					<posx>0</posx>
-					<posy>225</posy>
+					<posy>180</posy>
 					<include>ButtonCommonValues</include>
 					<label>587</label>
 					<onleft>9001</onleft>
 					<onright>50</onright>
 					<onup>8</onup>
+					<ondown>7</ondown>
+				</control>
+				<control type="radiobutton" id="7">
+					<description>Stack button</description>
+					<posx>0</posx>
+					<posy>225</posy>
+					<label>$LOCALIZE[346]</label>
+					<include>ButtonCommonValues</include>
+					<onleft>9001</onleft>
+					<onright>50</onright>
+					<onup>19</onup>
 					<ondown>16</ondown>
 				</control>
 				<control type="radiobutton" id="16">
@@ -143,7 +141,7 @@
 					<label>589</label>
 					<onleft>9001</onleft>
 					<onright>50</onright>
-					<onup>19</onup>
+					<onup>7</onup>
 					<ondown>17</ondown>
 				</control>
 				<control type="radiobutton" id="17">
@@ -193,7 +191,7 @@
 			<aligny>center</aligny>
 			<font>font13</font>
 			<textcolor>white</textcolor>
-			<label>$LOCALIZE[20314]</label>
+			<label>$LOCALIZE[3]</label>
 		</control>
 		<include>WindowFooter</include>
 		<control type="grouplist">

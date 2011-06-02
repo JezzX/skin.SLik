@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.slik-pvr"
-  version="0.0.2"
+  version="2.0.0"
   name="SLik (PVR Version)"
   provider-name="Jezz_X">
   <requires>
-    <import addon="xbmc.gui" version="2.11"/>
-    <import addon="script.recentlyadded" version="1.0.9"/>
+    <import addon="xbmc.gui" version="3.00"/>
   </requires>
   <extension
     point="xbmc.gui.skin"

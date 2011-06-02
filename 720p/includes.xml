@@ -153,134 +153,32 @@
 			<height>50</height>
 			<texture>Footer.png</texture>
 		</control>
-		<control type="grouplist">
-			<posx>640</posx>
+		<control type="label">
+			<description>Root Folder Name</description>
+			<posx>20r</posx>
 			<posy>50r</posy>
 			<width>620</width>
 			<height>25</height>
-			<orientation>horizontal</orientation>
+			<font>font12</font>
+			<textcolor>black</textcolor>
+			<scroll>false</scroll>
 			<align>right</align>
-			<itemgap>5</itemgap>
-			<control type="label">
-				<description>Root Folder Name</description>
-				<width min="0" max="300">auto</width>
-				<height>25</height>
-				<font>font12</font>
-				<textcolor>black</textcolor>
-				<scroll>false</scroll>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>[B]$LOCALIZE[20108][/B]</label>
-				<visible>IsEmpty(Container.FolderPath)</visible>
-			</control>
-			<control type="label">
-				<description>Folder Name</description>
-				<width min="0" max="300">auto</width>
-				<height>25</height>
-				<font>font12</font>
-				<textcolor>black</textcolor>
-				<scroll>false</scroll>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>[B]$LOCALIZE[20342][/B]</label>
-				<visible>Container.Content(Movies)</visible>
-			</control>
-			<control type="label">
-				<description>Folder Name</description>
-				<width min="0" max="300">auto</width>
-				<height>25</height>
-				<font>font12</font>
-				<textcolor>black</textcolor>
-				<scroll>false</scroll>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>[B]$LOCALIZE[20343][/B]</label>
-				<visible>Container.Content(TVShows)</visible>
-			</control>
-			<control type="label">
-				<description>Folder Name</description>
-				<width min="0" max="300">auto</width>
-				<height>25</height>
-				<font>font12</font>
-				<textcolor>black</textcolor>
-				<scroll>false</scroll>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>[B]$LOCALIZE[20389][/B]</label>
-				<visible>Container.Content(MusicVideos)</visible>
-			</control>
-			<control type="label">
-				<description>Folder Name</description>
-				<width min="0" max="500">auto</width>
-				<height>25</height>
-				<font>font12</font>
-				<textcolor>black</textcolor>
-				<scroll>false</scroll>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>[B]$INFO[ListItem.TVShowTitle][/B]</label>
-				<visible>[Container.Content(Seasons) | Container.Content(Episodes)] + !stringcompare(Container.FolderPath,videodb://5/)</visible>
-			</control>
-			<control type="label">
-				<description>Folder Name</description>
-				<width min="0" max="300">auto</width>
-				<height>25</height>
-				<font>font12</font>
-				<textcolor>black</textcolor>
-				<scroll>false</scroll>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>[B]$INFO[ListItem.Season, - $LOCALIZE[20373] ][/B]</label>
-				<visible>Container.Content(Episodes) + !stringcompare(Container.FolderPath,videodb://5/)</visible>
-			</control>
-			<control type="label">
-				<description>Episodes Folder Name</description>
-				<width min="0" max="300">auto</width>
-				<height>25</height>
-				<font>font12</font>
-				<textcolor>black</textcolor>
-				<scroll>false</scroll>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>[B]$LOCALIZE[20360][/B]</label>
-				<visible>stringcompare(Container.FolderPath,videodb://5/)</visible>
-			</control>
-			<control type="label">
-				<description>Recently Added</description>
-				<width min="0" max="300">auto</width>
-				<height>25</height>
-				<font>font12</font>
-				<textcolor>black</textcolor>
-				<scroll>false</scroll>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>[B] - $LOCALIZE[31009][/B]</label>
-				<visible>stringcompare(Container.FolderPath,videodb://4/) | stringcompare(Container.FolderPath,videodb://5/) | stringcompare(Container.FolderPath,videodb://6/)</visible>
-			</control>
-			<control type="label">
-				<description>Episodes Folder Name</description>
-				<width min="0" max="600">auto</width>
-				<height>25</height>
-				<font>font12</font>
-				<textcolor>black</textcolor>
-				<scroll>false</scroll>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>[B]$LOCALIZE[24001]$INFO[Container.Property(AddonCategory), - ][/B]</label>
-				<visible>substring(Container.FolderPath,addons://,left)</visible>
-			</control>
-			<control type="label">
-				<description>Folder Name</description>
-				<width min="0" max="600">auto</width>
-				<height>25</height>
-				<font>font12</font>
-				<textcolor>black</textcolor>
-				<scroll>false</scroll>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>[B]$INFO[Container.FolderName][/B]</label>
-				<visible>!Window.IsVisible(VideoLibrary) + !Window.IsVisible(MusicLibrary) + !Window.IsVisible(AddonBrowser)</visible>
-			</control>
+			<aligny>center</aligny>
+			<label>[B]$LOCALIZE[20108][/B]</label>
+			<visible>IsEmpty(Container.FolderPath)</visible>
+		</control>
+		<control type="label">
+			<description>Folder Name</description>
+			<posx>20r</posx>
+			<posy>50r</posy>
+			<width>620</width>
+			<height>25</height>
+			<font>font12</font>
+			<textcolor>black</textcolor>
+			<scroll>false</scroll>
+			<align>right</align>
+			<aligny>center</aligny>
+			<label>[B]$INFO[Container.FolderName][/B]</label>
 		</control>
 		<control type="label">
 			<description>Page Count Label</description>
@@ -887,8 +785,8 @@
 				<width>1280</width>
 				<height>40</height>
 				<texture>Footer.png</texture>
-				<animation reversible="false" effect="zoom" start="0,670,1280,50" end="0,680,1280,40" time="200" condition="Window.Previous(VideoFiles) | Window.Previous(VideoLibrary) | Window.Previous(MusicFiles) | Window.Previous(MusicLibrary) | Window.Previous(Pictures) | Window.Previous(Programs) | Window.Previous(FileManager) | Window.Previous(Weather) | Window.Previous(AddonBrowser) | Window.Previous(Profiles) | Window.Previous(TV)">WindowOpen</animation>
-				<animation reversible="false" effect="zoom" end="0,670,1280,50" start="0,680,1280,40" time="200" condition="Window.Next(VideoFiles) | Window.Next(VideoLibrary) | Window.Next(MusicFiles) | Window.Next(MusicLibrary) | Window.Next(Pictures) | Window.Next(Programs) | Window.Next(FileManager) | Window.Next(Weather) | Window.Next(AddonBrowser) | Window.Next(Profiles) | Window.Next(TV)">WindowClose</animation>
+				<animation reversible="false" effect="zoom" start="0,670,1280,50" end="0,680,1280,40" time="200" condition="Window.Previous(Videos) | Window.Previous(MusicFiles) | Window.Previous(MusicLibrary) | Window.Previous(Pictures) | Window.Previous(Programs) | Window.Previous(FileManager) | Window.Previous(Weather) | Window.Previous(AddonBrowser) | Window.Previous(Profiles) | Window.Previous(PVR)">WindowOpen</animation>
+				<animation reversible="false" effect="zoom" end="0,670,1280,50" start="0,680,1280,40" time="200" condition="Window.Next(Videos) | Window.Next(MusicFiles) | Window.Next(MusicLibrary) | Window.Next(Pictures) | Window.Next(Programs) | Window.Next(FileManager) | Window.Next(Weather) | Window.Next(AddonBrowser) | Window.Next(Profiles) | Window.Next(PVR)">WindowClose</animation>
 			</control>
 			<control type="group">
 				<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
