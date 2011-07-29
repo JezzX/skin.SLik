@@ -168,7 +168,7 @@
 					<align>top</align>
 					<onleft>9000</onleft>
 					<onright>9001</onright>
-					<onup>603</onup>
+					<onup>9000</onup>
 					<ondown>9000</ondown>
 					<itemgap>0</itemgap>
 					<visible>!Container(9000).HasFocus(5)</visible>
@@ -1073,7 +1073,7 @@
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<onup>90161</onup>
-					<ondown>603</ondown>
+					<ondown>599</ondown>
 					<pagecontrol>-</pagecontrol>
 					<focusposition>1</focusposition>
 					<orientation>horizontal</orientation>
@@ -1474,6 +1474,23 @@
 				</control>
 			</control>
 			<include>Common_RSS_Feed</include>
+			<control type="button" id="599">
+				<animation effect="slide" start="0,0" end="155,0" time="200" tween="quadratic" easing="out" condition="Player.HasMedia + Window.IsVisible(Home)">Conditional</animation>
+				<posx>10</posx>
+				<posy>36r</posy>
+				<width>32</width>
+				<height>32</height>
+				<label>-</label>
+				<texturefocus>FavouritesFO.png</texturefocus>
+				<texturenofocus>FavouritesNF.png</texturenofocus>
+				<onleft>605</onleft>
+				<onright>9000</onright>
+				<onup>9000</onup>
+				<ondown>90101</ondown>
+				<onclick>ActivateWindow(favourites)</onclick>
+				<include>Window_OpenClose_Animation</include>
+				<include>VisibleFadeEffect</include>
+			</control>
 			<control type="group">
 				<posx>10</posx>
 				<posy>36r</posy>

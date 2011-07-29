@@ -789,7 +789,8 @@
 			</control>
 			<control type="group">
 				<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-				<animation effect="slide" start="0,0" end="150,0" time="200" tween="quadratic" easing="out" condition="Player.HasMedia + Window.IsVisible(Home)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="30,0" time="200" tween="quadratic" easing="out" condition="Window.IsVisible(Home)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="155,0" time="200" tween="quadratic" easing="out" condition="Player.HasMedia + Window.IsVisible(Home)">Conditional</animation>
 				<control type="rss">
 					<description>rss feed</description>
 					<posx>65</posx>
