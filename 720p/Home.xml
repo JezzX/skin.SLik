@@ -100,7 +100,7 @@
 						<posy>5</posy>
 						<height>30</height>
 						<width>246</width>
-						<label>$INFO[Weather.Location]</label>
+						<label>$INFO[Window(Weather).Property(Location)]</label>
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font11</font>
@@ -1078,7 +1078,6 @@
 					<focusposition>1</focusposition>
 					<orientation>horizontal</orientation>
 					<scrolltime>200</scrolltime>
-					<preloaditems>4</preloaditems>
 					<itemlayout height="256" width="256">
 						<control type="image">
 							<posx>0</posx>
