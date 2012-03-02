@@ -876,6 +876,19 @@
 			<textcolor>white</textcolor>
 			<label>$LOCALIZE[8]</label>
 		</control>
+		<control type="label">
+			<description>Provider Text</description>
+			<posx>0</posx>
+			<posy>5</posy>
+			<width>1280</width>
+			<height>35</height>
+			<font>font11</font>
+			<textcolor>grey2</textcolor>
+			<scroll>true</scroll>
+			<align>center</align>
+			<aligny>center</aligny>
+			<label>$LOCALIZE[31048] :$INFO[Window.Property(WeatherProvider)]</label>
+		</control>
 		<control type="image">
 			<posx>0</posx>
 			<posy>50r</posy>
