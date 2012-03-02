@@ -79,10 +79,10 @@
 				</control>
 				<control type="label">
 					<description>Playing Label</description>
-					<posx>120</posx>
+					<posx>100</posx>
 					<posy>8</posy>
 					<height>20</height>
-					<width>130</width>
+					<width>170</width>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font10</font>
@@ -92,10 +92,10 @@
 				</control>
 				<control type="label">
 					<description>Paused Label</description>
-					<posx>120</posx>
+					<posx>100</posx>
 					<posy>8</posy>
 					<height>20</height>
-					<width>130</width>
+					<width>170</width>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font10</font>
@@ -105,10 +105,10 @@
 				</control>
 				<control type="label">
 					<description>Cache Label</description>
-					<posx>120</posx>
+					<posx>100</posx>
 					<posy>8</posy>
 					<height>20</height>
-					<width>130</width>
+					<width>170</width>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font10</font>
@@ -118,10 +118,10 @@
 				</control>
 				<control type="label">
 					<description>Seeking Label</description>
-					<posx>120</posx>
+					<posx>100</posx>
 					<posy>8</posy>
 					<height>20</height>
-					<width>130</width>
+					<width>170</width>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font10</font>
@@ -132,10 +132,10 @@
 
 				<control type="label">
 					<description>RW x2 Label</description>
-					<posx>120</posx>
+					<posx>100</posx>
 					<posy>8</posy>
 					<height>20</height>
-					<width>130</width>
+					<width>170</width>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font10</font>
@@ -145,10 +145,10 @@
 				</control>
 				<control type="label">
 					<description>RW x4 Label</description>
-					<posx>120</posx>
+					<posx>100</posx>
 					<posy>8</posy>
 					<height>20</height>
-					<width>130</width>
+					<width>170</width>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font10</font>
@@ -158,10 +158,10 @@
 				</control>
 				<control type="label">
 					<description>RW x8 Label</description>
-					<posx>120</posx>
+					<posx>100</posx>
 					<posy>8</posy>
 					<height>20</height>
-					<width>130</width>
+					<width>170</width>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font10</font>
@@ -171,10 +171,10 @@
 				</control>
 				<control type="label">
 					<description>RW x16 Label</description>
-					<posx>120</posx>
+					<posx>100</posx>
 					<posy>8</posy>
 					<height>20</height>
-					<width>130</width>
+					<width>170</width>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font10</font>
@@ -184,10 +184,10 @@
 				</control>
 				<control type="label">
 					<description>RW x32 Label</description>
-					<posx>120</posx>
+					<posx>100</posx>
 					<posy>8</posy>
 					<height>20</height>
-					<width>130</width>
+					<width>170</width>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font10</font>
@@ -198,10 +198,10 @@
 
 				<control type="label">
 					<description>FF x2 Label</description>
-					<posx>120</posx>
+					<posx>100</posx>
 					<posy>8</posy>
 					<height>20</height>
-					<width>130</width>
+					<width>170</width>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font10</font>
@@ -211,10 +211,10 @@
 				</control>
 				<control type="label">
 					<description>FF x4 Label</description>
-					<posx>120</posx>
+					<posx>100</posx>
 					<posy>8</posy>
 					<height>20</height>
-					<width>130</width>
+					<width>170</width>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font10</font>
@@ -224,10 +224,10 @@
 				</control>
 				<control type="label">
 					<description>FF x8 Label</description>
-					<posx>120</posx>
+					<posx>100</posx>
 					<posy>8</posy>
 					<height>20</height>
-					<width>130</width>
+					<width>170</width>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font10</font>
@@ -237,10 +237,10 @@
 				</control>
 				<control type="label">
 					<description>FF x16 Label</description>
-					<posx>120</posx>
+					<posx>100</posx>
 					<posy>8</posy>
 					<height>20</height>
-					<width>130</width>
+					<width>170</width>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font10</font>
@@ -250,10 +250,10 @@
 				</control>
 				<control type="label">
 					<description>FF x32 Label</description>
-					<posx>120</posx>
+					<posx>100</posx>
 					<posy>8</posy>
 					<height>20</height>
-					<width>130</width>
+					<width>170</width>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font10</font>
