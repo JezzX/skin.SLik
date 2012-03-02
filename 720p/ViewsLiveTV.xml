@@ -56,7 +56,7 @@
 						<posx>120</posx>
 						<posy>0</posy>
 						<width>425</width>
-						<height>30</height>
+						<height>25</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>orange</selectedcolor>
@@ -66,7 +66,7 @@
 					</control>
 					<control type="label">
 						<posx>120</posx>
-						<posy>30</posy>
+						<posy>26</posy>
 						<width>425</width>
 						<height>20</height>
 						<font>font11</font>
@@ -75,6 +75,16 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Title]</label>
+					</control>
+					<control type="progress">
+						<description>Progressbar</description>
+						<posx>120</posx>
+						<posy>50</posy>
+						<width>420</width>
+						<height>5</height>
+						<colordiffuse>88FFFFFF</colordiffuse>
+						<visible>ListItem.HasEpg</visible>
+						<info>ListItem.Progress</info>
 					</control>
 				</itemlayout>
 				<focusedlayout height="61" width="550">
@@ -118,7 +128,7 @@
 						<posx>120</posx>
 						<posy>0</posy>
 						<width>425</width>
-						<height>30</height>
+						<height>25</height>
 						<font>font12</font>
 						<textcolor>black</textcolor>
 						<selectedcolor>blue2</selectedcolor>
@@ -128,7 +138,7 @@
 					</control>
 					<control type="label">
 						<posx>120</posx>
-						<posy>30</posy>
+						<posy>25</posy>
 						<width>425</width>
 						<height>20</height>
 						<font>font11</font>
@@ -137,6 +147,15 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Title]</label>
+					</control>
+					<control type="progress">
+						<description>Progressbar</description>
+						<posx>120</posx>
+						<posy>50</posy>
+						<width>420</width>
+						<height>5</height>
+						<visible>ListItem.HasEpg</visible>
+						<info>ListItem.Progress</info>
 					</control>
 				</focusedlayout>
 			</control>
