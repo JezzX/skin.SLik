@@ -33,6 +33,50 @@
 			</control>
 		</control>
 		<control type="group">
+			<visible>Window.IsVisible(FullscreenVideo) + Player.Paused + !Window.IsActive(FullscreenInfo)</visible>
+			<posx>0</posx>
+			<posy>45r</posy>
+			<include>VisibleFadeEffect</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>45</height>
+				<texture border="0,0,0,2">Header.png</texture>
+			</control>
+			<control type="progress">
+				<description>Cache Progressbar</description>
+				<posx>30</posx>
+				<posy>19</posy>
+				<width>980</width>
+				<height>10</height>
+				<info>Player.ProgressCache</info>
+				<texturebg border="4,0,4,0">ProgressBack.png</texturebg>
+				<midtexture border="4,0,4,0">ProgressCache.png</midtexture>
+			</control>
+			<control type="progress">
+				<description>Progressbar</description>
+				<posx>30</posx>
+				<posy>19</posy>
+				<width>980</width>
+				<height>10</height>
+				<info>Player.Progress</info>
+				<texturebg border="4,0,4,0">ProgressBack2.png</texturebg>
+			</control>
+			<control type="label">
+				<description>time label</description>
+				<posx>1250</posx>
+				<posy>0</posy>
+				<width>620</width>
+				<height>45</height>
+				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font13_Numeric</font>
+				<textcolor>white</textcolor>
+			</control>
+		</control>
+		<control type="group">
 			<posx>850</posx>
 			<posy>15</posy>
 			<include>VisibleFadeEffect</include>
