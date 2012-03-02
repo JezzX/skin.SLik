@@ -1,3 +1,26 @@
+[B]Version 2.0.0[/B] (Eden)
+ 
+- bumped the version number to 2.0.0 for eden changes
+- Changed Use $ESCINFO instead of $INFO for recently added playback as it fixes playback of multi part videos
+- Added progress display to videos and Music when you pause so you know what your up too
+- Fixed that FF RW text got cut off ... in the seek bar
+- Added  _screenshots folder needed for eden
+- Added and skinned DialogPeripheralManager.xml and DialogPeripheralSettings.xml
+- Fixed a bug that caused High CPU usage and weird effects in eden
+- Changes for Improved the codec flagging code
+- Added cached progress bar textures to show you how much video is cached
+- Changed Removed all references to VideoFiles and VideoLibrary windows (changes for eden) sure hope I got it all right
+- Changed Removed Video "Library Mode" button and added "Stack" Button (changes for eden)
+- Removed String id="31021" "Video - Files" its not needed anymore
+- Changed "Video Library" window header to just Videos since its all in 1 now
+- Deleted MyVideo.xml because its no longer needed in eden
+- Simplified the way we get the current folder label for bottom right since changes for eden
+- Removed references recently added script since eden does not use it anymore
+- Added More Channel Count flagging images
+- Added Norwegian/strings.xml
+- Added Korean language files thanks to xbmc forum user epoke
+- Added a bunch of language files thanks to xbmc forum users
+
 [B]Version 1.1.0[/B]
 
 - Added Menu Button to Video OSD to get to DVD menus
