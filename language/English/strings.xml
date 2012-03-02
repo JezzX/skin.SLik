@@ -34,6 +34,7 @@
   <string id="31045">REWIND</string>
   <string id="31046"></string>
   <string id="31047">Last logged in</string>
+  <string id="31048">Data provider</string>
 
   <!-- Playlist Editor labels -->
   <string id="31054">The playlist is currently empty.[CR][CR]Use the context menu to[CR]add items to the playlist</string>
