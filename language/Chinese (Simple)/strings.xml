@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+  <string id="31000">静音</string>
+  <string id="31001">工作中</string>
+  <string id="31002"></string>
+  <string id="31003"></string>
+  <string id="31004">主界面</string>
+  <string id="31005">已用内存：</string>
+  <string id="31006">结束时间：</string>
+  <string id="31007">最新增加电影</string>
+  <string id="31008">最新增加剧集</string>
+  <string id="31009">最新增加</string>
+  <string id="31010"></string>
+  <string id="31011">最后更新</string>
+  <string id="31012">当前</string>
+  <string id="31013">可视效果设置</string>
+  <string id="31014">可视效果预设</string>
+  <string id="31015">显示同人画</string>
+  <string id="31016">隐藏同人画</string>
+  <string id="31017">歌曲歌词</string>
+  <string id="31018">获取字幕</string>
+  <string id="31019">音频设置</string>
+  <string id="31020">播放光盘</string>
+  <string id="31021"></string>
+  <string id="31022">音乐 - 文件</string>
+  <string id="31023">图片预览</string>
+  <string id="31024">页</string>
+  <string id="31025">项</string>
+  <string id="31026">自动关机[CR]于</string>
+  <string id="31027">视频菜单</string>
+
+
+  <string id="31042">播放中</string>
+  <string id="31043">暂停</string>
+  <string id="31044">快进</string>
+  <string id="31045">回退</string>
+  <string id="31046"></string>
+  <string id="31047">最近登录</string>
+  <string id="31048">数据来源</string>
+
+  <!-- Playlist Editor labels -->
+  <string id="31054">播放列表目前为空。[CR][CR]使用上下文菜单[CR]将项目加入播放列表</string>
+  <string id="31055">打开播放列表</string>
+  <string id="31056">保存播放列表</string>
+  <string id="31057">关闭播放列表</string>
+  <string id="31058">系统音乐文件</string>
+  <string id="31059">当前播放列表</string>
+  <string id="31060">这是一个堆叠文件，请选择要播放的片段。</string>
+  
+  <!-- Skin Settings labels (Catagories) -->
+  <string id="31100"></string>
+
+  <!-- Skin Settings labels (Sub Headers) -->
+  <string id="31110">常规皮肤选项</string>
+  <string id="31111">主页面选项</string>
+  <string id="31112">主界面快速启动视频扩展功能</string>
+  <string id="31113">主界面快速启动音乐扩展功能</string>
+  <string id="31114">主界面快速启动图片扩展功能</string>
+  <string id="31115">主界面快速启动程序扩展功能</string>
+  <string id="31116">视频子菜单快捷方式</string>
+  <string id="31117">音乐子菜单快捷方式</string>
+
+  <!-- Skin Settings labels (Options Text Headers) -->
+  <string id="31130">背景显示同人画</string>
+  <string id="31131">快捷方式文件链接</string>
+  <string id="31132">启用播放列表按钮</string>
+  <string id="31133">播放列表标签</string>
+  <string id="31134">播放列表路径</string>
+
+  <!-- Media Window View Type labels -->
+  <string id="31300">DVD缩略图</string>
+  <string id="31301">信息缩略图</string>
+  <string id="31302">信息列表</string>
+  <string id="31303">信息广角</string>
+  <string id="31304">宽图标</string>
+  <string id="31305">海报</string>
+  <string id="31306">媒体列表</string>
+
+  
+  <!-- Settings Description Labels  -->
+  <string id="31400">[B]设置用户界面[/B][CR][CR]变换皮肤 · 设置语言和区域 · 修改文件列表参数 · 设置屏幕保护</string>
+  <string id="31401">[B]设置视频参数[/B][CR][CR]管理视频资料库 · 设置视频播放参数 · 修改视频列表参数 · 设置字幕字体</string>
+  <string id="31402">[B]设置音乐参数[/B][CR][CR]管理音乐资料库 · 设置音乐播放参数 · 修改音乐列表参数 · 设置音乐提交 · 设置卡拉OK选项</string>
+  <string id="31403">[B]设置图片参数[/B][CR][CR]设置图片列表参数 · 设置幻灯片播放</string>
+  <string id="31404">[B]设置天气预报[/B][CR][CR]设置三个获取天气信息的城市</string>
+  <string id="31405">[B]设置网络参数[/B][CR][CR]设置通过UPnP和HTTP控制XBMC · 设置文件共享 · 设置互联网访问参数</string>
+  <string id="31406">[B]设置系统参数[/B][CR][CR]设置和校正显示器 · 设置音频输出 · 设置摇控器 · 设置节电参数 · 启用调试 · 设置管理员和锁定</string>
+  <string id="31407">[B]设置皮肤参数[/B][CR][CR]设置SLik皮肤 · 增加和删除主菜单项 · 创建媒体和扩展功能的快速链接</string>
+  <string id="31408">[B]设置扩展功能[/B][CR][CR]管理你安装的扩展功能 · 在xbmc.org浏览并安装扩展功能 · 修改扩展功能设置</string>
+  <string id="31409">[B]文件管理[/B][CR][CR]管理你的系统文件 · 拷贝、移动、更名、删除系统中的文件和目录 · 整理你的硬盘</string>
+
+  <!-- To be removed when XBMC Eden version starts coming out  -->
+  <string id="31500">关闭系统</string>
+ </strings>
